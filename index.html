@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ExSoft JSC</title>
+	<link rel="shortcut icon" href="./img/logo.svg" />
+	<link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="./css//grid.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/responsive.css" />
+	<link rel="stylesheet" href="./css/transition.css" />
+	<link rel="stylesheet" href="./css/carousel.css">
+	<link rel="stylesheet" href="./css/custom_slider.css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- <button title="Go to top" id="scroll">Top</button> -->
+
+	<div id="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<a href="#" class="header__logo">
+						<img src="./img/logo.svg" alt="modest" />
+					</a>
+					<nav class="menu" onclick="changeBg();">
+						<input type="checkbox" id="check" />
+						<label for="check" class="check__btn only-sp">
+							<img src="./img/ic-menu.svg" alt="">
+							<img style="display: none;" src="./img/header/closeLogo.svg" alt="">
+						</label>
+						<ul class="menu__list" onclick="uncheck()">
+							<li class="menu__item">
+								<a href="#gioithieu" class="menu__link">Giới thiệu</a>
+							</li>
+							<li class="border-right"></li>
+							<li class="menu__item">
+								<a href="#sanpham" class="menu__link">Sản phẩm</a>
+							</li>
+							<li class="border-right"></li>
+							<li class="menu__item">
+								<a href="#moitruong" class="menu__link">Môi trường làm việc</a>
+							</li>
+							<li class="border-right"></li>
+							<li class="menu__item">
+								<a href="#tuyendung" class="menu__link">Tuyển dụng</a>
+							</li>
+							<li class="border-right"></li>
+							<li class="menu__item">
+								<a href="#contact" class="menu__link">Liên lạc</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="form__group field">
+
+						<input type="input" class="form__field" placeholder="Tìm kiếm" name="name" id='name' required />
+						<label for="name" class="form__label">
+							<img src="./img/header/search_logo.svg" alt="">
+						</label>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header-end -->
+		<div class="banner">
+			<!-- <img src="./img/banner.png" cl alt="">
+			<img src="./img/banner_mb.png" alt=""> -->
+			<div class="container">
+				<div class="banner__content">
+					<h2 class="banner__content-title">THAI GIÁO ĐÚNG CÁCH
+						DẠY CON TỪ TRONG BỤNG MẸ</h2>
+					<p class="banner__content-desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
+						metus, tristique ndolor non, ornare sagittis dolor. Nulla
+						vestibulu lacus ...
+					</p>
+					<a href="" class="banner__content-btn">TÌM HIỂU NGAY</a>
+				</div>
+				<div class="slide-circle">
+					<!-- <label class="dot_banner">
+						<input type="radio" name="slide-control" id="goto-slide-1" checked="checked">
+					  </label>
+					  <label class="dot_banner">
+						<input type="radio" name="slide-control" id="goto-slide-2">
+					  </label>
+					  <label class="dot_banner">
+						<input type="radio" name="slide-control" id="goto-slide-3">
+						<span class="checkmark"></span>
+					  </label> -->
+
+
+					<!-- <input type="radio" name="slide-control" id="goto-slide-1" checked />
+					<input type="radio" name="slide-control" id="goto-slide-2" />
+					<input type="radio" name="slide-control" id="goto-slide-3" />
+					<div class="controls">
+						<label for="goto-slide-1"></label>
+						<label for="goto-slide-2"></label>
+						<label for="goto-slide-3"></label>
+					</div> -->
+
+					<div class="radio-item">
+						<input type="radio" id="ritema" name="ritem" value="ropt1" checked>
+						<label for="ritema"></label>
+					</div>
+
+					<div class="radio-item">
+						<input type="radio" id="ritemb" name="ritem" value="ropt2">
+						<label for="ritemb"></label>
+					</div>
+					<div class="radio-item">
+						<input type="radio" id="ritemc" name="ritem" value="ropt2">
+						<label for="ritemc"></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner-end -->
+		<div class="gioithieu" id="gioithieu">
+			<div class="container">
+				<div class="gioithieu__col">
+					<div class="gioithieu__col-1-of-2">
+						<img src="./img/gioithieu/pana.svg" alt="" srcset="">
+					</div>
+					<div class="gioithieu__col-1-of-2">
+						<div class="gioithieu-right">
+							<div>
+								<p>Giới thiệu</p>
+							</div>
+							<div>
+								<p>Công ty Cổ phần Công nghệ phần mềm Exsoft là một trong những Công ty Công nghệ hàng
+									đầu Việt Nam cung cấp ứng dụng về giáo dục và chăm sóc sức khỏe cho mẹ mang bầu và
+									con dưới 6 tuổi.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class=" gioithieu-bg">
+				<!-- <div class="gallery">
+					<div class="gallery-flex" style="padding-top: 50px;padding-bottom: 30px;">
+						<div class="gioithieu-btn" onclick="change(0)">Giá trị cốt lõi</div>
+						<div class="gioithieu-btn gioithieu-btn-active" onclick="change(1)">Tầm nhìn</div>
+						<div class="gioithieu-btn" onclick="change(2)">Sứ mệnh</div>
+					</div>
+					<div class="container gallery-container">
+						<div id="op2" style="
+						position: absolute;
+						opacity: 1;
+						background: #FFFFFF;
+						left: 50%;
+						transform: translateX(-50%);
+						height: 300px;
+						width: 65%;
+						border-radius: 16px;
+						bottom: 50px;
+						"></div>
+						<div id="op1" style="    
+						left: 50%;
+						background: #FFFFFF;
+						border-radius: 16px;
+						position: absolute;
+						opacity: .4;
+						transform: translateX(-50%);
+						height: 270px;
+						width: 70%;
+						bottom: 50px;
+						overflow: hidden;"></div>
+						<div class="gallery-item gallery-item-2" data-index="2">
+							
+							<div class="gioithieu-card">
+								<img src="./img/gioithieu/icon2.svg" alt="">
+								<p>Sứ mệnh</p>
+								<p>Với sứ mệnh đồng hành cùng sự phát triển của thế hệ trẻ em Việt Nam, Exsoft cam kết
+									tạo ra những sản phẩm công nghệ chất lượng cao giúp cho hành trình làm mẹ và nuôi
+									con trở nên nhẹ nhàng, đơn giản. Là một start-up trẻ, năng động và sáng tạo, Exsoft
+									sẽ trao những giải pháp chăm sóc, hỗ trợ hiện đại giúp giải quyết hiệu quả các khó
+									khăn trong quá trình mang bầu và chăm sóc trẻ, từ đó người phụ nữ sẽ được tận hưởng
+									đúng nghĩa những điều ngọt ngào và hạnh phúc trong hành trình làm mẹ.</p>
+							</div>
+						</div>
+
+						<div class="gallery-item gallery-item-1" data-index="0">
+							<div class="gioithieu-card">
+								<img src="./img/gioithieu/icon3.svg" alt="">
+								<p>Giá trị cốt lõi</p>
+								<div class="gioithieu-card-type-2">
+									<div>
+										<p>Đổi mới</p>
+										<p>Exsoft luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ nhằm xóa
+											bỏ những
+											rào cản, cải thiện khó khăn cho các khách hàng của mình.
+										</p>
+									</div>
+									<div>
+										<p>Tận tâm</p>
+										<p>Với trái tim nhiệt thành và tâm huyết trong việc nuôi dưỡng, giáo dục thế hệ
+											trẻ Việt Nam, Exsoft tạo ra những sản phẩm phục vụ và chăm sóc một cách tốt
+											nhất cho cộng đồng mẹ và bé.
+										</p>
+									</div>
+									<div>
+										<p>Thấu hiểu</p>
+										<p>Đội ngũ nhân sự giàu kinh nghiệm trong lĩnh vực chăm sóc sức khỏe cho mẹ và
+											bé của Exsoft luôn lắng nghe và thấu hiểu các vấn đề của khách hàng, từ đó
+											sẽ nghiên cứu, cung cấp cho người dùng những giải pháp xử lý hiệu quả.
+										</p>
+									</div>
+									<div>
+										<p>Trách nhiệm</p>
+										<p>Chúng tôi cam kết là người đồng hành đáng tin cậy, cung cấp cho khách hàng
+											những phương thức, sản phẩm tối ưu nhất trong hành trình nuôi con.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="gallery-item gallery-item-3" data-index="1">
+							<div class="gioithieu-card">
+								<img src="./img/gioithieu/icon1.svg" alt="">
+								<p>Tầm nhìn</p>
+								<p>Với đội ngũ nhân sự nhiều kinh nghiệm trong lĩnh vực mẹ và bé, giàu tâm huyết trong
+									việc xây
+									dựng, kiến tạo những giá trị tốt đẹp cộng đồng, Exsoft sẽ trở thành Công ty Công
+									nghệ hàng
+									đầu Việt Nam, giữ vị trí số 1 trong mảng cung cấp ứng dụng về giáo dục và chăm sóc
+									sức khỏe
+									cho mẹ mang bầu và con dưới 6 tuổi.</p>
+							</div>
+						</div>
+						<div class="gallery-controls"></div>
+
+					</div>
+				</div> -->
+				<div class="container">
+					<!-- <div class="gallery">
+
+						<div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel" data-pause="hover">
+							<div class="carousel-indicators"  style="z-index: 10;" onclick="animationGioiThieu()">
+								<div type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+									class="gioithieu-btn" aria-label="Slide 2"
+									>Tầm nhìn
+								</div>
+
+								<div type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+									class="gioithieu-btn active" aria-current="true" aria-label="Slide 1">
+									Sứ mệnh
+								</div>
+
+								<div type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+									class="gioithieu-btn" aria-label="Slide 3">
+									Giá trị cốt lõi
+								</div>
+								
+							</div>
+							<div class="carousel-inner">
+								<div id="op2" style="
+							position: absolute;
+							opacity: 1;
+							background: #FFFFFF;
+							left: 50%;
+							transform: translateX(-50%);
+							height: 417px;
+							width: 76%;
+							transition: all .5s;
+							border-radius: 16px;
+							bottom: 0px;
+						"></div>
+						<div id="op1" style="    
+						    left: 50%;
+							background: #FFFFFF;
+							border-radius: 16px;
+							position: absolute;
+							opacity: .4;
+							transform: translateX(-50%);
+							height: 302px;
+							width: 81%;
+							bottom: 0px;
+							transition: all .5s;
+							overflow: hidden;"></div>
+								<div class="carousel-item active">
+									<div class="gioithieu-card">
+										<img src="./img/gioithieu/icon2.svg" alt="">
+										<p>Sứ mệnh</p>
+										<p>Với sứ mệnh đồng hành cùng sự phát triển của thế hệ trẻ em Việt Nam, Exsoft
+											cam kết
+											tạo ra những sản phẩm công nghệ chất lượng cao giúp cho hành trình làm mẹ và
+											nuôi
+											con trở nên nhẹ nhàng, đơn giản. Là một start-up trẻ, năng động và sáng tạo,
+											Exsoft
+											sẽ trao những giải pháp chăm sóc, hỗ trợ hiện đại giúp giải quyết hiệu quả
+											các khó
+											khăn trong quá trình mang bầu và chăm sóc trẻ, từ đó người phụ nữ sẽ được
+											tận hưởng
+											đúng nghĩa những điều ngọt ngào và hạnh phúc trong hành trình làm mẹ.</p>
+									</div>
+									<div class="lineBlue"></div>
+
+								</div>
+								<div class="carousel-item">
+									<div class="gioithieu-card">
+										<img src="./img/gioithieu/icon3.svg" alt="">
+										<p>Giá trị cốt lõi</p>
+										<div class="gioithieu-card-type-2">
+											<div>
+												<p>Đổi mới</p>
+												<p>Exsoft luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ
+													nhằm xóa
+													bỏ những
+													rào cản, cải thiện khó khăn cho các khách hàng của mình.
+												</p>
+											</div>
+											<div>
+												<p>Tận tâm</p>
+												<p>Với trái tim nhiệt thành và tâm huyết trong việc nuôi dưỡng, giáo dục
+													thế hệ
+													trẻ Việt Nam, Exsoft tạo ra những sản phẩm phục vụ và chăm sóc một
+													cách tốt
+													nhất cho cộng đồng mẹ và bé.
+												</p>
+											</div>
+											<div>
+												<p>Thấu hiểu</p>
+												<p>Đội ngũ nhân sự giàu kinh nghiệm trong lĩnh vực chăm sóc sức khỏe cho
+													mẹ và
+													bé của Exsoft luôn lắng nghe và thấu hiểu các vấn đề của khách hàng,
+													từ đó
+													sẽ nghiên cứu, cung cấp cho người dùng những giải pháp xử lý hiệu
+													quả.
+												</p>
+											</div>
+											<div>
+												<p>Trách nhiệm</p>
+												<p>Chúng tôi cam kết là người đồng hành đáng tin cậy, cung cấp cho khách
+													hàng
+													những phương thức, sản phẩm tối ưu nhất trong hành trình nuôi con.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="lineBlue"></div>
+
+								</div>
+								<div class="carousel-item">
+									<div class="gioithieu-card">
+										<img src="./img/gioithieu/icon1.svg" alt="">
+										<p>Tầm nhìn</p>
+										<p>Với đội ngũ nhân sự nhiều kinh nghiệm trong lĩnh vực mẹ và bé, giàu tâm huyết
+											trong
+											việc xây
+											dựng, kiến tạo những giá trị tốt đẹp cộng đồng, Exsoft sẽ trở thành Công ty
+											Công
+											nghệ hàng
+											đầu Việt Nam, giữ vị trí số 1 trong mảng cung cấp ứng dụng về giáo dục và
+											chăm sóc
+											sức khỏe
+											cho mẹ mang bầu và con dưới 6 tuổi.</p>
+									</div>
+									<div class="lineBlue"></div>
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button"
+							onclick="animationGioiThieu()"
+								data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+								<div><div class='gioithieu-ic-prev'><img src='./img/gioithieu/icpre.svg'></div></div>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button"
+							onclick="animationGioiThieu()"
+								data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+								<div><div class='gioithieu-ic-next'><img src='./img/gioithieu/icnext.svg'></div></div>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div> -->
+					<div class="gallery-flex" style="padding-top: 50px;padding-bottom: 60px;">
+						<div class="gioithieu-btn gioithieu-btn-active" onclick="show(0, false)">Tầm nhìn</div>
+						<div class="gioithieu-btn" onclick="show(1, false)">Sứ mệnh</div>
+						<div class="gioithieu-btn" onclick="show(-1,false)">Giá trị cốt lõi</div>
+					</div>
+					<div class="slider__">
+						<div class="gioithieu-card-4">
+							<div class="gioithieu-card-5">
+
+							</div>
+						</div>
+						<div class="slide__">
+							<div class="gioithieu-card">
+								<img src="./img/gioithieu/icon1.svg" alt="">
+								<p>Tầm nhìn</p>
+								<p>Với đội ngũ nhân sự nhiều kinh nghiệm trong lĩnh vực mẹ và bé, giàu tâm huyết
+									trong
+									việc xây
+									dựng, kiến tạo những giá trị tốt đẹp cộng đồng, Exsoft sẽ trở thành Công ty
+									Công
+									nghệ hàng
+									đầu Việt Nam, giữ vị trí số 1 trong mảng cung cấp ứng dụng về giáo dục và
+									chăm sóc
+									sức khỏe
+									cho mẹ mang bầu và con dưới 6 tuổi.</p>
+							</div>
+							<div class="lineBlue"></div>
+						</div>
+						<div class="slide__">
+							<div class="gioithieu-card">
+								<img src="./img/gioithieu/icon2.svg" alt="">
+								<p>Sứ mệnh</p>
+								<p>Với sứ mệnh đồng hành cùng sự phát triển của thế hệ trẻ em Việt Nam, Exsoft
+									cam kết
+									tạo ra những sản phẩm công nghệ chất lượng cao giúp cho hành trình làm mẹ và
+									nuôi
+									con trở nên nhẹ nhàng, đơn giản. Là một start-up trẻ, năng động và sáng tạo,
+									Exsoft
+									sẽ trao những giải pháp chăm sóc, hỗ trợ hiện đại giúp giải quyết hiệu quả
+									các khó
+									khăn trong quá trình mang bầu và chăm sóc trẻ, từ đó người phụ nữ sẽ được
+									tận hưởng
+									đúng nghĩa những điều ngọt ngào và hạnh phúc trong hành trình làm mẹ.</p>
+							</div>
+							<div class="lineBlue"></div>
+						</div>
+						<div class="slide__">
+							<div class="gioithieu-card">
+								<img src="./img/gioithieu/icon3.svg" alt="">
+								<p>Giá trị cốt lõi</p>
+								<div class="gioithieu-card-type-2 only-pc">
+
+									<div>
+										<p>Đổi mới</p>
+										<p>Exsoft luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ
+											nhằm xóa
+											bỏ những
+											rào cản, cải thiện khó khăn cho các khách hàng của mình.
+										</p>
+									</div>
+									<div>
+										<p>Tận tâm</p>
+										<p>Với trái tim nhiệt thành và tâm huyết trong việc nuôi dưỡng, giáo dục
+											thế hệ
+											trẻ Việt Nam, Exsoft tạo ra những sản phẩm phục vụ và chăm sóc một
+											cách tốt
+											nhất cho cộng đồng mẹ và bé.
+										</p>
+									</div>
+									<div>
+										<p>Thấu hiểu</p>
+										<p>Đội ngũ nhân sự giàu kinh nghiệm trong lĩnh vực chăm sóc sức khỏe cho
+											mẹ và
+											bé của Exsoft luôn lắng nghe và thấu hiểu các vấn đề của khách hàng,
+											từ đó
+											sẽ nghiên cứu, cung cấp cho người dùng những giải pháp xử lý hiệu
+											quả.
+										</p>
+									</div>
+									<div>
+										<p>Trách nhiệm</p>
+										<p>Chúng tôi cam kết là người đồng hành đáng tin cậy, cung cấp cho khách
+											hàng
+											những phương thức, sản phẩm tối ưu nhất trong hành trình nuôi con.
+										</p>
+									</div>
+								</div>
+								<div class="gioithieu-card-type-3 only-mobile">
+									<ul>
+										<li>
+											<p>Đổi mới</p>
+											<p>Exsoft luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ
+												nhằm xóa
+												bỏ những
+												rào cản, cải thiện khó khăn cho các khách hàng của mình.
+											</p>
+										</li>
+										<li>
+											<p>Tận tâm</p>
+											<p>Với trái tim nhiệt thành và tâm huyết trong việc nuôi dưỡng, giáo dục
+												thế hệ
+												trẻ Việt Nam, Exsoft tạo ra những sản phẩm phục vụ và chăm sóc một
+												cách tốt
+												nhất cho cộng đồng mẹ và bé.
+											</p>
+										</li>
+										<li>
+											<p>Thấu hiểu</p>
+											<p>Đội ngũ nhân sự giàu kinh nghiệm trong lĩnh vực chăm sóc sức khỏe cho
+												mẹ và
+												bé của Exsoft luôn lắng nghe và thấu hiểu các vấn đề của khách hàng,
+												từ đó
+												sẽ nghiên cứu, cung cấp cho người dùng những giải pháp xử lý hiệu
+												quả.
+											</p>
+										</li>
+										<li>
+											<p>Trách nhiệm</p>
+											<p>Chúng tôi cam kết là người đồng hành đáng tin cậy, cung cấp cho khách
+												hàng
+												những phương thức, sản phẩm tối ưu nhất trong hành trình nuôi con.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="lineBlue"></div>
+						</div>
+						<div class="buttons">
+							<!-- <button data-navigate="prev">Prev</button>
+							<button data-navigate="next">Next</button> -->
+							<div class='gioithieu-ic-prev' data-navigate="prev">
+								<img  src='./img/gioithieu/icpre.svg'>
+								<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
+
+							</div>
+							<div class='gioithieu-ic-next' data-navigate="next">
+								<img  src='./img/gioithieu/icnext.svg'>
+								<img style="display: none;"  src='./img/gioithieu/next_hover.svg'>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<!-- gioithieu-end -->
+
+		<!-- san pham -->
+		<div class="sanpham" id="sanpham">
+			<div class="container">
+				<div class="title-sanpham">
+					<p>Sản phẩm</p>
+					<div>
+						<p>Exsoft cung cấp những phần mềm hữu ích nhằm hướng dẫn, hỗ trợ để mẹ trở thành người mẹ hạnh
+							phúc,
+							nuôi con một cách khoa học, thông thái.</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="grid-sanpham container only-pc">
+				<img src="./img/sanpham/lineblue.svg" alt="">
+				<div class="sanpham1" onclick="changeLayout(1)">
+					<div class="sanpham-flexbox sanpham-card-show">
+						<div class="sanpham-card-1">
+							<img src="./img/sanpham/icon1_.svg" alt="">
+							<div>Trợ lý cho mẹ</div>
+							<div>
+								<div class="sanpham-btn">Đối tượng:</div>
+							</div>
+							<div>Mẹ bầu đang mang thai và các mẹ có con dưới 1 tuổi.</div>
+							<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+							<ul>
+								<li>
+									Cung cấp các kiến thức về lĩnh vực chăm sóc và giáo dục trẻ, bao gồm kiến thức dành
+									cho
+									mẹ
+									bầu như thai giáo, dinh dưỡng, sức khỏe, bệnh lý...; kiến thức dành cho mẹ nuôi con
+									nhỏ
+									như
+									chăm sóc trẻ sơ sinh, bé ăn dặm, vận động...
+								</li>
+								<li>
+									Là cầu nối với những chuyên gia đầu ngành có nhiều kinh nghiệm, giúp giải đáp, hỗ
+									trợ mẹ
+									chăm sóc bé.
+								</li>
+								<li>
+									Dành cho mẹ thêm những tiện ích tuyệt vời giúp việc mang thai, chăm sóc bé trở nên
+									đơn
+									giản,
+									an toàn.
+								</li>
+
+
+							</ul>
+						</div>
+						<div style="padding-top: 100px;">
+							<img src="./img/sanpham/cuate1.svg" alt="">
+						</div>
+					</div>
+					<div class="sanpham-card-hidden">
+						<div class="sanpham-card-2">
+							<p>Trợ lý cho mẹ</p>
+							<p>Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc trẻ, đồng
+								thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+
+							<div href="" class="sanpham-btn-2">Chi tiết</div>
+						</div>
+					</div>
+				</div>
+				<div class="sanpham2" onclick="changeLayout(2)">
+					<div class="sanpham-card-hidden">
+						<div class="sanpham-card-1">
+							<img src="./img/sanpham/icon2.svg" alt="">
+							<div>Giáo dục sớm</div>
+							<div>
+								<div class="sanpham-btn">Đối tượng:</div>
+							</div>
+							<div>Trẻ từ 01 - 03 tuổi.</div>
+							<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+							<ul>
+								<li>
+									Giúp trẻ sớm hình thành và phát triển các kĩ năng quan trọng như kỹ năng ngôn ngữ,
+									tư duy, vận động... từ đó làm tiền đề để trẻ có tư chất thông minh, sáng dạ với khả
+									năng học hỏi tốt về sau.
+								</li>
+							</ul>
+						</div>
+						<div style="padding-top: 100px;">
+							<img src="./img/sanpham/cuate2.svg" alt="">
+						</div>
+					</div>
+					<div class="">
+						<div class="sanpham-card-2">
+							<p>Giáo dục sớm</p>
+							<p>Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc trẻ, đồng
+								thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+							<div href="" class="sanpham-btn-2">Chi tiết</div>
+						</div>
+					</div>
+				</div>
+				<div class="sanpham3" onclick="changeLayout(3)">
+					<div class="sanpham-card-hidden">
+						<div class="sanpham-card-1">
+							<img src="./img/sanpham/icon3.svg" alt="">
+							<div>Dạy kĩ năng</div>
+							<div>
+								<div class="sanpham-btn">Đối tượng:</div>
+							</div>
+							<div>Trẻ từ 03 - 06 tuổi.</div>
+							<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+							<ul>
+								<li>
+									Hỗ trợ ba mẹ khơi dậy, nuôi dưỡng, phát triển các kỹ năng về thể chất và tư duy cho
+									trẻ thông qua các hoạt động, mô hình, dự án đặc thù với lứa tuổi.
+								</li>
+							</ul>
+						</div>
+						<div style="padding-top: 100px;">
+							<img src="./img/sanpham/cuate3.svg" alt="">
+						</div>
+					</div>
+					<div class="">
+						<div class="sanpham-card-2">
+							<p>Dạy kỹ năng</p>
+							<p>Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc trẻ, đồng
+								thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+							<div href="" class="sanpham-btn-2">Chi tiết</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container only-mobile" style="position: relative">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle1"
+								aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div>
+												<div class="sanpham-card-1">
+													<img src="./img/sanpham/icon1.svg" alt="">
+													<div>Trợ lý cho mẹ</div>
+													<div>
+														<div class="sanpham-btn">Đối tượng:</div>
+													</div>
+													<div>Mẹ bầu đang mang thai và các mẹ có con dưới 1 tuổi.</div>
+													<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+													<ul>
+														<li>
+															Cung cấp các kiến thức về lĩnh vực chăm sóc và giáo dục trẻ,
+															bao gồm
+															kiến thức dành
+															cho
+															mẹ
+															bầu như thai giáo, dinh dưỡng, sức khỏe, bệnh lý...; kiến
+															thức dành
+															cho
+															mẹ nuôi con
+															nhỏ
+															như
+															chăm sóc trẻ sơ sinh, bé ăn dặm, vận động...
+														</li>
+														<li>
+															Là cầu nối với những chuyên gia đầu ngành có nhiều kinh
+															nghiệm, giúp
+															giải đáp, hỗ
+															trợ mẹ
+															chăm sóc bé.
+														</li>
+														<li>
+															Dành cho mẹ thêm những tiện ích tuyệt vời giúp việc mang
+															thai, chăm
+															sóc
+															bé trở nên
+															đơn
+															giản,
+															an toàn.
+														</li>
+
+
+													</ul>
+												</div>
+												<div style="padding-top: 100px;">
+													<img src="./img/sanpham/cuate1.svg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="sanpham-card-2">
+									<p>Trợ lý cho mẹ</p>
+									<p> 1Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc
+										trẻ,
+										đồng
+										thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+									<img src="./img/sanpham/cuate1.svg" alt="">
+									<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
+										href="#exampleModalToggle1" role="button">Chi tiết</button>
+
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle2"
+								aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div>
+												<div class="sanpham-card-1">
+													<img src="./img/sanpham/icon2.svg" alt="">
+													<div>Giáo dục sớm</div>
+													<div>
+														<div class="sanpham-btn">Đối tượng:</div>
+													</div>
+													<div>Trẻ từ 01 - 03 tuổi.</div>
+													<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+													<ul>
+														<li>
+															Giúp trẻ sớm hình thành và phát triển các kĩ năng quan trọng
+															như kỹ
+															năng ngôn ngữ, tư duy, vận động... từ đó làm tiền đề để trẻ
+															có tư
+															chất thông minh, sáng dạ với khả năng học hỏi tốt về sau.
+														</li>
+													</ul>
+												</div>
+												<div style="padding-top: 100px;">
+													<img src="./img/sanpham/cuate2.svg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="sanpham-card-2">
+									<p>Giáo dục sớm</p>
+									<p> Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc
+										trẻ,
+										đồng thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+									<img src="./img/sanpham/cuate2.svg" alt="">
+									<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
+										href="#exampleModalToggle2" role="button">Chi tiết</button>
+
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle3"
+								aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<div>
+												<div class="sanpham-card-1">
+													<img src="./img/sanpham/icon3.svg" alt="">
+													<div>Dạy kĩ năng</div>
+													<div>
+														<div class="sanpham-btn">Đối tượng:</div>
+													</div>
+													<div>Trẻ từ 03 - 06 tuổi.</div>
+													<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+													<ul>
+														<li>
+															Hỗ trợ ba mẹ khơi dậy, nuôi dưỡng, phát triển các kỹ năng về
+															thể
+															chất và tư duy cho trẻ thông qua các hoạt động, mô hình, dự
+															án đặc
+															thù với lứa tuổi.
+														</li>
+													</ul>
+												</div>
+												<div style="padding-top: 100px;">
+													<img src="./img/sanpham/cuate3.svg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="sanpham-card-2">
+									<p>Dạy kĩ năng</p>
+									<p> 1Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc
+										trẻ,
+										đồng
+										thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+									<img src="./img/sanpham/cuate3.svg" alt="">
+									<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
+										href="#exampleModalToggle3" role="button">Chi tiết</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+						data-bs-slide="prev">
+						<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+						<div class='sanpham-ic-prev'>
+							<img src='./img/gioithieu/icpre.svg'>
+						</div>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+						data-bs-slide="next">
+						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+						<div class='sanpham-ic-next'>
+							<img src='./img/gioithieu/icnext.svg'>
+						</div>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+				<!-- <div class="mySlides">
+					<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle1" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+									<div>
+										<div class="sanpham-card-1">
+											<img src="./img/sanpham/icon1.svg" alt="">
+											<div>Trợ lý cho mẹ</div>
+											<div>
+												<div class="sanpham-btn">Đối tượng:</div>
+											</div>
+											<div>Mẹ bầu đang mang thai và các mẹ có con dưới 1 tuổi.</div>
+											<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+											<ul>
+												<li>
+													Cung cấp các kiến thức về lĩnh vực chăm sóc và giáo dục trẻ, bao gồm
+													kiến thức dành
+													cho
+													mẹ
+													bầu như thai giáo, dinh dưỡng, sức khỏe, bệnh lý...; kiến thức dành
+													cho
+													mẹ nuôi con
+													nhỏ
+													như
+													chăm sóc trẻ sơ sinh, bé ăn dặm, vận động...
+												</li>
+												<li>
+													Là cầu nối với những chuyên gia đầu ngành có nhiều kinh nghiệm, giúp
+													giải đáp, hỗ
+													trợ mẹ
+													chăm sóc bé.
+												</li>
+												<li>
+													Dành cho mẹ thêm những tiện ích tuyệt vời giúp việc mang thai, chăm
+													sóc
+													bé trở nên
+													đơn
+													giản,
+													an toàn.
+												</li>
+
+
+											</ul>
+										</div>
+										<div style="padding-top: 100px;">
+											<img src="./img/sanpham/cuate1.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="sanpham-card-2">
+							<p>Trợ lý cho mẹ</p>
+							<p> 1Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc trẻ,
+								đồng
+								thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+							<img src="./img/sanpham/cuate1.svg" alt="">
+							<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
+								href="#exampleModalToggle1" role="button">Chi tiết</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="mySlides">
+					<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle2" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+									<div>
+										<div class="sanpham-card-1">
+											<img src="./img/sanpham/icon2.svg" alt="">
+											<div>Giáo dục sớm</div>
+											<div>
+												<div class="sanpham-btn">Đối tượng:</div>
+											</div>
+											<div>Trẻ từ 01 - 03 tuổi.</div>
+											<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+											<ul>
+												<li>
+													Giúp trẻ sớm hình thành và phát triển các kĩ năng quan trọng như kỹ
+													năng ngôn ngữ, tư duy, vận động... từ đó làm tiền đề để trẻ có tư
+													chất thông minh, sáng dạ với khả năng học hỏi tốt về sau.
+												</li>
+											</ul>
+										</div>
+										<div style="padding-top: 100px;">
+											<img src="./img/sanpham/cuate2.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="sanpham-card-2">
+							<p>Giáo dục sớm</p>
+							<p> Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc trẻ,
+								đồng thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+							<img src="./img/sanpham/cuate2.svg" alt="">
+							<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
+								href="#exampleModalToggle2" role="button">Chi tiết</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="mySlides">
+					<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle3" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+									<div>
+										<div class="sanpham-card-1">
+											<img src="./img/sanpham/icon3.svg" alt="">
+											<div>Dạy kĩ năng</div>
+											<div>
+												<div class="sanpham-btn">Đối tượng:</div>
+											</div>
+											<div>Trẻ từ 03 - 06 tuổi.</div>
+											<div class="sanpham-btn">Thông tin sản phẩm: </div>
+
+											<ul>
+												<li>
+													Hỗ trợ ba mẹ khơi dậy, nuôi dưỡng, phát triển các kỹ năng về thể
+													chất và tư duy cho trẻ thông qua các hoạt động, mô hình, dự án đặc
+													thù với lứa tuổi.
+												</li>
+											</ul>
+										</div>
+										<div style="padding-top: 100px;">
+											<img src="./img/sanpham/cuate3.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="sanpham-card-2">
+							<p>Dạy kĩ năng</p>
+							<p> 1Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc trẻ,
+								đồng
+								thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+							<img src="./img/sanpham/cuate3.svg" alt="">
+							<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
+								href="#exampleModalToggle3" role="button">Chi tiết</button>
+
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<div class="sp-prev" onclick="plusDivs(-1)">
+							<div class='sanpham-ic-prev'><img src='./img/gioithieu/icpre.svg'></div>
+						</div>
+						<div class="sp-next" onclick="plusDivs(1)">
+							<div class='sanpham-ic-next'><img src='./img/gioithieu/icnext.svg'></div>
+						</div>
+					</div> -->
+				<!-- <button onclick="currentDiv(1)">1</button>
+					<button onclick="currentDiv(2)">2</button>
+					<button onclick="currentDiv(3)">3</button> -->
+			</div>
+		</div>
+	</div>
+	<!-- sanpham-end -->
+
+	<!-- moitruong -->
+	<div class="moitruong" id="moitruong">
+		<div class="container">
+			<div class="title-moitruong">
+				<p>Môi trường làm việc</p>
+				<div>
+					<p>Exsoft là môi trường start - up trẻ trung, hiện đại, cởi mở và quý trọng nguồn tài nguyên từ
+						con người. Sẽ không có giới hạn cho sự sáng tạo và bứt phá của bạn, hãy gia nhập với chúng
+						tôi ngay hôm nay!</p>
+				</div>
+
+			</div>
+		</div>
+		<div class="moitruong-flex only-pc">
+			<div class="moitruong-item">
+				<div>
+					<p>Đội ngũ nhân sự năng động, trẻ trung, hiện đại, cởi mở</p>
+				</div>
+				<img src="./img/moitruong/svg1.svg" alt="">
+			</div>
+			<div class="moitruong-item">
+				<div>
+					<p>Sáng tạo không giới hạn, khuyến khích bứt phá</p>
+				</div>
+				<img src="./img/moitruong/svg2.svg" alt="">
+			</div>
+			<div class="moitruong-item">
+				<div>
+					<p>Tôn trọng sự khác biệt của mỗi cá nhân</p>
+				</div>
+				<img src="./img/moitruong/svg3.svg" alt="">
+			</div>
+			<div class="moitruong-item">
+				<div>
+					<p>Trọng dụng nhân tài, đãi ngộ xứng đáng</p>
+				</div>
+				<img src="./img/moitruong/svg4.svg" alt="">
+			</div>
+		</div>
+		<div class="moitruong-flex only-mobile">
+			<div class="moitruong-item">
+				<div>
+					<p>Đội ngũ nhân sự năng động, trẻ trung, hiện đại, cởi mở</p>
+					<p>01</p>
+				</div>
+				<img src="./img/moitruong/svg1.svg" alt="">
+			</div>
+			<div class="moitruong-item">
+				<div>
+					<p>02</p>
+					<p>Sáng tạo không giới hạn, khuyến khích bứt phá</p>
+				</div>
+				<img src="./img/moitruong/svg2.svg" alt="">
+			</div>
+			<div class="moitruong-item">
+				<div>
+					<p>Tôn trọng sự khác biệt của mỗi cá nhân</p>
+					<p>03</p>
+				</div>
+				<img src="./img/moitruong/svg3.svg" alt="">
+			</div>
+			<div class="moitruong-item">
+				<div>
+					<p>04</p>
+					<p>Trọng dụng nhân tài, đãi ngộ xứng đáng</p>
+				</div>
+				<img src="./img/moitruong/svg4.svg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- moitruong-end -->
+
+	<div class="tuyendung" id="tuyendung">
+		<div class="container">
+			<div class="title-tuyendung" style="padding-bottom: 50px;">
+				<p>Gia nhập đội ngũ Exsoft</p>
+				<div>
+					<p>Hiện tại có <span style="color: #00AAFF;">15</span> vị trí đang được tuyển dụng:</p>
+				</div>
+				<div class="modal fade" tabindex="-1" role="dialog" id="jd1" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								Jd1 here
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" tabindex="-1" role="dialog" id="jd2" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								Jd2 here
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" tabindex="-1" role="dialog" id="jd3" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								Jd3 here
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" tabindex="-1" role="dialog" id="jd4" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								Jd4 here
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tuyendung-grid">
+					<div class="tuyendung-flexbox" data-bs-target="#jd1" data-bs-toggle="modal" data-bs-dismiss="modal">
+						<div>
+							<p>Frontend Developer</p>
+						</div>
+						<div>
+							<p>Số lượng : 01</p>
+						</div>
+						<div>
+							<p>Kinh nghiệm: 01 - 02 năm</p>
+						</div>
+					</div>
+					<div class="tuyendung-flexbox" data-bs-target="#jd2" data-bs-toggle="modal" data-bs-dismiss="modal">
+						<div>
+							<p>Frontend Developer</p>
+						</div>
+						<div>
+							<p>Số lượng : 01</p>
+						</div>
+						<div>
+							<p>Kinh nghiệm: 01 - 02 năm</p>
+						</div>
+					</div>
+					<div class="tuyendung-flexbox" data-bs-target="#jd3" data-bs-toggle="modal" data-bs-dismiss="modal">
+						<div>
+							<p>Frontend Developer</p>
+						</div>
+						<div>
+							<p>Số lượng : 01</p>
+						</div>
+						<div>
+							<p>Kinh nghiệm: 01 - 02 năm</p>
+						</div>
+					</div>
+					<div class="tuyendung-flexbox" data-bs-target="#jd4" data-bs-toggle="modal" data-bs-dismiss="modal">
+						<div>
+							<p>Frontend Developer</p>
+						</div>
+						<div>
+							<p>Số lượng : 01</p>
+						</div>
+						<div>
+							<p>Kinh nghiệm: 01 - 02 năm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- contact-end -->
+	<footer class="footer" id="contact">
+		<div class="container footer-layout only-pc">
+			<div></div>
+			<div>
+				<img style="width: 153px; height: 80px;" src="./img/logo.svg" alt="">
+				<div class="txt only-mobile">
+					<p>ExSoft.,JSC</p>
+					<p>Công ty Cổ phần Công nghệ phần mềm Exsoft</p>
+				</div>
+			</div>
+			<div style="max-width: 350px;">
+				<div class="lh" onclick="showdetail('detail')">
+					<p>Liên hệ: </p>
+				</div>
+				<div class="detail_">
+					<div>
+						<img src="./img/footer/ic1.svg" alt="">
+						<p>Email: Info@exsoft.com.vn</p>
+					</div>
+					<div>
+						<img src="./img/footer/ic2.svg" alt="">
+						<p>SDT: 0899500092</p>
+
+					</div>
+					<div>
+						<img style="    
+						padding-bottom: 20px;
+						padding-left: 2px;" src="./img/footer/ic3.svg" alt="">
+						<p>Trụ sở: P806, tòa nhà Sannam, 76 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội.</p>
+
+					</div>
+				</div>
+			</div>
+			<div>
+				<p>Kết nối:</p>
+				<div class="connect" style="display: flex;">
+					<img src="./img/footer/logos_facebook.svg" alt="">
+					<img src="./img/footer/ytb.svg" alt="">
+				</div>
+
+			</div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="only-mobile footer-layout">
+			<div>
+				<img style="width: 153px; height: 80px;" src="./img/logo.svg" alt="">
+				<div class="txt">
+					<p>ExSoft.,JSC</p>
+					<p>Công ty Cổ phần Công nghệ phần mềm Exsoft</p>
+				</div>
+			</div>
+			<div style="max-width: 350px;">
+				<div class="lh active_1" onclick="showdetail('detail')">
+					<p>Liên hệ: </p>
+					<img src="./img/footer/muiten.svg" alt="">
+				</div>
+				<div class="detail">
+					<div>
+						<img src="./img/footer/ic1.svg" alt="">
+						<p>Email: Info@exsoft.com.vn</p>
+					</div>
+					<div>
+						<img src="./img/footer/ic2.svg" alt="">
+						<p>SDT: 0899500092</p>
+
+					</div>
+					<div>
+						<img style="    
+						padding-bottom: 20px;
+						padding-left: 2px;" src="./img/footer/ic3.svg" alt="">
+						<p>Trụ sở: P806, tòa nhà Sannam, 76 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội.</p>
+
+					</div>
+				</div>
+				
+			</div>
+			<div>
+				<div class="lh active_2" onclick="showdetail('detail1')">
+					<p>Kết nối: </p>
+					<img src="./img/footer/muiten.svg" alt="">
+				</div>
+				<div class="connect detail1" >
+					<div style="display: flex;">
+						<img style="padding-right: 15px;" src="./img/footer/logos_facebook.svg" alt="">
+						<img src="./img/footer/ytb.svg" alt="">
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	</div>
+	<div class="backSc" onclick="removebg()"></div>
+
+
+	<script src="./js/script.js"></script>
+	<script src="./js/carousel.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>
