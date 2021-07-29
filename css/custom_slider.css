@@ -29,11 +29,12 @@
   z-index: 2200;
 }
 .buttons > div:nth-child(1) {
+  left: 13%;
   top: 50%;
 }
 .buttons > div:nth-child(2) {
   top: 50%;
-  right: 0;
+  right: 13%;
 }
 /* .buttons > div:hover {
   margin: 0 5px;
