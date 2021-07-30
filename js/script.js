@@ -160,6 +160,10 @@ if (i == 2) glayout.style.gridTemplateAreas = `"${name2} ${name2} ${name1} ${nam
 if (i == 3) glayout.style.gridTemplateAreas = `"${name3} ${name3} ${name1} ${name1}" "${name3} ${name3} ${name2} ${name2}"`;
 let sp = document.querySelector(`.${name} > div:nth-child(1)`);
 sp.className = 'sanpham-flexbox sanpham-card-show';
+$(".sanpham-flexbox > div:nth-child(1)").css("width","400px")
+setTimeout(() => {
+$(".sanpham-flexbox > div:nth-child(1)").css("width","60%");
+}, 1000);
 list.forEach(e => {
   if (e != name) {
     let s = document.querySelector(`.${e} > div:nth-child(1)`);
@@ -171,27 +175,98 @@ sp2.className = 'sanpham-card-hidden'
 
 }
 
+// thiet lap hover 1 so button
+var mobile = window.matchMedia("(max-width: 739px)").matches;
+document.getElementsByClassName("gtnn-3")[0].getElementsByTagName("img")[1].style.width = "50px"
+document.getElementsByClassName("gtnn-3")[0].getElementsByTagName("img")[1].style.height = "50px"
+document.getElementsByClassName("gtnn-2")[0].getElementsByTagName("img")[1].style.width = "50px"
+document.getElementsByClassName("gtnn-2")[0].getElementsByTagName("img")[1].style.height = "50px"
+document.getElementsByClassName("gtnn-1")[0].getElementsByTagName("img")[1].style.width = "50px"
+document.getElementsByClassName("gtnn-1")[0].getElementsByTagName("img")[1].style.height = "50px"
+if(mobile) {
+  $('.gioithieu-ic-prev').bind('touchstart', function(){
+    document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[1].style.display = "unset"
+    document.getElementsByClassName("gioithieu-ic-prev")[0].style.backgroundColor = "#00AAFF";
+  });
+  $('.gioithieu-ic-prev').bind('touchend', function(){
+    document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[1].style.display = "none"
+    document.getElementsByClassName("gioithieu-ic-prev")[0].style.backgroundColor = "#fff";
+  });
+
+  $('.gioithieu-ic-next').bind('touchstart', function(){
+    document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[1].style.display = "unset"
+    document.getElementsByClassName("gioithieu-ic-next")[0].style.backgroundColor = "#00AAFF";
+  });
+  $('.gioithieu-ic-next').bind('touchend', function(){
+    document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[1].style.display = "none"
+    document.getElementsByClassName("gioithieu-ic-next")[0].style.backgroundColor = "#fff";
+  });
+  console.log("xx", $('.gtnn-3'))
+  $('.gtnn-3').bind('touchstart', function(){
+    document.getElementsByClassName("gtnn-3")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("gtnn-3")[0].getElementsByTagName("img")[1].style.display = "unset"
+  });
+  $('.gtnn-3').bind('touchend', function(){
+    document.getElementsByClassName("gtnn-3")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("gtnn-3")[0].getElementsByTagName("img")[1].style.display = "none"
+
+  });
+  $('.gtnn-2').bind('touchstart', function(){
+    document.getElementsByClassName("gtnn-2")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("gtnn-2")[0].getElementsByTagName("img")[1].style.display = "unset"
+  });
+  $('.gtnn-2').bind('touchend', function(){
+    document.getElementsByClassName("gtnn-2")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("gtnn-2")[0].getElementsByTagName("img")[1].style.display = "none"
+
+  });
+  $('.gtnn-1').bind('touchstart', function(){
+    document.getElementsByClassName("gtnn-1")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("gtnn-1")[0].getElementsByTagName("img")[1].style.display = "unset"
+  });
+  $('.gtnn-1').bind('touchend', function(){
+    document.getElementsByClassName("gtnn-1")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("gtnn-1")[0].getElementsByTagName("img")[1].style.display = "none"
+
+  });
+  
+}
+else {
+  $(".gioithieu-ic-prev").hover(function () {
+    document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[1].style.display = "unset"
+    document.getElementsByClassName("gioithieu-ic-prev")[0].style.backgroundColor = "#00AAFF";
+  }, function () {
+    document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[1].style.display = "none"
+    document.getElementsByClassName("gioithieu-ic-prev")[0].style.backgroundColor = "#fff";
+  
+  });
+  $(".gioithieu-ic-next").hover(function () {
+    document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[1].style.display = "unset"
+    document.getElementsByClassName("gioithieu-ic-next")[0].style.backgroundColor = "#00AAFF";
+  }, function () {
+    document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[1].style.display = "none"
+    document.getElementsByClassName("gioithieu-ic-next")[0].style.backgroundColor = "#fff";
+  
+  });
+}
+//end
+
+
+//disable auto slide
+
+//end
+
 //change button phan gioi thieu
-$(".gioithieu-ic-prev").hover(function () {
-  document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[0].style.display = "none"
-  document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[1].style.display = "unset"
-  document.getElementsByClassName("gioithieu-ic-prev")[0].style.backgroundColor = "#00AAFF";
-}, function () {
-  document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[0].style.display = "unset"
-  document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[1].style.display = "none"
-  document.getElementsByClassName("gioithieu-ic-prev")[0].style.backgroundColor = "#fff";
 
-});
-$(".gioithieu-ic-next").hover(function () {
-  document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[0].style.display = "none"
-  document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[1].style.display = "unset"
-  document.getElementsByClassName("gioithieu-ic-next")[0].style.backgroundColor = "#00AAFF";
-}, function () {
-  document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[0].style.display = "unset"
-  document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[1].style.display = "none"
-  document.getElementsByClassName("gioithieu-ic-next")[0].style.backgroundColor = "#fff";
 
-});
 //button san pham
 $(".sanpham2 .sanpham-btn-2").hover(function () {
   $(".sanpham2 .sanpham-btn-2").css("background-color", "#FA7387");
@@ -301,9 +376,14 @@ function animationGioiThieu() {
 }
 
 
-
 function showdetail(classN) {
+  if(document.getElementsByClassName(classN)[0].style.display != "block"){
   document.getElementsByClassName(classN)[0].style.display = "block"
+  }
+  else {
+  document.getElementsByClassName(classN)[0].style.display = "none"
+
+  }
 }
 
 

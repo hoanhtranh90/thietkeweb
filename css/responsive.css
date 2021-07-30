@@ -37,6 +37,12 @@
     .sanpham-card {
         width: 100%;
     }
+    .tuyendung-flexbox {
+        justify-content: space-between;
+    }
+    .tuyendung-flexbox > div:nth-child(1) {
+        width: 25%;
+    }
 
 }
 @media (max-width: 1400px) {
@@ -157,7 +163,7 @@
     }
     /* moi truong  */
     .moitruong-flex {
-        display: grid;
+        display: grid ;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 6rem;
         grid-column-gap: 5rem;
@@ -221,7 +227,7 @@
         color: #6F6F6F;
     }
     .gioithieu-card {
-        padding: 32px 20px 57px 20px;
+        padding: 32px 10px 57px 10px;
     }
     .form__group {
         display: none;
@@ -286,7 +292,10 @@
     }
     .banner {
         background-image: url(../img/banner_mb.png);
-        background-size: 100% 100%;
+        
+    background-position: 87% center;
+    background-size: unset;
+
     }
     .title h2 {
         font-size: 2.5rem;
@@ -312,8 +321,18 @@
     }
     /* ====== gioithieu ====== */
     .gioithieu {
+        
+        background-color: #fff;
         padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+    .gioithieu > div:nth-child(1) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .gioithieu .gioithieu-bg,
+    .gioithieu .gioithieu-right {
+        background-color: #E6F2FD;
     }
     .gioithieu__col {
         display: grid;
@@ -324,7 +343,11 @@
         width: 100%;
     }
     .gioithieu-right {
-        padding: 10px;
+       border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        margin-top: 70px;
+        position: relative;
+        padding: 10px 30px;
     }
     .gioithieu-listcard {
         display: grid;
@@ -334,6 +357,31 @@
     .gioithieu-card {
         max-width: 90%;
         
+    }
+    .gioithieu-card > p:nth-child(3) {
+        text-align: left;
+    }
+    .gioithieu-right > div:nth-child(1) {
+        line-height: unset;
+        width: 188px;
+        height: 52px;
+        margin: 0 auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        position: absolute;
+        top: -31px;
+        left: 24%;
+    }
+    .gioithieu-right > div:nth-child(1) > p {
+        border-radius: 30px;
+        box-shadow: 0px 5px 8.35498px rgba(210, 210, 210, 0.5);
+        padding: 5px 10px;
+        background-color: #fff;
+    }
+    .gioithieu-right p {
+        text-align: center;
     }
     .gioithieu-right > div:nth-child(2) {
         font-size: 14px;
@@ -430,7 +478,7 @@
         padding-top: 40px;
     }
     .only-mobile {
-        display: block ;
+        display: unset !important ;
     }
     .only-pc {
         display: none !important;
@@ -438,13 +486,50 @@
     .modal-content {
         margin: 0 auto;
         width: 90% !important;
-        margin-top: 20%;
-        margin-bottom: 30%;
+        margin-top: 10%;
+        margin-bottom: 20%;
         padding: 10px 15px;
         border-radius: 15px !important;
     }
-    .sanpham-card-1 {
+    .sanpham .sanpham-card-1 {
         width: 100%;
+    }
+    .sanpham .sanpham-card-1 > img:nth-child(1) {
+        top: -18px;
+        left: 50%;
+		transform: translate(-50%, 0);
+		position: absolute;
+    }
+    .sanpham .sanpham-card-1 > div:nth-child(2) {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 30px;
+        color: #FFFFFF;
+        top: -30px;
+        left: 50%;
+		transform: translate(-50%, 0);
+		position: absolute;
+    }
+    .closebtn-gt {
+        left: 50%;
+		transform: translate(-50%, 0);
+		position: absolute;
+    }
+    .sanpham .sanpham-btn {
+        padding: 0px 10px;
+        font-size: 12px;
+    }
+    .sanpham-card-1 > div:nth-child(4),
+    .sanpham-card-1 > ul:nth-child(6) {
+        font-size: 14px;
+    }
+    .sanpham-card-1 > div:nth-child(3) {
+        padding-top: 60px;
+    }
+    .sanpham .modal-content-card-1 {
+        position: relative;
     }
     .sanpham-card-2 > p:nth-child(2) {
         font-size: 14px;
@@ -457,8 +542,8 @@
     .title-moitruong > div:nth-child(2) {
         max-width: 100%;
     }
-    .moitruong .moitruong-flex {
-        display: grid;
+    .moitruong .only-mobile {
+        display: grid !important;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 5rem;
     }
@@ -604,9 +689,39 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
+    .tuyendung-flexbox {
+        justify-content: unset;
+    }
+    .tuyendung-flexbox .only-mobile {
+        padding-left: 20px;
+    }
+    .tuyendung .modal-body::-webkit-scrollbar-thumb {
+        border: 6px solid #fff;
+      }
+    /* .tuyendung-flexbox {
+        cursor: pointer;
+        display: flex;
+        justify-content: unset;
+        padding: 19px 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(210, 210, 210, 0.5);
+        border-radius: 12px;
+    }
+    .tuyendung-flexbox .only-mobile p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: justify;
+        color: #6F6F6F;
+    }
+    .tuyendung-flexbox .only-mobile {
+        padding-left: 26px;
+    } */
     .tuyendung-flexbox > div:nth-child(1) {
         border-right: 1px solid #C4C4C4;
-        width: 25%;
+        width: 31%;
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
@@ -614,6 +729,15 @@
         line-height: 21px;
         text-align: justify;
         color: #00AAFF;
+    }
+    .tuyendung-flexbox .only-mobile p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: justify;
+        color: #6F6F6F;
     }
     .tuyendung-flexbox > div:nth-child(2) {
         border-right: 1px solid #C4C4C4;
@@ -648,8 +772,15 @@
        position: absolute;
        left: 43%;
     }
+
     .tuyendung .modal-dialog-scrollable .modal-content {
         overflow: unset;
+    }
+    .tuyendung .modal-content {
+        margin-top: 10% !important;
+    }
+    .tuyendung .modal-body > ul > li {
+        max-width: 95%;
     }
     .footer-layout > div > p:nth-child(1) {
         font-family: Open Sans;
@@ -661,12 +792,14 @@
         color: #FFFFFF;
     }
     /* FOOTER */
-    /* .footer  .footer-layout {
-        display: grid;
+    .footer .only-mobile {
+        display: grid !important;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 2rem;
         padding: 30px 30px;
-    } */
+    }
+
+
     .tuyendung .modal-body > p:nth-child(4),
 .tuyendung .modal-body > p:nth-child(6),
 .tuyendung .modal-body > p:nth-child(8),

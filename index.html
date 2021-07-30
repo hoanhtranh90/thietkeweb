@@ -13,9 +13,8 @@
 	<link rel="stylesheet" href="./css/transition.css" />
 	<link rel="stylesheet" href="./css/carousel.css">
 	<link rel="stylesheet" href="./css/custom_slider.css">
-	
+
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 		crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -149,9 +148,9 @@
 
 			</div>
 			<div class=" gioithieu-bg">
-			
+
 				<div class="container">
-					
+
 					<div class="gallery-flex" style="padding-top: 50px;padding-bottom: 60px;">
 						<div class="gioithieu-btn gioithieu-btn-active" onclick="show(0, false)">Tầm nhìn</div>
 						<div class="gioithieu-btn" onclick="show(1, false)">Sứ mệnh</div>
@@ -284,13 +283,13 @@
 							<!-- <button data-navigate="prev">Prev</button>
 							<button data-navigate="next">Next</button> -->
 							<div class='gioithieu-ic-prev' data-navigate="prev">
-								<img  src='./img/gioithieu/icpre.svg'>
+								<img src='./img/gioithieu/icpre.svg'>
 								<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
 
 							</div>
 							<div class='gioithieu-ic-next' data-navigate="next">
-								<img  src='./img/gioithieu/icnext.svg'>
-								<img style="display: none;"  src='./img/gioithieu/next_hover.svg'>
+								<img src='./img/gioithieu/icnext.svg'>
+								<img style="display: none;" src='./img/gioithieu/next_hover.svg'>
 
 							</div>
 						</div>
@@ -432,9 +431,9 @@
 				</div>
 			</div>
 			<div class="container only-mobile" style="position: relative">
-				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="false">
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						<div class="carousel-item active" data-bs-interval="600000">
 							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle1"
 								aria-hidden="true">
 								<div class="modal-dialog">
@@ -442,7 +441,7 @@
 										<div class="modal-body">
 											<div>
 												<div class="sanpham-card-1">
-													<img src="./img/sanpham/icon1.svg" alt="">
+													<img src="./img/sanpham/mobile1.svg" alt="">
 													<div>Trợ lý cho mẹ</div>
 													<div>
 														<div class="sanpham-btn">Đối tượng:</div>
@@ -488,6 +487,12 @@
 												<div style="padding-top: 100px;">
 													<img src="./img/sanpham/cuate1.svg" alt="">
 												</div>
+												<div class="closebtn-gt gtnn-1" data-bs-dismiss="modal"
+													aria-label="Close">
+													<img src="./img/header/closeLogo.svg" alt="">
+													<img style="display: none;" src="./img/header/close_Logo_hover.svg"
+														alt="">
+												</div>
 											</div>
 										</div>
 									</div>
@@ -507,7 +512,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item" data-bs-interval="600000">
 							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle2"
 								aria-hidden="true">
 								<div class="modal-dialog">
@@ -515,7 +520,7 @@
 										<div class="modal-body">
 											<div>
 												<div class="sanpham-card-1">
-													<img src="./img/sanpham/icon2.svg" alt="">
+													<img src="./img/sanpham/mobile1.svg" alt="">
 													<div>Giáo dục sớm</div>
 													<div>
 														<div class="sanpham-btn">Đối tượng:</div>
@@ -536,6 +541,13 @@
 												<div style="padding-top: 100px;">
 													<img src="./img/sanpham/cuate2.svg" alt="">
 												</div>
+												<div class="closebtn-gt gtnn-2" data-bs-dismiss="modal"
+													aria-label="Close">
+													<img src="./img/header/closeLogo.svg" alt="">
+													<img style="display: none;" src="./img/header/close_Logo_hover.svg"
+														alt="">
+												</div>
+
 											</div>
 										</div>
 									</div>
@@ -554,7 +566,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item" data-bs-interval="600000">
 							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle3"
 								aria-hidden="true">
 								<div class="modal-dialog">
@@ -562,7 +574,7 @@
 										<div class="modal-body">
 											<div>
 												<div class="sanpham-card-1">
-													<img src="./img/sanpham/icon3.svg" alt="">
+													<img src="./img/sanpham/mobile1.svg" alt="">
 													<div>Dạy kĩ năng</div>
 													<div>
 														<div class="sanpham-btn">Đối tượng:</div>
@@ -582,6 +594,12 @@
 												</div>
 												<div style="padding-top: 100px;">
 													<img src="./img/sanpham/cuate3.svg" alt="">
+												</div>
+												<div class="closebtn-gt gtnn-3" data-bs-dismiss="modal"
+													aria-label="Close">
+													<img src="./img/header/closeLogo.svg" alt="">
+													<img style="display: none;" src="./img/header/close_Logo_hover.svg"
+														alt="">
 												</div>
 											</div>
 										</div>
@@ -621,7 +639,7 @@
 					</button>
 				</div>
 
-			
+
 			</div>
 		</div>
 	</div>
@@ -704,7 +722,7 @@
 			<div class="title-tuyendung" style="padding-bottom: 50px;">
 				<p>Gia nhập đội ngũ Exsoft</p>
 				<div>
-					<p>Hiện tại có <span style="color: #00AAFF;">15</span> vị trí đang được tuyển dụng:</p>
+					<p>Hiện tại có <span style="color: #00AAFF;">4</span> vị trí đang được tuyển dụng:</p>
 				</div>
 
 				<!-- cac modal  -->
@@ -712,60 +730,75 @@
 					<div class="modal-dialog modal-dialog-scrollable tuyendung-modal-margin">
 						<div class="modal-content">
 							<div class="modal-header">
-								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close" src="./img/header/closeLogo.svg" alt="">
+								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close"
+									src="./img/header/closeLogo.svg" alt="">
 								<img class="tuyendung-close-btn" style="
 								display: none;" data-bs-dismiss="modal" aria-label="Close" src="./img/header/close_Logo_hover.svg" alt="">
 							</div>
 							<div class="modal-body">
 								<p>
-									<span class="only-pc">ÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM EXSOFT
-									VỊ TRÍ TUYỂN DỤNG: </span>
+									<span class="only-pc">CÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM EXSOFT
+										VỊ TRÍ TUYỂN DỤNG: </span>
 									<span style="color: #00AAFF;">BACKEND DEVELOPER</span>
 								</p>
 								<p>MÔ TẢ CÔNG VIỆC</p>
 								<ul>
 									<li>Tham gia phát triển các sản phẩm phần mềm trong mảng Edutech, Healthtech.</li>
 									<li>Phối hợp với stackholders làm rõ nghiệp vụ, đóng góp ý tưởng vào sản phẩm.</li>
-									<li>Thực hiện phân tích thiết kế, xây dựng giải pháp để phát triển sản phẩm đáp ứng yêu cầu cao của người dùng cuối.</li>
+									<li>Thực hiện phân tích thiết kế, xây dựng giải pháp để phát triển sản phẩm đáp ứng
+										yêu cầu cao của người dùng cuối.</li>
 									<li>Tham gia review thiết kế, review code.</li>
-									<li>Nghiên cứu, áp dụng công nghệ mới vào sản phẩm nhằm nâng cao chất lượng, tối ưu hiệu năng tối ưu hiệu năng hệ thống.</li>
+									<li>Nghiên cứu, áp dụng công nghệ mới vào sản phẩm nhằm nâng cao chất lượng, tối ưu
+										hiệu năng tối ưu hiệu năng hệ thống.</li>
 								</ul>
 								<p>YÊU CẦU ỨNG VIÊN</p>
 								<ul>
 									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
+									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java
+										như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
+									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và
+										giải thuật.</li>
 									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
+									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính …
+										tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
 									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
 								</ul>
 								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
 								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
+									<li>Chế độ lương, thưởng, thu nhập</li>
+
+									<li>Mức lương hấp dẫn, cạnh tranh (ứng viên tự thỏa thuận khi tham gia phỏng vấn).
+										Up to 35M.</li>
+									<li>13 tháng lương + bonus hàng tháng theo hiệu quả công việc.</li>
+									<li>Review lương 2 lần/năm.</li>
+									<li>Phúc lợi: BHXH, BHYT, BHTN, Nghỉ mát, thưởng ngày lễ, team building.</li>
+
+									<p style="
+									font-size: 16px;
+									padding-left: 10%;
+									text-align: justify;
+									color: #00AAFF;">2. Môi trường làm việc</p>
+
+									<li>Đội ngũ nhân sự trẻ trung, năng động, hiện đại, cởi mở, trân trọng, yêu thương,
+										tương hỗ & lắng nghe mỗi người từ những ý tưởng nhỏ nhất.</li>
+									<li>Sáng tạo không giới hạn, khuyến khích bứt phá.</li>
+									<li>Tôn trọng sự khác biệt của mỗi cá nhân.</li>
+									<li>Trọng dụng nhân tài, đãi ngộ xứng đáng.</li>
+
+									<p style="
+									font-size: 16px;
+									padding-left: 10%;
+									text-align: justify;
+									color: #00AAFF;">3. Cơ hội phát triển bản thân</p>
+
+									<li>Có cơ hội thử sức trong lĩnh vực công nghệ tiên tiến, hiện đại nhất.</li>
+									<li>Được trao quyền sáng tạo với đam mê của tuổi trẻ.</li>
+									<li>Cơ hội học hỏi trực tiếp từ đội ngũ lãnh đạo tài năng và đồng nghiệp ưu tú.</li>
+									<li>Cơ hội được đào tạo, trau dồi kĩ năng, chuyên môn để phát triển toàn diện.</li>
+
+
 								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
+
 							</div>
 						</div>
 					</div>
@@ -774,59 +807,42 @@
 					<div class="modal-dialog modal-dialog-scrollable tuyendung-modal-margin">
 						<div class="modal-content">
 							<div class="modal-header">
-								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close" src="./img/header/closeLogo.svg" alt="">
+								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close"
+									src="./img/header/closeLogo.svg" alt="">
 								<img class="tuyendung-close-btn" style="
 								display: none;" data-bs-dismiss="modal" aria-label="Close" src="./img/header/close_Logo_hover.svg" alt="">
 							</div>
 							<div class="modal-body">
 								<p>
-									<span class="only-pc">ÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM EXSOFT
-									VỊ TRÍ TUYỂN DỤNG: </span>
-									<span style="color: #00AAFF;">BACKEND DEVELOPER</span>
+									<span class="only-pc">CÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM EXSOFT
+										VỊ TRÍ TUYỂN DỤNG: </span>
+									<span style="color: #00AAFF;">FRONTEND WEB DEVELOPER</span>
 								</p>
 								<p>MÔ TẢ CÔNG VIỆC</p>
 								<ul>
-									<li>Tham gia phát triển các sản phẩm phần mềm trong mảng Edutech, Healthtech.</li>
-									<li>Phối hợp với stackholders làm rõ nghiệp vụ, đóng góp ý tưởng vào sản phẩm.</li>
-									<li>Thực hiện phân tích thiết kế, xây dựng giải pháp để phát triển sản phẩm đáp ứng yêu cầu cao của người dùng cuối.</li>
-									<li>Tham gia review thiết kế, review code.</li>
-									<li>Nghiên cứu, áp dụng công nghệ mới vào sản phẩm nhằm nâng cao chất lượng, tối ưu hiệu năng tối ưu hiệu năng hệ thống.</li>
+									<li>Phát triển Frontend của ứng dụng Web, App hiện đại, giàu tương tác
+										với yêu cầu cao về chất lượng và độ tin cậy</li>
+									<li>Tham gia cùng với đội ngũ Backend để thiết kế API</li>
+									<li>Liên tục cập nhật kiến thức, nghiên cứu công nghệ mới để ứng dụng
+										trong công việc và phát triển sản phẩm của Công ty.</li>
+									<li>Đảm bảo tiêu chuẩn đồ họa chất lượng cao và sự thống nhất trong brand</li>
+									<li>Thu thập ý kiến phản hồi và xây dựng các hướng giải quyết cho người sử dụng và
+										khách hàng</li>
 								</ul>
 								<p>YÊU CẦU ỨNG VIÊN</p>
 								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
+									<li>Có kinh nghiệm ít nhất 1 năm trong lĩnh vực chuyên môn</li>
+									<li>Từng có kinh nghiệm làm việc với: ReactJS hoặc VueJS,... và ưu tiên có kinh
+										nghiệm làm việc với thư viện hỗ trợ xây dựng giao diện như Editor, Comment,
+										Chart,..</li>
+									<li>Nắm chắc kiến thức về html, css, javascript</li>
+									<li>Có kiến thức về restful api</li>
+									<li>Ưu tiên có kinh nghiệm làm việc fullstack</li>
+									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới</li>
+									<li>Có khả năng đọc hiểu tài liệu tiếng anh là một lợi thế</li>
+									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính …
+										tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông</li>
+
 								</ul>
 							</div>
 						</div>
@@ -836,60 +852,46 @@
 					<div class="modal-dialog modal-dialog-scrollable tuyendung-modal-margin">
 						<div class="modal-content">
 							<div class="modal-header">
-								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close" src="./img/header/closeLogo.svg" alt="">
+								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close"
+									src="./img/header/closeLogo.svg" alt="">
 								<img class="tuyendung-close-btn" style="
 								display: none;" data-bs-dismiss="modal" aria-label="Close" src="./img/header/close_Logo_hover.svg" alt="">
 							</div>
 							<div class="modal-body">
 								<p>
-									<span class="only-pc">ÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM EXSOFT
-									VỊ TRÍ TUYỂN DỤNG: </span>
-									<span style="color: #00AAFF;">BACKEND DEVELOPER</span>
+									<span class="only-pc">CÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM EXSOFT
+										VỊ TRÍ TUYỂN DỤNG: </span>
+									<span style="color: #00AAFF;">CONTENT MARKETING</span>
 								</p>
 								<p>MÔ TẢ CÔNG VIỆC</p>
 								<ul>
-									<li>Tham gia phát triển các sản phẩm phần mềm trong mảng Edutech, Healthtech.</li>
-									<li>Phối hợp với stackholders làm rõ nghiệp vụ, đóng góp ý tưởng vào sản phẩm.</li>
-									<li>Thực hiện phân tích thiết kế, xây dựng giải pháp để phát triển sản phẩm đáp ứng yêu cầu cao của người dùng cuối.</li>
-									<li>Tham gia review thiết kế, review code.</li>
-									<li>Nghiên cứu, áp dụng công nghệ mới vào sản phẩm nhằm nâng cao chất lượng, tối ưu hiệu năng tối ưu hiệu năng hệ thống.</li>
+									<li>Chịu trách nhiệm sản xuất nội dung trên các nền tảng Web, App của công ty theo
+										phân công của trưởng bộ phận.</li>
+									<li>Lên kế hoạch, quản trị, sáng tạo nội dung, quảng bá hình ảnh, xây dựng thương
+										hiệu tại Fanpage, cộng đồng group...</li>
+									<li>Đo lường chỉ số, báo cáo hiệu quả và đề xuất phương thức cải thiện chất lượng
+										nội dung tại các kênh.</li>
+									<li>Tham gia tìm kiếm, thu thập thông tin, nghiên cứu các nội dung, những xu thế
+										mới trên thị trường về lĩnh vực mẹ và bé.</li>
+									<li>Tham gia cùng team xây dựng và triển khai các chiến dịch Marketing, đóng góp
+										các ý tưởng nội dung sáng tạo cho chiến dịch Marketing.</li>
+									<li>Giám sát tiến độ thực thi nội dung của các bên outsource (Nếu có).</li>
+
 								</ul>
 								<p>YÊU CẦU ỨNG VIÊN</p>
 								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
+									<li>Ưu tiên ứng viên có hiểu biết, đã làm trong lĩnh vực chăm sóc sức khỏe mẹ và
+										bé.</li>
+									<li>Ứng viên tốt nghiệp chuyên ngành Marketing, Quản trị kinh doanh hoặc chuyên
+										ngành có liên quan.</li>
+									<li>Có khả năng viết lách tốt, kinh nghiệm từ 1 - 2 năm về content MKT, nắm vững
+										các kiến thức cơ bản về một số dạng content như SEO, Social Media, PR...</li>
+									<li>Nhiệt tình, trách nhiệm, sáng tạo trong công việc.</li>
+									<li>Biết sử dụng cơ bản các phần mềm PTS, AI, Canva...</li>
+									<li>Biết tiếng Anh là lợi thế.</li>
+
 								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
+
 							</div>
 						</div>
 					</div>
@@ -898,59 +900,42 @@
 					<div class="modal-dialog modal-dialog-scrollable tuyendung-modal-margin">
 						<div class="modal-content">
 							<div class="modal-header">
-								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close" src="./img/header/closeLogo.svg" alt="">
+								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close"
+									src="./img/header/closeLogo.svg" alt="">
 								<img class="tuyendung-close-btn" style="
 								display: none;" data-bs-dismiss="modal" aria-label="Close" src="./img/header/close_Logo_hover.svg" alt="">
 							</div>
 							<div class="modal-body">
 								<p>
-									<span class="only-pc">ÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM EXSOFT
-									VỊ TRÍ TUYỂN DỤNG: </span>
-									<span style="color: #00AAFF;">BACKEND DEVELOPER</span>
+									<span class="only-pc">CÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM EXSOFT
+										VỊ TRÍ TUYỂN DỤNG: </span>
+									<span style="color: #00AAFF;">JUNIOR TESTER</span>
 								</p>
 								<p>MÔ TẢ CÔNG VIỆC</p>
 								<ul>
-									<li>Tham gia phát triển các sản phẩm phần mềm trong mảng Edutech, Healthtech.</li>
-									<li>Phối hợp với stackholders làm rõ nghiệp vụ, đóng góp ý tưởng vào sản phẩm.</li>
-									<li>Thực hiện phân tích thiết kế, xây dựng giải pháp để phát triển sản phẩm đáp ứng yêu cầu cao của người dùng cuối.</li>
-									<li>Tham gia review thiết kế, review code.</li>
-									<li>Nghiên cứu, áp dụng công nghệ mới vào sản phẩm nhằm nâng cao chất lượng, tối ưu hiệu năng tối ưu hiệu năng hệ thống.</li>
+									<li>Phân tích tài liệu đặc tả</li>
+									<li>Thực hiện design và create test case dựa trên tài liệu phân tích thiết kế</li>
+									<li>Thực hiện test các chức năng của sản phẩm: web, app</li>
+									<li>Report lỗi & phối hợp cùng dev để phân tích; đánh giá lỗi.</li>
+									<li>Đề xuất các chức năng của sản phẩm (nếu có)</li>
+									<li>Report kết quả test cho Quản lý dự án</li>
+									<li>Phối hợp công việc theo nhóm dưới dự phân công của Quản lý dự án</li>
+
 								</ul>
 								<p>YÊU CẦU ỨNG VIÊN</p>
 								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính … tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
+									<li>Có ít nhất 1 năm kinh nghiệm trong công việc kiểm thử: web, app, API</li>
+									<li>Nắm vững các kỹ thuật test, kỹ thuật design test case.</li>
+									<li>Có kinh nghiệm sử dụng một trong các tool bug tracking (Jira, Redmine,..); tool
+										API testing (Postman,..); SQL (MS SQL, My SQL,..); test management (Testlink,
+										MBI,..)</li>
+									<li>Có khả năng phối hợp tốt với các stakeholders: developer, BA, PM</li>
+									<li>Cẩn thận, tỉ mỉ, chi tiết</li>
+									<li>Kỹ năng xử lý vấn đề tốt</li>
+									<li>Khả năng làm việc độc lập & làm việc nhóm</li>
+									<li>Có ISTQB Foundation certificate là một lợi thế</li>
+									<li>Có kinh nghiệm về Automation test là một lợi thế</li>
+
 								</ul>
 							</div>
 						</div>
@@ -958,48 +943,80 @@
 				</div>
 				<!-- end modal -->
 				<div class="tuyendung-grid">
-					<div class="tuyendung-flexbox" data-bs-target="#jd1" data-bs-toggle="modal" data-bs-dismiss="modal">
-						<div>
-							<p>Frontend Developer</p>
+					<div class="tuyendung-flexbox">
+						<div data-bs-target="#jd1" data-bs-toggle="modal" data-bs-dismiss="modal">
+							<p>Backend Developer</p>
 						</div>
-						<div>
-							<p>Số lượng : 01</p>
+						<div class="only-pc">
+							<p>Số lượng : 02</p>
 						</div>
-						<div>
-							<p>Kinh nghiệm: 01 - 02 năm</p>
+						<div class="only-pc">
+							<p>Kinh nghiệm: Trên 02 năm</p>
 						</div>
-					</div>
-					<div class="tuyendung-flexbox" data-bs-target="#jd2" data-bs-toggle="modal" data-bs-dismiss="modal">
-						<div>
-							<p>Frontend Developer</p>
-						</div>
-						<div>
-							<p>Số lượng : 01</p>
-						</div>
-						<div>
-							<p>Kinh nghiệm: 01 - 02 năm</p>
+						<div class="only-mobile">
+							<div>
+								<p>Số lượng : 02</p>
+							</div>
+							<div>
+								<p>Kinh nghiệm: Trên 02 năm</p>
+							</div>
 						</div>
 					</div>
-					<div class="tuyendung-flexbox" data-bs-target="#jd3" data-bs-toggle="modal" data-bs-dismiss="modal">
-						<div>
+					<div class="tuyendung-flexbox">
+						<div data-bs-target="#jd2" data-bs-toggle="modal" data-bs-dismiss="modal">
 							<p>Frontend Developer</p>
 						</div>
-						<div>
+						<div class="only-pc">
 							<p>Số lượng : 01</p>
 						</div>
-						<div>
-							<p>Kinh nghiệm: 01 - 02 năm</p>
+						<div class="only-pc">
+							<p>Kinh nghiệm: 01</p>
+						</div>
+						<div class="only-mobile">
+							<div>
+								<p>Số lượng : 01</p>
+							</div>
+							<div>
+								<p>Kinh nghiệm: 01</p>
+							</div>
 						</div>
 					</div>
-					<div class="tuyendung-flexbox" data-bs-target="#jd4" data-bs-toggle="modal" data-bs-dismiss="modal">
-						<div>
-							<p>Frontend Developer</p>
+					<div class="tuyendung-flexbox">
+						<div data-bs-target="#jd3" data-bs-toggle="modal" data-bs-dismiss="modal">
+							<p>Content Marketing</p>
 						</div>
-						<div>
+						<div class="only-pc">
 							<p>Số lượng : 01</p>
 						</div>
-						<div>
+						<div class="only-pc">
 							<p>Kinh nghiệm: 01 - 02 năm</p>
+						</div>
+						<div class="only-mobile">
+							<div>
+								<p>Số lượng : 01</p>
+							</div>
+							<div>
+								<p>Kinh nghiệm: 01 - 02 năm</p>
+							</div>
+						</div>
+					</div>
+					<div class="tuyendung-flexbox">
+						<div data-bs-target="#jd4" data-bs-toggle="modal" data-bs-dismiss="modal">
+							<p>Junior Tester</p>
+						</div>
+						<div class="only-pc">
+							<p>Số lượng : 02</p>
+						</div>
+						<div class="only-pc">
+							<p>Kinh nghiệm: Trên 01 năm</p>
+						</div>
+						<div class="only-mobile">
+							<div>
+								<p>Số lượng : 02</p>
+							</div>
+							<div>
+								<p>Kinh nghiệm: Trên 01 năm</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1043,8 +1060,8 @@
 			<div>
 				<p>Kết nối:</p>
 				<div class="connect" style="display: flex;">
-					<img src="./img/footer/logos_facebook.svg" alt="">
-					<img src="./img/footer/ytb.svg" alt="">
+					<a href="https://www.facebook.com/"><img src="./img/footer/logos_facebook.svg" alt=""></a>
+					<a href="https://www.youtube.com/"><img src="./img/footer/ytb.svg" alt=""></a>
 				</div>
 
 			</div>
@@ -1071,7 +1088,7 @@
 					</div>
 					<div>
 						<img src="./img/footer/ic2.svg" alt="">
-						<p>SDT: 0899500092</p>
+						<p onclick="window.open('tel:0899500092');">SDT: 0899500092</p>
 
 					</div>
 					<div>
@@ -1082,19 +1099,19 @@
 
 					</div>
 				</div>
-				
+
 			</div>
 			<div>
 				<div class="lh active_2" onclick="showdetail('detail1')">
 					<p>Kết nối: </p>
 					<img src="./img/footer/muiten.svg" alt="">
 				</div>
-				<div class="connect detail1" >
+				<div class="connect detail1">
 					<div style="display: flex;">
-						<img style="padding-right: 15px;" src="./img/footer/logos_facebook.svg" alt="">
-						<img src="./img/footer/ytb.svg" alt="">
+						<a href="https://www.facebook.com/"><img src="./img/footer/logos_facebook.svg" alt=""></a>
+						<a href="https://www.youtube.com/"><img src="./img/footer/ytb.svg" alt=""></a>
 					</div>
-					
+
 				</div>
 
 			</div>

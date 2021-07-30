@@ -133,6 +133,8 @@ function show(slideIndex, animation = true) {
   );
 
   const $prevSlide = $slides.eq(previousSlideIndex);
+  console.log("=>>>", $prevSlide)
+  const $backScreen = $('.gioithieu-card-4')
   const $currentSlide = $slides.eq(slideIndex);
 
   // update current index
@@ -160,8 +162,11 @@ function show(slideIndex, animation = true) {
   );
 
   // stage 1: bring the current slide to front
-  timeline.to($currentSlide, { zIndex: 3, opacity: 1, rotateY: 0 }, "stage1");
-
+  timeline.to($currentSlide, { zIndex: 5, opacity: 1, rotateY: 0 }, "stage1");
+  timeline.to($backScreen, { zIndex: 4, opacity: 1 }, "stage1");
+  setTimeout(() => {
+    $backScreen.css("z-index","1")
+  }, 1000);
   // stage 2: set previous slide scale and position
   timeline.addLabel("stage2");
   timeline.to(
@@ -171,7 +176,7 @@ function show(slideIndex, animation = true) {
       scaleY: 1,
       rotateY: 0,
       x: 0,
-      opacity: 1
+      opacity: mobile ? 0 : 1
     },
     "stage2"
   );
