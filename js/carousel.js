@@ -79,7 +79,8 @@ function show(slideIndex, animation = true) {
 
 
 
-
+  // var el = document.getElementsByClassName('slider__')[0];
+  // el.scrollIntoView({block: "center"});
 
   var x = window.matchMedia("(max-width: 1200px)").matches;
   var mobile = window.matchMedia("(max-width: 739px)").matches;
@@ -166,7 +167,7 @@ function show(slideIndex, animation = true) {
   timeline.to($backScreen, { zIndex: 4, opacity: 1 }, "stage1");
   setTimeout(() => {
     $backScreen.css("z-index","1")
-  }, 1000);
+  }, 1100);
   // stage 2: set previous slide scale and position
   timeline.addLabel("stage2");
   timeline.to(
@@ -188,6 +189,10 @@ function show(slideIndex, animation = true) {
     { scaleX: 1, scaleY: 1 },
     "stage2"
   );
+
+  document.getElementsByClassName('gioithieu-ic-prev')[0].scrollIntoView({
+    block: 'center',
+});
 }
 
 // show the first slide by default
@@ -207,3 +212,12 @@ $("[data-navigate]").click(function () {
 
 
 
+function scrollToMiddle(id) {
+
+  var elem_position = $(id).offset().top;
+  var window_height = $(window).height();
+  var y = elem_position - window_height/2;
+
+  window.scrollTo(0,y);
+
+}

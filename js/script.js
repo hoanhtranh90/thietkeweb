@@ -184,6 +184,8 @@ document.getElementsByClassName("gtnn-2")[0].getElementsByTagName("img")[1].styl
 document.getElementsByClassName("gtnn-1")[0].getElementsByTagName("img")[1].style.width = "50px"
 document.getElementsByClassName("gtnn-1")[0].getElementsByTagName("img")[1].style.height = "50px"
 if(mobile) {
+
+  //gt
   $('.gioithieu-ic-prev').bind('touchstart', function(){
     document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[0].style.display = "none"
     document.getElementsByClassName("gioithieu-ic-prev")[0].getElementsByTagName("img")[1].style.display = "unset"
@@ -205,6 +207,32 @@ if(mobile) {
     document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[1].style.display = "none"
     document.getElementsByClassName("gioithieu-ic-next")[0].style.backgroundColor = "#fff";
   });
+  //end
+
+  //tuyendung
+  $('.tuyendung-ic-prev').bind('touchstart', function(){
+    document.getElementsByClassName("tuyendung-ic-prev")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("tuyendung-ic-prev")[0].getElementsByTagName("img")[1].style.display = "unset"
+    document.getElementsByClassName("tuyendung-ic-prev")[0].style.backgroundColor = "#00AAFF";
+  });
+  $('.tuyendung-ic-prev').bind('touchend', function(){
+    document.getElementsByClassName("tuyendung-ic-prev")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("tuyendung-ic-prev")[0].getElementsByTagName("img")[1].style.display = "none"
+    document.getElementsByClassName("tuyendung-ic-prev")[0].style.backgroundColor = "#fff";
+  });
+
+  $('.tuyendung-ic-next').bind('touchstart', function(){
+    document.getElementsByClassName("tuyendung-ic-next")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("tuyendung-ic-next")[0].getElementsByTagName("img")[1].style.display = "unset"
+    document.getElementsByClassName("tuyendung-ic-next")[0].style.backgroundColor = "#00AAFF";
+  });
+
+  $('.tuyendung-ic-next').bind('touchend', function(){
+    document.getElementsByClassName("tuyendung-ic-next")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("tuyendung-ic-next")[0].getElementsByTagName("img")[1].style.display = "none"
+    document.getElementsByClassName("tuyendung-ic-next")[0].style.backgroundColor = "#fff";
+  });
+  //end
   console.log("xx", $('.gtnn-3'))
   $('.gtnn-3').bind('touchstart', function(){
     document.getElementsByClassName("gtnn-3")[0].getElementsByTagName("img")[0].style.display = "none"
@@ -254,6 +282,28 @@ else {
     document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[0].style.display = "unset"
     document.getElementsByClassName("gioithieu-ic-next")[0].getElementsByTagName("img")[1].style.display = "none"
     document.getElementsByClassName("gioithieu-ic-next")[0].style.backgroundColor = "#fff";
+  
+  });
+  $(".tuyendung-ic-prev").hover(function () {
+    document.getElementsByClassName("tuyendung-ic-prev")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("tuyendung-ic-prev")[0].getElementsByTagName("img")[1].style.display = "unset"
+    document.getElementsByClassName("tuyendung-ic-prev")[0].style.backgroundColor = "#00AAFF";
+
+  }, function () {
+    document.getElementsByClassName("tuyendung-ic-prev")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("tuyendung-ic-prev")[0].getElementsByTagName("img")[1].style.display = "none"
+    document.getElementsByClassName("tuyendung-ic-prev")[0].style.backgroundColor = "#fff";
+  
+  });
+  $(".tuyendung-ic-next").hover(function () {
+    document.getElementsByClassName("tuyendung-ic-next")[0].getElementsByTagName("img")[0].style.display = "none"
+    document.getElementsByClassName("tuyendung-ic-next")[0].getElementsByTagName("img")[1].style.display = "unset"
+    document.getElementsByClassName("tuyendung-ic-next")[0].style.backgroundColor = "#00AAFF";
+    
+  }, function () {
+    document.getElementsByClassName("tuyendung-ic-next")[0].getElementsByTagName("img")[0].style.display = "unset"
+    document.getElementsByClassName("tuyendung-ic-next")[0].getElementsByTagName("img")[1].style.display = "none"
+    document.getElementsByClassName("tuyendung-ic-next")[0].style.backgroundColor = "#fff";
   
   });
 }

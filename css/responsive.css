@@ -779,6 +779,7 @@
     .tuyendung .modal-content {
         margin-top: 10% !important;
     }
+    .tuyendung .modal-body > ul > p,
     .tuyendung .modal-body > ul > li {
         max-width: 95%;
     }
@@ -811,9 +812,11 @@
     .tuyendung .modal-body > ul > li {
         padding-left: unset;
         font-size: 12px;
-;
     }
-
+    .tuyendung .modal-body > ul > p {
+        padding-left: unset;
+        font-size: 12px;
+    }
     .footer-layout > div:nth-child(1) img {
         width: 86px !important;
         height: 47px !important;

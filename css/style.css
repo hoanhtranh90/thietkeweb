@@ -1105,6 +1105,7 @@ color: #FFFFFF;
 	gap: 28px;
 }
 .tuyendung-flexbox {
+	margin: 0 8px;
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
@@ -1115,6 +1116,42 @@ color: #FFFFFF;
 }
 .tuyendung-flexbox .only-mobile {
 	/* padding-left: px; */
+}
+.tuyendung-ic-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8.35498px rgb(210 210 210 / 50%);
+}
+.tuyendung-ic-prev img {
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .tuyendung-ic-next img {
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+.tuyendung-ic-next {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8.35498px rgb(210 210 210 / 50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 .tuyendung-flexbox > div:nth-child(1) {
 	border-right: 1px solid #C4C4C4;
@@ -1175,7 +1212,6 @@ color: #FFFFFF;
 	border: 3px solid #fff;
   }
 .tuyendung .modal-body > p:nth-child(1) {
-	padding-top: 40px;
 	margin: 0 auto;
 	max-width: 45%;
 	font-family: Roboto;
@@ -1215,6 +1251,18 @@ color: #FFFFFF;
 	font-size: 14px;
 	line-height: 22px;
 	color: #000000;
+}
+.tuyendung .modal-body > ul > p {
+	max-width: 66%;
+	padding-left: 10%;
+	text-align: left;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 22px;
+	color: #000000;
+	padding-bottom: 5px;
 }
 .tuyendung .modal-body > ul > li::before {
 	content: "\2022";
