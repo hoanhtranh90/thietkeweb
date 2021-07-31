@@ -1114,12 +1114,10 @@ color: #FFFFFF;
 	box-shadow: 0px 0px 20px rgba(210, 210, 210, 0.5);
 	border-radius: 12px;
 }
-.tuyendung-flexbox .only-mobile {
-	/* padding-left: px; */
-}
+
 .tuyendung-ic-prev {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0;
     width: 30px;
     height: 30px;
@@ -1150,7 +1148,7 @@ color: #FFFFFF;
     border-radius: 50%;
     box-shadow: 0px 0px 8.35498px rgb(210 210 210 / 50%);
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0;
 }
 .tuyendung-flexbox > div:nth-child(1) {
