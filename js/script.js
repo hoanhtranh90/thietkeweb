@@ -2,7 +2,13 @@
 // var a = document.getElementById('scroll');
 window.onscroll = function () { scrollFunction() };
 $(document).ready(function(){
-  $(this).scrollTop(0);
+  $('html, body').scrollTop(0);
+
+  $(window).on('load', function() {
+  setTimeout(function(){
+      $('html, body').scrollTop(0);
+  }, 0);
+});
 });
 function scrollFunction() {
 
