@@ -42,23 +42,23 @@
 						</label>
 						<ul class="menu__list" onclick="uncheck()">
 							<li class="menu__item">
-								<a href="#gioithieu" class="menu__link">Giới thiệu</a>
+								<a onclick="scrollToMiddle1('gioithieu')"  class="menu__link">Giới thiệu</a>
 							</li>
 							<li class="border-right"></li>
 							<li class="menu__item">
-								<a href="#sanpham" class="menu__link">Sản phẩm</a>
+								<a onclick="scrollToMiddle1('sanpham')" class="menu__link">Sản phẩm</a>
 							</li>
 							<li class="border-right"></li>
 							<li class="menu__item">
-								<a href="#moitruong" class="menu__link">Môi trường làm việc</a>
+								<a onclick="scrollToMiddle1('moitruong')" class="menu__link">Môi trường làm việc</a>
 							</li>
 							<li class="border-right"></li>
 							<li class="menu__item">
-								<a href="#tuyendung" class="menu__link">Tuyển dụng</a>
+								<a onclick="scrollToMiddle1('tuyendung')"  class="menu__link">Tuyển dụng</a>
 							</li>
 							<li class="border-right"></li>
 							<li class="menu__item">
-								<a href="#contact" class="menu__link">Liên lạc</a>
+								<a onclick="scrollToMiddle1('contact')"  class="menu__link">Liên lạc</a>
 							</li>
 						</ul>
 					</nav>
@@ -81,11 +81,11 @@
 					<h2 class="banner__content-title">THAI GIÁO ĐÚNG CÁCH</h2>
 					<h2 class="banner__content-title">DẠY CON TỪ TRONG BỤNG MẸ</h2>
 					<p class="banner__content-desc">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
+						<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
 						metus, tristique ndolor non, ornare sagittis dolor. Nulla
-						vestibulu lacus ...
+						vestibulu lacus ... -->
 					</p>
-					<a href="#gioithieu" class="banner__content-btn">TÌM HIỂU NGAY</a>
+					<a href="#sanpham" class="banner__content-btn">TÌM HIỂU NGAY</a>
 				</div>
 				<div class="slide-circle">
 					<!-- <label class="dot_banner">
@@ -242,36 +242,22 @@
 									<ul>
 										<li>
 											<p>Đổi mới</p>
-											<p>Exsoft luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ
-												nhằm xóa
-												bỏ những
-												rào cản, cải thiện khó khăn cho các khách hàng của mình.
+											<p>Sáng tạo, cải tiến để đưa ra giải pháp tốt hơn.
 											</p>
 										</li>
 										<li>
 											<p>Tận tâm</p>
-											<p>Với trái tim nhiệt thành và tâm huyết trong việc nuôi dưỡng, giáo dục
-												thế hệ
-												trẻ Việt Nam, Exsoft tạo ra những sản phẩm phục vụ và chăm sóc một
-												cách tốt
-												nhất cho cộng đồng mẹ và bé.
+											<p>Nhiệt thành và tâm huyết trong từng sản phẩm.
 											</p>
 										</li>
 										<li>
 											<p>Thấu hiểu</p>
-											<p>Đội ngũ nhân sự giàu kinh nghiệm trong lĩnh vực chăm sóc sức khỏe cho
-												mẹ và
-												bé của Exsoft luôn lắng nghe và thấu hiểu các vấn đề của khách hàng,
-												từ đó
-												sẽ nghiên cứu, cung cấp cho người dùng những giải pháp xử lý hiệu
-												quả.
+											<p>Dành trọn trái tim để lắng nghe và thấu hiểu băn khoăn của mẹ.
 											</p>
 										</li>
 										<li>
 											<p>Trách nhiệm</p>
-											<p>Chúng tôi cam kết là người đồng hành đáng tin cậy, cung cấp cho khách
-												hàng
-												những phương thức, sản phẩm tối ưu nhất trong hành trình nuôi con.
+											<p>Cam kết cung cấp những phương thức nuôi con tối ưu nhất.
 											</p>
 										</li>
 									</ul>
@@ -404,8 +390,7 @@
 					<div class="">
 						<div class="sanpham-card-2">
 							<p>Giáo dục sớm</p>
-							<p>Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc trẻ, đồng
-								thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+							<p>Giúp trẻ sớm hình thành và phát triển các kĩ năng quan trọng như kỹ năng ngôn ngữ, tư duy, vận động... từ đó làm tiền đề để trẻ có tư chất thông minh, sáng dạ với khả năng học hỏi tốt về sau.</p>
 							<div href="" class="sanpham-btn-2">Chi tiết</div>
 						</div>
 					</div>
@@ -414,7 +399,7 @@
 					<div class="sanpham-card-hidden">
 						<div class="sanpham-card-1">
 							<img src="./img/sanpham/icon3.svg" alt="">
-							<div>Dạy kĩ năng</div>
+							<div>Dạy kỹ năng</div>
 							<div>
 								<div class="sanpham-btn">Đối tượng:</div>
 							</div>
@@ -423,8 +408,7 @@
 
 							<ul>
 								<li>
-									Hỗ trợ ba mẹ khơi dậy, nuôi dưỡng, phát triển các kỹ năng về thể chất và tư duy cho
-									trẻ thông qua các hoạt động, mô hình, dự án đặc thù với lứa tuổi.
+									Hỗ trợ ba mẹ khơi dậy, nuôi dưỡng, phát triển các kỹ năng về thể chất và tư duy cho trẻ thông qua các hoạt động, mô hình, dự án đặc thù với lứa tuổi.
 								</li>
 							</ul>
 						</div>
@@ -435,8 +419,7 @@
 					<div class="">
 						<div class="sanpham-card-2">
 							<p>Dạy kỹ năng</p>
-							<p>Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc trẻ, đồng
-								thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+							<p>Hỗ trợ ba mẹ khơi dậy, nuôi dưỡng, phát triển các kỹ năng về thể chất và tư duy cho trẻ thông qua các hoạt động, mô hình, dự án đặc thù với lứa tuổi.</p>
 							<div href="" class="sanpham-btn-2">Chi tiết</div>
 						</div>
 					</div>
@@ -568,9 +551,7 @@
 							<div>
 								<div class="sanpham-card-2">
 									<p>Giáo dục sớm</p>
-									<p> Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc
-										trẻ,
-										đồng thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+									<p> Giúp trẻ sớm hình thành và phát triển các kĩ năng quan trọng như kỹ năng ngôn ngữ, tư duy, vận động... từ đó làm tiền đề để trẻ có tư chất thông minh, sáng dạ với khả năng học hỏi tốt về sau.</p>
 									<img src="./img/sanpham/cuate2.svg" alt="">
 									<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
 										href="#exampleModalToggle2" role="button">Chi tiết</button>
@@ -621,10 +602,7 @@
 							<div>
 								<div class="sanpham-card-2">
 									<p>Dạy kĩ năng</p>
-									<p> 1Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc
-										trẻ,
-										đồng
-										thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
+									<p>Hỗ trợ ba mẹ khơi dậy, nuôi dưỡng, phát triển các kỹ năng về thể chất và tư duy cho trẻ thông qua các hoạt động, mô hình, dự án đặc thù với lứa tuổi.</p>
 									<img src="./img/sanpham/cuate3.svg" alt="">
 									<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
 										href="#exampleModalToggle3" role="button">Chi tiết</button>
@@ -1166,8 +1144,8 @@
 			<div>
 				<p>Kết nối:</p>
 				<div class="connect" style="display: flex;">
-					<a href="https://www.facebook.com/"><img src="./img/footer/logos_facebook.svg" alt=""></a>
-					<a href="https://www.youtube.com/"><img src="./img/footer/ytb.svg" alt=""></a>
+					<a onclick="window.open('https://www.facebook.com/')"><img src="./img/footer/logos_facebook.svg" alt=""></a>
+					<a onclick="window.open('https://www.youtube.com/')"><img src="./img/footer/ytb.svg" alt=""></a>
 				</div>
 
 			</div>
@@ -1214,8 +1192,8 @@
 				</div>
 				<div class="connect detail1">
 					<div style="display: flex;">
-						<a href="https://www.facebook.com/"><img src="./img/footer/logos_facebook.svg" alt=""></a>
-						<a href="https://www.youtube.com/"><img src="./img/footer/ytb.svg" alt=""></a>
+						<a onclick="window.open('https://www.facebook.com/')" ><img src="./img/footer/logos_facebook.svg" alt=""></a>
+						<a onclick="window.open('https://www.youtube.com/')"><img src="./img/footer/ytb.svg" alt=""></a>
 					</div>
 
 				</div>

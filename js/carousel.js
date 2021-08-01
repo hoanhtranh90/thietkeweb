@@ -88,7 +88,7 @@ function show(slideIndex, animation = true) {
   if (slideIndex == 2 || slideIndex == -1) {
     // document.getElementsByClassName("slider")[0].style.height = "800px";
     if (mobile) {
-      document.getElementsByClassName("slider__")[0].style.height = "970px";
+      document.getElementsByClassName("slider__")[0].style.height = "730px";
 
     }
     else {
@@ -220,4 +220,8 @@ setTimeout(() => {
 });
 }, 500);
 
+}
+
+function scrollToMiddle1(id) {
+  document.getElementById(id).scrollIntoView();
 }

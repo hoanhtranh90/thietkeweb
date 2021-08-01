@@ -54,6 +54,7 @@ img {
 	max-width: 100%;
 }
 a {
+	cursor: pointer;
 	display: block;
 	text-decoration: none !important;
 }
