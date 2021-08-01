@@ -146,9 +146,12 @@ function show(slideIndex, animation = true) {
 
   // hide all slides
   timeline.to($slides, { scaleX: 0.8, scaleY: 0.8, opacity: 0, rotateY: 0, zIndex: 1 }, 0);
+  // timeline.to($backScreen, { zIndex: 0 }, 0);
 
   // stage 1: bring the prev slide to back, slide to left/right side, and rotate at the same time
   timeline.addLabel("stage1", 0);
+  // timeline.to($backScreen, { zIndex: 4 }, "stage1");
+
   timeline.to(
     $prevSlide,
     {
@@ -164,10 +167,9 @@ function show(slideIndex, animation = true) {
 
   // stage 1: bring the current slide to front
   timeline.to($currentSlide, { zIndex: 5, opacity: 1, rotateY: 0 }, "stage1");
-  timeline.to($backScreen, { zIndex: 4, opacity: 1 }, "stage1");
-  setTimeout(() => {
-    $backScreen.css("z-index","1")
-  }, 1100);
+  // setTimeout(() => {
+  //   $backScreen.css("z-index","1")
+  // }, 1100);
   // stage 2: set previous slide scale and position
   timeline.addLabel("stage2");
   timeline.to(
@@ -181,6 +183,7 @@ function show(slideIndex, animation = true) {
     },
     "stage2"
   );
+  // timeline.to($backScreen, { zIndex: 0, opacity: 1 }, "stage2");
 
   // stage 2: finish the current slide
   timeline.fromTo(
@@ -190,9 +193,7 @@ function show(slideIndex, animation = true) {
     "stage2"
   );
 
-  document.getElementsByClassName('gioithieu-ic-prev')[0].scrollIntoView({
-    block: 'center',
-});
+
 }
 
 // show the first slide by default
@@ -212,12 +213,11 @@ $("[data-navigate]").click(function () {
 
 
 
-function scrollToMiddle(id) {
-
-  var elem_position = $(id).offset().top;
-  var window_height = $(window).height();
-  var y = elem_position - window_height/2;
-
-  window.scrollTo(0,y);
+function scrollToMiddle() {
+setTimeout(() => {
+  document.getElementsByClassName('gioithieu-ic-prev')[0].scrollIntoView({
+    block: 'center',
+});
+}, 500);
 
 }

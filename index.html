@@ -78,14 +78,14 @@
 			<img src="./img/banner_mb.png" alt=""> -->
 			<div class="container">
 				<div class="banner__content">
-					<h2 class="banner__content-title">THAI GIÁO ĐÚNG CÁCH
-						DẠY CON TỪ TRONG BỤNG MẸ</h2>
+					<h2 class="banner__content-title">THAI GIÁO ĐÚNG CÁCH</h2>
+					<h2 class="banner__content-title">DẠY CON TỪ TRONG BỤNG MẸ</h2>
 					<p class="banner__content-desc">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
 						metus, tristique ndolor non, ornare sagittis dolor. Nulla
 						vestibulu lacus ...
 					</p>
-					<a href="" class="banner__content-btn">TÌM HIỂU NGAY</a>
+					<a href="#gioithieu" class="banner__content-btn">TÌM HIỂU NGAY</a>
 				</div>
 				<div class="slide-circle">
 					<!-- <label class="dot_banner">
@@ -282,16 +282,28 @@
 						<div class="buttons">
 							<!-- <button data-navigate="prev">Prev</button>
 							<button data-navigate="next">Next</button> -->
-							<div class='gioithieu-ic-prev' data-navigate="prev">
-								<img src='./img/gioithieu/icpre.svg'>
-								<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
+							<div style="width: 100px;height: 100px;display: flex; justify-content: flex-start;" data-navigate="prev" onclick="scrollToMiddle()">
+								<div class='gioithieu-ic-prev' style="
+								width: 35px;
+								height: 35px;
+							">
+									<img src='./img/gioithieu/icpre.svg'>
+									<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
 
+								</div>
 							</div>
-							<div class='gioithieu-ic-next' data-navigate="next">
-								<img src='./img/gioithieu/icnext.svg'>
-								<img style="display: none;" src='./img/gioithieu/next_hover.svg'>
+							<div style="width: 100px;height: 100px;display: flex; justify-content: flex-end;" data-navigate="next" onclick="scrollToMiddle()">
 
+								<div class='gioithieu-ic-next'  style="
+								width: 35px;
+								height: 35px;
+							">
+									<img src='./img/gioithieu/icnext.svg'>
+									<img style="display: none;" src='./img/gioithieu/next_hover.svg'>
+
+								</div>
 							</div>
+
 						</div>
 					</div>
 
@@ -320,11 +332,11 @@
 					<div class="sanpham-flexbox sanpham-card-show">
 						<div class="sanpham-card-1">
 							<img src="./img/sanpham/icon1_.svg" alt="">
-							<div>Trợ lý cho mẹ</div>
+							<div>Trợ lý của mẹ</div>
 							<div>
 								<div class="sanpham-btn">Đối tượng:</div>
 							</div>
-							<div>Mẹ bầu đang mang thai và các mẹ có con dưới 1 tuổi.</div>
+							<div>Mẹ đang mang thai và các mẹ có con dưới 1 tuổi.</div>
 							<div class="sanpham-btn">Thông tin sản phẩm: </div>
 
 							<ul>
@@ -501,7 +513,7 @@
 							<div>
 								<div class="sanpham-card-2">
 									<p>Trợ lý cho mẹ</p>
-									<p> 1Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc
+									<p> Babiuni cung cấp kiến thức bổ ích về thai kỳ, dành cho mẹ các tiện ích chăm sóc
 										trẻ,
 										đồng
 										thời là cầu nối giữa mẹ và chuyên gia trong lĩnh vực Sản - Nhi khoa.</p>
@@ -1018,22 +1030,21 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item" data-bs-interval="600000">
+
+						<!-- bo sung yeu cau tuyen dung o day -->
+						<!-- <div class="carousel-item" data-bs-interval="600000">
 							slider 2 test
-						</div>
+						</div> -->
+						nut next va prer cua tuyen dung
 					</div>
-						<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-						<div class='tuyendung-ic-prev' data-bs-target="#tuyendung_slider"
-						data-bs-slide="prev">
-							<img src='./img/gioithieu/icpre.svg'>
-							<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
-						</div>
-						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-						<div class='tuyendung-ic-next' data-bs-target="#tuyendung_slider"
-						data-bs-slide="next">
-							<img src='./img/gioithieu/icnext.svg'>
-							<img style="display: none;" src='./img/gioithieu/next_hover.svg'>
-						</div>
+					<!-- <div class='tuyendung-ic-prev' data-bs-target="#tuyendung_slider" data-bs-slide="prev">
+						<img src='./img/gioithieu/icpre.svg'>
+						<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
+					</div>
+					<div class='tuyendung-ic-next' data-bs-target="#tuyendung_slider" data-bs-slide="next">
+						<img src='./img/gioithieu/icnext.svg'>
+						<img style="display: none;" src='./img/gioithieu/next_hover.svg'>
+					</div> -->
 				</div>
 
 			</div>
