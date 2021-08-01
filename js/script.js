@@ -1,7 +1,9 @@
 
 // var a = document.getElementById('scroll');
 window.onscroll = function () { scrollFunction() };
-
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
 function scrollFunction() {
 
   if (document.documentElement.scrollTop > 30) {
