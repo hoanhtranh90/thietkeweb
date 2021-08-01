@@ -146,7 +146,7 @@ function show(slideIndex, animation = true) {
 
   // hide all slides
   timeline.to($slides, { scaleX: 0.8, scaleY: 0.8, opacity: 0, rotateY: 0, zIndex: 1 }, 0);
-  // timeline.to($backScreen, { zIndex: 0 }, 0);
+  timeline.to($backScreen, { zIndex: 0 }, 0);
 
   // stage 1: bring the prev slide to back, slide to left/right side, and rotate at the same time
   timeline.addLabel("stage1", 0);
