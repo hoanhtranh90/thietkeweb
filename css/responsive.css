@@ -2,6 +2,11 @@
 .only-sp {
 	display: none;
 }
+@media screen and  (max-width: 3700px) {
+    .only-mobile-impottant {
+        display: none !important;
+    }
+}
 @media screen and  (max-width: 1700px) {
     .moitruong-flex {
         margin: 0 5%;
@@ -12,6 +17,7 @@
     .moitruong-item > img:nth-child(2) {
         top: 190px !important;
     }
+    
 }
 @media screen and (max-width: 1024px) {
     /* .only-pc {
@@ -178,6 +184,7 @@
         width: 150px;
         height: 160px;
     }
+   
 }
 
 
@@ -192,6 +199,9 @@
 }
 /* Mobile */
 @media (max-width: 739px) {
+    .only-mobile-impottant {
+        display: flex !important;
+    }
     .gioithieu-card-type-2 {
         max-width: 100%;
     }
@@ -290,13 +300,7 @@
         height: 1px;
         background-color: #DCDCDC;
     }
-    .banner {
-        background-image: url(../img/banner_mb.png);
-        
-    background-position: 87% center;
-    background-size: unset;
-
-    }
+  
     .title h2 {
         font-size: 2.5rem;
     }

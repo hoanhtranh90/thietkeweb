@@ -23,1137 +23,407 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
 
 </head>
-	<div id="wrapper">
-		<header class="header">
-			<div class="container">
-				<div class="header__top">
-					<a href="#" class="header__logo" style="width: 50px">
-						<img src="./img/logo.png" alt="modest" />
+<style>
+	.nav-pills .nav-link.active {
+		background-color: rgb(237, 86, 59) ;
+	}
+	.txtsp {
+		font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+	}
+</style>
+<div id="wrapper">
+ <header class="header-area header-sticky" style="background-color: #000;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<nav class="main-nav">
+					<!-- ***** Logo Start ***** -->
+					<a href="index.html" class="logo">City<em> GYM</em></a>
+					<!-- ***** Logo End ***** -->
+					<!-- ***** Menu Start ***** -->
+					<ul class="nav" id="mn">
+						<li><a></a></li>
+						<li class="scroll-to-section"><a href="#top" class="active">Trang chủ</a></li>
+						<li class="scroll-to-section"><a href="#gioithieu">Giới thiệu</a></li>
+						<li class="scroll-to-section"><a href="#sanpham">Sản phẩm</a></li>
+						<li class="scroll-to-section"><a href="dichvu.html">Dịch vụ</a></li>
+						<li class="scroll-to-section"><a href="datlich.html">Đặt lịch</a></li> 
+						<li class="main-button"><a href="signIn.html">Đăng ký</a></li>
+					</ul>        
+					<a class='menu-trigger'>
+						<span>Menu</span>
 					</a>
-					<nav class="menu" onclick="changeBg();">
-						<input type="checkbox" id="check" />
-						<label for="check" class="check__btn only-sp">
-							<img src="./img/ic-menu.svg" alt="">
-							<img style="display: none;" src="./img/header/closelogo.svg" alt="">
-						</label>
-						<ul class="menu__list" onclick="uncheck()">
-							<li class="menu__item">
-								<a onclick="scrollToMiddle1('gioithieu')"  class="menu__link">Giới thiệu</a>
-							</li>
-							<li class="border-right"></li>
-							<li class="menu__item">
-								<a onclick="scrollToMiddle1('sanpham')" class="menu__link">Sản phẩm</a>
-							</li>
-							<li class="border-right"></li>
-							<li class="menu__item">
-								<a onclick="scrollToMiddle1('moitruong')" class="menu__link">Môi trường làm việc</a>
-							</li>
-							<li class="border-right"></li>
-							<li class="menu__item">
-								<a onclick="scrollToMiddle1('tuyendung')"  class="menu__link">Tuyển dụng</a>
-							</li>
-							<li class="border-right"></li>
-							<li class="menu__item">
-								<a onclick="scrollToMiddle1('contact')"  class="menu__link">Liên hệ</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="form__group field d-flex justify-content-between w-3">
-						<div class="form__item">
-							<a href="#" class="btn btn-primary">Đăng ký</a>
-						</div>
-						<div class="form__item">
-							<a href="#" class="btn btn-primary">Đăng nhập</a>
-						</div>
-					</div>
-				</div>
+					<!-- ***** Menu End ***** -->
+				</nav>
 			</div>
-		</header>
-		<!-- header-end -->
-		<div class="banner">
-			<!-- <img src="./img/banner.png" cl alt="">
+		</div>
+	</div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+	<!-- header-end -->
+	<div class="banner">
+		<!-- <img src="./img/banner.png" cl alt="">
 			<img src="./img/banner_mb.png" alt=""> -->
-			<div class="container">
-				<div class="banner__content">
-					<h2 class="banner__content-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h2>
-					<h2 class="banner__content-title">dolor sit amet consectetur adipisicing elit</h2>
-					<p class="banner__content-desc">
-						<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
+		<div class="container">
+			<div class="banner__content">
+				<h2 class="banner__content-title" style="color: #000;">DỊCH VỤ ĐẲNG CẤP</h2>
+				<h2 class="banner__content-title" style="color: #000;">TRẢI NGHIỆM XỨNG TẦM</h2>
+				<p class="banner__content-desc">
+					<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
 						metus, tristique ndolor non, ornare sagittis dolor. Nulla
 						vestibulu lacus ... -->
-					</p>
-					<a href="#sanpham" class="banner__content-btn">TÌM HIỂU NGAY</a>
-				</div>
-				<div class="slide-circle">
-					<!-- <label class="dot_banner">
-						<input type="radio" name="slide-control" id="goto-slide-1" checked="checked">
-					  </label>
-					  <label class="dot_banner">
-						<input type="radio" name="slide-control" id="goto-slide-2">
-					  </label>
-					  <label class="dot_banner">
-						<input type="radio" name="slide-control" id="goto-slide-3">
-						<span class="checkmark"></span>
-					  </label> -->
-
-
-					<!-- <input type="radio" name="slide-control" id="goto-slide-1" checked />
-					<input type="radio" name="slide-control" id="goto-slide-2" />
-					<input type="radio" name="slide-control" id="goto-slide-3" />
-					<div class="controls">
-						<label for="goto-slide-1"></label>
-						<label for="goto-slide-2"></label>
-						<label for="goto-slide-3"></label>
-					</div> -->
-
-					<div class="radio-item">
-						<input type="radio" id="ritema" name="ritem" value="ropt1" checked>
-						<label for="ritema"></label>
-					</div>
-
-					<div class="radio-item">
-						<input type="radio" id="ritemb" name="ritem" value="ropt2">
-						<label for="ritemb"></label>
-					</div>
-					<div class="radio-item">
-						<input type="radio" id="ritemc" name="ritem" value="ropt2">
-						<label for="ritemc"></label>
-					</div>
-				</div>
+				</p>
+				<a href="#sanpham" class="banner__content-btn">GIA NHẬP</a>
 			</div>
+		
 		</div>
-		<!-- banner-end -->
-		<div class="gioithieu" id="gioithieu">
-			<div class="container">
-				<div class="gioithieu__col">
-					<div class="gioithieu__col-1-of-2">
-						<img src="./img/gioithieu/pana.svg" alt="" srcset="">
-					</div>
-					<div class="gioithieu__col-1-of-2">
-						<div class="gioithieu-right">
-							<div>
-								<p>Giới thiệu</p>
-							</div>
-							<div>
-								<p>Công ty Cổ phần Công nghệ phần mềm PocoSoft là một trong những Công ty Công nghệ hàng
-									đầu Việt Nam</p>
-							</div>
+	</div>
+	<!-- banner-end -->
+	<div class="gioithieu" id="gioithieu">
+		<div class="container">
+			<div class="gioithieu__col">
+				<div class="gioithieu__col-1-of-2">
+					<img src="./img/club300-tru-so-3-770x800.jpg" alt="" srcset="">
+				</div>
+				<div class="gioithieu__col-1-of-2">
+					<div class="gioithieu-right">
+						<div>
+							<p style="font-size: 20px;">Giới thiệu</p>
+						</div>
+						<div>
+							<h3><span style="font-size: 85%;"><strong>BẠN MUỐN CẢI THIỆN VÓC DÁNG – TĂNG CƯỜNG THỂ
+										CHẤT</strong></span></h3>
+							<h3 class="mt-5"><span style="font-size: 85%;"><strong>BẠN CẦN CHẾ ĐỘ ĂN UỐNG KẾT HỢP LUYỆN TẬP KHOA
+										HỌC</strong></span></h3>
+							<h3 class="mt-5"><span style="font-size: 85%;"><strong>BẠN KHAO KHÁT ĐƯỢC TRUYỀN “LỬA” ĐỂ LUYỆN TẬP MỖI
+										NGÀY</strong></span></h3>
+										
+							<h3 class="mt-5">Hãy đến với chúng tôi – Club 300 Climbing &amp; Fitness!</h3>
+							<h3>Tự hào là cơ sở FITNESS chất lượng đạt chứng chỉ uy tín Quốc tế. Club 300 Climbing
+								&amp; Fitness có đa dạng các bộ môn Gym, Yoga, Group X, Climbing với núi nhân tạo
+								trong nhà cao nhất Sài Gòn, Boxing,… giúp bạn có được cơ thể cân đối, khoẻ mạnh và
+								giải trí tuyệt vời sau những giờ làm việc căng thẳng.</h3>
+
+
 						</div>
 					</div>
 				</div>
-
 			</div>
-			<div class=" gioithieu-bg">
 
-				<div class="container">
+		</div>
+		<div class="gioithieu-bg">
 
-					<div class="gallery-flex" style="padding-top: 50px;padding-bottom: 60px;">
-						<div class="gioithieu-btn gioithieu-btn-active" onclick="show(0, false)">Tầm nhìn</div>
-						<div class="gioithieu-btn" onclick="show(1, false)">Sứ mệnh</div>
-						<div class="gioithieu-btn" onclick="show(-1,false)">Giá trị cốt lõi</div>
-					</div>
-					<div class="slider__">
-						<div class="gioithieu-card-4 only-pc">
-							<div class="gioithieu-card-5">
+			<div class="container">
 
-							</div>
+				<div class="gallery-flex" style="padding-top: 50px;padding-bottom: 60px;">
+					<div class="gioithieu-btn gioithieu-btn-active" onclick="show(0, false)">Tầm nhìn</div>
+					<div class="gioithieu-btn" onclick="show(1, false)">Sứ mệnh</div>
+					<div class="gioithieu-btn" onclick="show(-1,false)">Giá trị cốt lõi</div>
+				</div>
+				<div class="slider__">
+					<div class="gioithieu-card-4 only-pc">
+						<div class="gioithieu-card-5">
+
 						</div>
-						<div class="slide__">
-							<div class="gioithieu-card">
-								<img src="./img/gioithieu/icon1.svg" alt="">
-								<p>Tầm nhìn</p>
-								<p>Với đội ngũ nhân sự nhiều kinh nghiệm trong lĩnh vực, giàu tâm huyết
-									trong
-									việc xây
-									dựng, kiến tạo những giá trị tốt đẹp cộng đồng, PocoSoft sẽ trở thành Công ty
-									Công
-									nghệ hàng
-									đầu Việt Nam, giữ vị trí số 1 trong mảng cung cấp ứng dụng về giáo dục và
-									chăm sóc
-									sức khỏe
+					</div>
+					<div class="slide__">
+						<div class="gioithieu-card">
+							<img src="./img/gioithieu/icon1.svg" alt="">
+							<p>Tầm nhìn</p>
+							<p>
+								Dinh dưỡng kết hợp luyện tập khoa học
+								<br/>
+								Giúp bạn sở hữu một body hoàn hảo vạn người mê, nhờ kết hợp song song việc luyện tập thể hình với tư vấn chế độ ăn uống hiệu quả từ đó phat huy rõ hiệu quả.
+							</p>
+						</div>
+						<div class="lineBlue"></div>
+					</div>
+					<div class="slide__">
+						<div class="gioithieu-card">
+							<img src="./img/gioithieu/icon2.svg" alt="">
+							<p>Sứ mệnh</p>
+							<p>Với sứ mệnh đồng hành cùng cộng đồng Gymer, CityGym
+								cam kết
+								tạo ra những buổi tập chất lượng, đảm bảo sức khỏe cho cộng đồng.
+								Chúng tôi có khả năng tối ưu lộ trình luyện tập kết hợp nhiều môn phù hợp với thể trạng, đem lại hiệu quả nhanh nhất và tốt nhất cho bạn.</p>
+						</div>
+						<div class="lineBlue"></div>
+					</div>
+					<div class="slide__">
+						<div class="gioithieu-card">
+							<img src="./img/gioithieu/icon3.svg" alt="">
+							<p>Giá trị cốt lõi</p>
+							<div class="gioithieu-card-type-2 only-pc">
+
+								<div>
+									<p>Đổi mới</p>
+									<p>CityGym luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ
+										nhằm tạo ra hiệu quả cao nhất,
+										 cải thiện khó khăn cho các khách hàng của mình.
 									</p>
-							</div>
-							<div class="lineBlue"></div>
-						</div>
-						<div class="slide__">
-							<div class="gioithieu-card">
-								<img src="./img/gioithieu/icon2.svg" alt="">
-								<p>Sứ mệnh</p>
-								<p>Với sứ mệnh đồng hành cùng sự phát triển của thế hệ trẻ em Việt Nam, PocoSoft
-									cam kết
-									tạo ra những sản phẩm công nghệ chất lượng cao giúp cho hành trình dễ dàng
-									con trở nên nhẹ nhàng, đơn giản. Là một start-up trẻ, năng động và sáng tạo,
-									PocoSoft
-									sẽ trao những giải pháp chăm sóc, hỗ trợ hiện đại giúp giải quyết hiệu quả
-									các khó
-									khăn trong quá trình mang bầu và chăm sóc trẻ, từ đó người phụ nữ sẽ được
-									tận hưởng
-									đúng nghĩa những điều ngọt ngào và hạnh phúc trong hành trình làm mẹ.</p>
-							</div>
-							<div class="lineBlue"></div>
-						</div>
-						<div class="slide__">
-							<div class="gioithieu-card">
-								<img src="./img/gioithieu/icon3.svg" alt="">
-								<p>Giá trị cốt lõi</p>
-								<div class="gioithieu-card-type-2 only-pc">
+								</div>
+								<div>
+									<p>Tận tâm</p>
+									<p>Với trái tim nhiệt thành và tâm huyết trong công việc. Chúng tôi tự tin có thể đáp ứng mọi yêu cầu
+										
 
-									<div>
+									</p>
+								</div>
+								<div>
+									<p>Thấu hiểu</p>
+									<p>Truyền cảm hứng luyện tập mỗi ngày
+									</p>
+								</div>
+								<div>
+									<p>Trách nhiệm</p>
+									<p>Chúng tôi cam kết là người đồng hành đáng tin cậy, cung cấp cho khách
+										hàng
+										những phương thức, sản phẩm tối ưu nhất
+									</p>
+								</div>
+							</div>
+							<div class="gioithieu-card-type-3 only-mobile">
+								<ul>
+									<li>
 										<p>Đổi mới</p>
-										<p>PocoSoft luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ
-											nhằm xóa
-											bỏ những
-											rào cản, cải thiện khó khăn cho các khách hàng của mình.
+										<p>Sáng tạo, cải tiến để đưa ra giải pháp tốt hơn.
 										</p>
-									</div>
-									<div>
+									</li>
+									<li>
 										<p>Tận tâm</p>
-										<p>Với trái tim nhiệt thành và tâm huyết trong việc nuôi dưỡng, giáo dục
-											thế hệ
-											trẻ Việt Nam, PocoSoft tạo ra những sản phẩm phục vụ và chăm sóc một
-											cách tốt
-											nhất cho cộng đồng
+										<p>Nhiệt thành và tâm huyết trong từng sản phẩm.
+											Nhiệt thành và tâm huyết trong từng sản phẩm.
 										</p>
-									</div>
-									<div>
+									</li>
+									<li>
 										<p>Thấu hiểu</p>
-										<p>Đội ngũ nhân sự giàu kinh nghiệm trong lĩnh vực chăm sóc sức khỏe. PocoSoft luôn lắng nghe và thấu hiểu các vấn đề của khách hàng,
-											từ đó
-											sẽ nghiên cứu, cung cấp cho người dùng những giải pháp xử lý hiệu
-											quả.
+										<p>Dành trọn trái tim để lắng nghe và thấu hiểu băn khoăn
 										</p>
-									</div>
-									<div>
+									</li>
+									<li>
 										<p>Trách nhiệm</p>
-										<p>Chúng tôi cam kết là người đồng hành đáng tin cậy, cung cấp cho khách
-											hàng
-											những phương thức, sản phẩm tối ưu nhất
+										<p>Cam kết cung cấp những phương thức tốt nhất
 										</p>
-									</div>
-								</div>
-								<div class="gioithieu-card-type-3 only-mobile">
-									<ul>
-										<li>
-											<p>Đổi mới</p>
-											<p>Sáng tạo, cải tiến để đưa ra giải pháp tốt hơn.
-											</p>
-										</li>
-										<li>
-											<p>Tận tâm</p>
-											<p>Nhiệt thành và tâm huyết trong từng sản phẩm.
-											</p>
-										</li>
-										<li>
-											<p>Thấu hiểu</p>
-											<p>Dành trọn trái tim để lắng nghe và thấu hiểu băn khoăn
-											</p>
-										</li>
-										<li>
-											<p>Trách nhiệm</p>
-											<p>Cam kết cung cấp những phương thức tốt nhất
-											</p>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="lineBlue"></div>
-						</div>
-						<div class="buttons">
-							<!-- <button data-navigate="prev">Prev</button>
-							<button data-navigate="next">Next</button> -->
-							<div style="width: 100px;height: 100px;display: flex; justify-content: flex-start;" data-navigate="prev" onclick="scrollToMiddle()">
-								<div class='gioithieu-ic-prev' style="
-								width: 35px;
-								height: 35px;
-							">
-									<img src='./img/gioithieu/icpre.svg'>
-									<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
-
-								</div>
-							</div>
-							<div style="width: 100px;height: 100px;display: flex; justify-content: flex-end;" data-navigate="next" onclick="scrollToMiddle()">
-
-								<div class='gioithieu-ic-next'  style="
-								width: 35px;
-								height: 35px;
-							">
-									<img src='./img/gioithieu/icnext.svg'>
-									<img style="display: none;" src='./img/gioithieu/next_hover.svg'>
-
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-		</div>
-		<!-- gioithieu-end -->
-
-		<!-- san pham -->
-		<div class="sanpham" id="sanpham">
-			<div class="container">
-				<div class="title-sanpham">
-					<p>Sản phẩm</p>
-					<div>
-						<p>PocoSoft cung cấp những phần mềm hữu ích nhằm hướng dẫn, hỗ trợ dễ dàng</p>
-					</div>
-
-				</div>
-			</div>
-			<div class="grid-sanpham container only-pc">
-				<img src="./img/sanpham/lineblue.svg" alt="">
-				<div class="sanpham1" onclick="changeLayout(1)">
-					<div class="sanpham-flexbox sanpham-card-show">
-						<div class="sanpham-card-1">
-							<img src="./img/sanpham/icon1_.svg" alt="">
-							<div>Title1</div>
-							<div>
-								<div class="sanpham-btn">Đối tượng:</div>
-							</div>
-							<div>Content1</div>
-							<div class="sanpham-btn">Thông tin sản phẩm: </div>
-
-							<ul>
-								<li>
-									Info software 1
-								</li>
-								<li>
-									Info software 2
-								</li>
-								<li>
-									Info software 3
-								</li>
-
-
-							</ul>
-						</div>
-						<div style="padding-top: 100px;">
-							<img src="./img/sanpham/cuate1.svg" alt="">
-						</div>
-					</div>
-					<div class="sanpham-card-hidden">
-						<div class="sanpham-card-2">
-							<p>Title2</p>
-							<p>content2</p>
-
-							<div href="" class="sanpham-btn-2">Chi tiết</div>
-						</div>
-					</div>
-				</div>
-				<div class="sanpham2" onclick="changeLayout(2)">
-					<div class="sanpham-card-hidden">
-						<div class="sanpham-card-1">
-							<img src="./img/sanpham/icon2.svg" alt="">
-							<div>Title 3</div>
-							<div>
-								<div class="sanpham-btn">Đối tượng:</div>
-							</div>
-							<div>Content3</div>
-							<div class="sanpham-btn">Thông tin sản phẩm: </div>
-
-							<ul>
-								<li>
-									Ìno Soft uawre
-								</li>
-							</ul>
-						</div>
-						<div style="padding-top: 100px;">
-							<img src="./img/sanpham/cuate2.svg" alt="">
-						</div>
-					</div>
-					<div class="">
-						<div class="sanpham-card-2">
-							<p>Title</p>
-							<p>Content</p>
-							<div href="" class="sanpham-btn-2">Chi tiết</div>
-						</div>
-					</div>
-				</div>
-				<div class="sanpham3" onclick="changeLayout(3)">
-					<div class="sanpham-card-hidden">
-						<div class="sanpham-card-1">
-							<img src="./img/sanpham/icon3.svg" alt="">
-							<div>Tilte</div>
-							<div>
-								<div class="sanpham-btn">Content</div>
-							</div>
-							<div>Content</div>
-							<div class="sanpham-btn">Content</div>
-
-							<ul>
-								<li>
-									Content								
-								</li>
-							</ul>
-						</div>
-						<div style="padding-top: 100px;">
-							<img src="./img/sanpham/cuate3.svg" alt="">
-						</div>
-					</div>
-					<div class="">
-						<div class="sanpham-card-2">
-							<p>Title</p>
-							<p>Content</p>
-							<div href="" class="sanpham-btn-2">Chi tiết</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container only-mobile" style="position: relative">
-				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="false">
-					<div class="carousel-inner">
-						<div class="carousel-item active" data-bs-interval="600000">
-							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle1"
-								aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-body">
-											<div>
-												<div class="sanpham-card-1">
-													<img src="./img/sanpham/mobile1.svg" alt="">
-													<div>Title</div>
-													<div>
-														<div class="sanpham-btn">Content</div>
-													</div>
-													<div>Content</div>
-													<div class="sanpham-btn">Content</div>
-
-													<ul>
-														<li>
-															Info1
-														</li>
-														<li>
-															Info2
-														</li>
-														<li>
-															Info3
-														</li>
-
-
-													</ul>
-												</div>
-												<div style="padding-top: 100px;">
-													<img src="./img/sanpham/cuate1.svg" alt="">
-												</div>
-												<div class="closebtn-gt gtnn-1" data-bs-dismiss="modal" style="width: 30%;"
-													aria-label="Close">
-													<img src="./img/header/closelogo.svg" alt="">
-													<img style="display: none;" src="./img/header/close_Logo_hover.svg"
-														alt="">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="sanpham-card-2">
-									<p>Title</p>
-									<p> Content</p>
-									<img src="./img/sanpham/cuate1.svg" alt="">
-									<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
-										href="#exampleModalToggle1" role="button">Chi tiết</button>
-
-								</div>
+									</li>
+								</ul>
 							</div>
 						</div>
-						<div class="carousel-item" data-bs-interval="600000">
-							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle2"
-								aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-body">
-											<div>
-												<div class="sanpham-card-1">
-													<img src="./img/sanpham/mobile1.svg" alt="">
-													<div>Title</div>
-													<div>
-														<div class="sanpham-btn">Info1</div>
-													</div>
-													<div>Info1</div>
-													<div class="sanpham-btn">Info1</div>
-
-													<ul>
-														<li>
-															Info1
-														</li>
-													</ul>
-												</div>
-												<div style="padding-top: 100px;">
-													<img src="./img/sanpham/cuate2.svg" alt="">
-												</div>
-												<div class="closebtn-gt gtnn-2" data-bs-dismiss="modal"
-													aria-label="Close">
-													<img src="./img/header/closelogo.svg" alt="">
-													<img style="display: none;" src="./img/header/close_Logo_hover.svg"
-														alt="">
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="sanpham-card-2">
-									<p>Title</p>
-									<p>Info1</p>
-									<img src="./img/sanpham/cuate2.svg" alt="">
-									<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
-										href="#exampleModalToggle2" role="button">Chi tiết</button>
-
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item" data-bs-interval="600000">
-							<div class="modal fade" tabindex="-1" role="dialog" id="exampleModalToggle3"
-								aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-body">
-											<div>
-												<div class="sanpham-card-1">
-													<img src="./img/sanpham/mobile1.svg" alt="">
-													<div>Info1</div>
-													<div>
-														<div class="sanpham-btn">Info1</div>
-													</div>
-													<div>Info1</div>
-													<div class="sanpham-btn">Thông tin sản phẩm: </div>
-
-													<ul>
-														<li>
-															Info1
-														</li>
-													</ul>
-												</div>
-												<div style="padding-top: 100px;">
-													<img src="./img/sanpham/cuate3.svg" alt="">
-												</div>
-												<div class="closebtn-gt gtnn-3" data-bs-dismiss="modal"
-													aria-label="Close">
-													<img src="./img/header/closelogo.svg" alt="">
-													<img style="display: none;" src="./img/header/close_Logo_hover.svg"
-														alt="">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="sanpham-card-2">
-									<p>Title</p>
-									<p>Info1</p>
-									<img src="./img/sanpham/cuate3.svg" alt="">
-									<button type="button" class="sanpham-btn-2" data-bs-toggle="modal"
-										href="#exampleModalToggle3" role="button">Chi tiết</button>
-
-								</div>
-							</div>
-						</div>
+						<div class="lineBlue"></div>
 					</div>
 					<div class="buttons">
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-						data-bs-slide="prev">
-						<div class='sanpham-ic-prev'>
-							<img src='./img/gioithieu/icpre.svg'>
-						</div>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-						data-bs-slide="next">
-						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-						<div class='sanpham-ic-next'>
-							<img src='./img/gioithieu/icnext.svg'>
-						</div>
-						<span class="visually-hidden">Next</span>
-					</button>
-					</div>	
-				</div>
+						<!-- <button data-navigate="prev">Prev</button>
+							<button data-navigate="next">Next</button> -->
+						<div style="width: 100px;height: 100px;display: flex; justify-content: flex-start;"
+							data-navigate="prev" onclick="scrollToMiddle()">
+							<div class='gioithieu-ic-prev' style="
+								width: 35px;
+								height: 35px;
+							">
+								<img src='./img/gioithieu/icpre.svg'>
+								<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
 
+							</div>
+						</div>
+						<div style="width: 100px;height: 100px;display: flex; justify-content: flex-end;"
+							data-navigate="next" onclick="scrollToMiddle()">
+
+							<div class='gioithieu-ic-next' style="
+								width: 35px;
+								height: 35px;
+							">
+								<img src='./img/gioithieu/icnext.svg'>
+								<img style="display: none;" src='./img/gioithieu/next_hover.svg'>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
 
 			</div>
 		</div>
-	</div>
-	<!-- sanpham-end -->
 
-	<!-- moitruong -->
-	<div class="moitruong" id="moitruong">
+	</div>
+	<!-- gioithieu-end -->
+
+	<!-- san pham -->
+	<div class="sanpham" id="sanpham" style="margin-bottom: 50px;">
 		<div class="container">
-			<div class="title-moitruong">
-				<p>Môi trường làm việc</p>
+			<div class="title-sanpham">
+				<p>Sản phẩm</p>
 				<div>
-					<p>Info1</p>
+					<p>CityGym cung cấp đa dạng thể loại cho khách hàng</p>
 				</div>
 
 			</div>
-		</div>
-		<div class="moitruong-flex only-pc">
-			<div class="moitruong-item">
-				<div>
-					<p>Đội ngũ nhân sự năng động, trẻ trung, hiện đại, cởi mở</p>
+			<ul class="nav nav-pills mb-3 only-mobile-impottant" id="pills-tab" role="tablist">
+				<li class="nav-item" role="presentation">
+				  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"  aria-controls="v-pills-home" aria-selected="true">Gym</button>
+				</li>
+				<li class="nav-item" role="presentation">
+				  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Yoga</button>
+				</li>
+				<li class="nav-item" role="presentation">
+				  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Fitnts</button>
+				</li>
+			  </ul>
+			<div class="d-flex align-items-start" style="width: 100%; margin: 0 auto;">
+				<div class="nav flex-column nav-pills me-3 only-pc" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="width: 40%;">
+				  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" style="width: 250px; font-size: 20px;">Gym</button>
+				  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="width: 250px; font-size: 20px;">Yoga</button>
+				  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" style="width: 250px; font-size: 20px;">Fitnts</button>
+				  <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" style="width: 250px; font-size: 20px;">banu</button>
 				</div>
-				<img src="./img/moitruong/svg1.svg" alt="">
-			</div>
-			<div class="moitruong-item">
-				<div>
-					<p>Sáng tạo không giới hạn, khuyến khích bứt phá</p>
+	
+				<div class="tab-content" id="v-pills-tabContent">
+				  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+						<img src="../img/training-image-01.jpg" alt="First Class">
+						<h2>First Training Class</h2>
+						<p class="txtsp">Tập luyện tại CITIGYM để có cơ hội thay đổi ngoại hình một cách ngoạn mục
+							Việc luyện tập đều đặn tại CITIGYM và đúng kỹ thuật, cùng với một chế độ dinh dưỡng hợp lý sẽ giúp cải thiện vóc dáng một cách rõ rệt. Huấn luyện viên của Citigym thiết kế chương trình luyện tập dựa trên chỉ số cơ thể, tình trạng sức khỏe của bạn nhằm giúp bạn thấy rõ sự thay đổi ngoạn mục chỉ trong khoảng trung bình từ 6-8 tuần.</p>
+					
+						<a href="chitiet.html"> <button type="button" class="btn btn-outline-primary mt-3" style="font-size: 16px;" >Xem chi tiết</button></a>
+
+				  </div>
+				  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+						<img src="../img/training-image-02.jpg" alt="Second Training">
+						<h2>Second Training Class</h2>
+						<p class="txtsp">
+							CITIGYM hỗ trợ hội viên đo chỉ số BMI trước và trong quá trình tập luyện để hội viên có thể theo dõi được kết quả tập luyện. BMI là chỉ số khối cơ thể (Body Mass Index), được các bác sĩ và chuyên gia sức khỏe dùng để xác định một người có bị béo phì, thừa cân hay quá gầy. Hãy để lại thông tin để CITIGYM có thể giúp bạn phân tích sức khỏe và đưa ra những tư vấn phù hợp với thể trạng của bạn.
+						</p>
+				  </div>
+				  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+						<img src="../img/training-image-03.jpg" alt="Third Class">
+						<h2>Third Training Class</h2>
+						<p class="txtsp">
+							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt tình,
+							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt tình,
+							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt tình,
+						</p>
+				  </div>
+				  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+						<img src="../img/training-image-04.jpg" alt="Fourth Training">
+						<h2>Fourth Training Class</h2>
+						<p class="txtsp">
+							Tự hào là cơ sở FITNESS chất lượng đạt chứng chỉ uy tín Quốc tế. Club 300 Climbing & Fitness có đa dạng các bộ môn Gym, Yoga, Group X, Climbing với núi nhân tạo trong nhà cao nhất Sài Gòn, Boxing,… giúp bạn có được cơ thể cân đối, khoẻ mạnh và giải trí tuyệt vời sau những giờ làm việc căng thẳng.
+						</p>
+				  </div>
 				</div>
-				<img src="./img/moitruong/svg2.svg" alt="">
-			</div>
-			<div class="moitruong-item">
-				<div>
-					<p>Tôn trọng sự khác biệt của mỗi cá nhân</p>
-				</div>
-				<img src="./img/moitruong/svg3.svg" alt="">
-			</div>
-			<div class="moitruong-item">
-				<div>
-					<p>Trọng dụng nhân tài, đãi ngộ xứng đáng</p>
-				</div>
-				<img src="./img/moitruong/svg4.svg" alt="">
-			</div>
-		</div>
-		<div class="moitruong-flex only-mobile">
-			<div class="moitruong-item">
-				<div>
-					<p>Đội ngũ nhân sự năng động, trẻ trung, hiện đại, cởi mở</p>
-					<p>01</p>
-				</div>
-				<img src="./img/moitruong/svg1.svg" alt="">
-			</div>
-			<div class="moitruong-item">
-				<div>
-					<p>02</p>
-					<p>Sáng tạo không giới hạn, khuyến khích bứt phá</p>
-				</div>
-				<img src="./img/moitruong/svg2.svg" alt="">
-			</div>
-			<div class="moitruong-item">
-				<div>
-					<p>Tôn trọng sự khác biệt của mỗi cá nhân</p>
-					<p>03</p>
-				</div>
-				<img src="./img/moitruong/svg3.svg" alt="">
-			</div>
-			<div class="moitruong-item">
-				<div>
-					<p>04</p>
-					<p>Trọng dụng nhân tài, đãi ngộ xứng đáng</p>
-				</div>
-				<img src="./img/moitruong/svg4.svg" alt="">
-			</div>
+			  </div>
 		</div>
 	</div>
-	<!-- moitruong-end -->
+</div>
+<!-- sanpham-end -->
 
-	<div class="tuyendung" id="tuyendung">
-		<div class="container">
-			<div class="title-tuyendung" style="padding-bottom: 50px;">
-				<p>Gia nhập đội ngũ của chúng tôi</p>
-				<div>
-					<p>Hiện tại có <span style="color: #00AAFF;">4</span> vị trí đang được tuyển dụng:</p>
-				</div>
-
-				<!-- cac modal  -->
-				<div class="modal fade" tabindex="-1" role="dialog" id="jd1" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-scrollable tuyendung-modal-margin">
-						<div class="modal-content">
-							<div class="modal-header">
-								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close"
-									src="./img/header/closelogo.svg" alt="">
-								<img class="tuyendung-close-btn" style="
-								display: none;" data-bs-dismiss="modal" aria-label="Close" src="./img/header/close_Logo_hover.svg" alt="">
-							</div>
-							<div class="modal-body">
-								<p>
-									<span class="only-pc">CÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM PocoSoft
-										VỊ TRÍ TUYỂN DỤNG: </span>
-									<span style="color: #00AAFF;">BACKEND DEVELOPER</span>
-								</p>
-								<p>MÔ TẢ CÔNG VIỆC</p>
-								<ul>
-									<li>Tham gia phát triển các sản phẩm phần mềm trong mảng Edutech, Healthtech.</li>
-									<li>Phối hợp với stackholders làm rõ nghiệp vụ, đóng góp ý tưởng vào sản phẩm.</li>
-									<li>Thực hiện phân tích thiết kế, xây dựng giải pháp để phát triển sản phẩm đáp ứng
-										yêu cầu cao của người dùng cuối.</li>
-									<li>Tham gia review thiết kế, review code.</li>
-									<li>Nghiên cứu, áp dụng công nghệ mới vào sản phẩm nhằm nâng cao chất lượng, tối ưu
-										hiệu năng tối ưu hiệu năng hệ thống.</li>
-								</ul>
-								<p>YÊU CẦU ỨNG VIÊN</p>
-								<ul>
-									<li>Có kinh nghiệm chuyên môn từ 2 năm trở lên.</li>
-									<li>Thành thạo Java Core, có kinh nghiệm làm việc với một trong các framework Java
-										như Spring Boot, Struts, Hibernate... và một số design pattern thông dụng.</li>
-									<li>Tư duy về thiết kế hướng đối tượng và nắm vững kiến thức về cấu trúc dữ liệu và
-										giải thuật.</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack.</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính …
-										tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông....</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới.</li>
-								</ul>
-								<p>QUYỀN LỢI ĐƯỢC HƯỞNG</p>
-								<ul>
-									<p>1.Chế độ lương, thưởng, thu nhập</p>
-
-									<li>Mức lương hấp dẫn, cạnh tranh (ứng viên tự thỏa thuận khi tham gia phỏng vấn).
-										Up to 35M.</li>
-									<li>13 tháng lương + bonus hàng tháng theo hiệu quả công việc.</li>
-									<li>Review lương 2 lần/năm.</li>
-									<li>Phúc lợi: BHXH, BHYT, BHTN, Nghỉ mát, thưởng ngày lễ, team building.</li>
-
-									<p>2. Môi trường làm việc</p>
-
-									<li>Đội ngũ nhân sự trẻ trung, năng động, hiện đại, cởi mở, trân trọng, yêu thương,
-										tương hỗ & lắng nghe mỗi người từ những ý tưởng nhỏ nhất.</li>
-									<li>Sáng tạo không giới hạn, khuyến khích bứt phá.</li>
-									<li>Tôn trọng sự khác biệt của mỗi cá nhân.</li>
-									<li>Trọng dụng nhân tài, đãi ngộ xứng đáng.</li>
-
-									<p>3. Cơ hội phát triển bản thân</p>
-
-									<li>Có cơ hội thử sức trong lĩnh vực công nghệ tiên tiến, hiện đại nhất.</li>
-									<li>Được trao quyền sáng tạo với đam mê của tuổi trẻ.</li>
-									<li>Cơ hội học hỏi trực tiếp từ đội ngũ lãnh đạo tài năng và đồng nghiệp ưu tú.</li>
-									<li>Cơ hội được đào tạo, trau dồi kĩ năng, chuyên môn để phát triển toàn diện.</li>
-
-
-								</ul>
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal fade" tabindex="-1" role="dialog" id="jd2" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-scrollable tuyendung-modal-margin">
-						<div class="modal-content">
-							<div class="modal-header">
-								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close"
-									src="./img/header/closelogo.svg" alt="">
-								<img class="tuyendung-close-btn" style="
-								display: none;" data-bs-dismiss="modal" aria-label="Close" src="./img/header/close_Logo_hover.svg" alt="">
-							</div>
-							<div class="modal-body">
-								<p>
-									<span class="only-pc">CÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM PocoSoft
-										VỊ TRÍ TUYỂN DỤNG: </span>
-									<span style="color: #00AAFF;">FRONTEND WEB DEVELOPER</span>
-								</p>
-								<p>MÔ TẢ CÔNG VIỆC</p>
-								<ul>
-									<li>Phát triển Frontend của ứng dụng Web, App hiện đại, giàu tương tác
-										với yêu cầu cao về chất lượng và độ tin cậy</li>
-									<li>Tham gia cùng với đội ngũ Backend để thiết kế API</li>
-									<li>Liên tục cập nhật kiến thức, nghiên cứu công nghệ mới để ứng dụng
-										trong công việc và phát triển sản phẩm của Công ty.</li>
-									<li>Đảm bảo tiêu chuẩn đồ họa chất lượng cao và sự thống nhất trong brand</li>
-									<li>Thu thập ý kiến phản hồi và xây dựng các hướng giải quyết cho người sử dụng và
-										khách hàng</li>
-								</ul>
-								<p>YÊU CẦU ỨNG VIÊN</p>
-								<ul>
-									<li>Có kinh nghiệm ít nhất 1 năm trong lĩnh vực chuyên môn</li>
-									<li>Từng có kinh nghiệm làm việc với: ReactJS hoặc VueJS,... và ưu tiên có kinh
-										nghiệm làm việc với thư viện hỗ trợ xây dựng giao diện như Editor, Comment,
-										Chart,..</li>
-									<li>Nắm chắc kiến thức về html, css, javascript</li>
-									<li>Có kiến thức về restful api</li>
-									<li>Ưu tiên có kinh nghiệm làm việc fullstack</li>
-									<li>Có tinh thần trách nhiệm cao và sẵn sàng tiếp cận công nghệ mới</li>
-									<li>Có khả năng đọc hiểu tài liệu tiếng anh là một lợi thế</li>
-									<li>Ưu tiên tốt nghiệp các ngành Công nghệ thông tin, Toán tin, khoa học máy tính …
-										tại các trường: Đại học BKHN, ĐH Quốc Gia, ĐH Bưu chính viễn thông</li>
-
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal fade" tabindex="-1" role="dialog" id="jd3" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-scrollable tuyendung-modal-margin">
-						<div class="modal-content">
-							<div class="modal-header">
-								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close"
-									src="./img/header/closelogo.svg" alt="">
-								<img class="tuyendung-close-btn" style="
-								display: none;" data-bs-dismiss="modal" aria-label="Close" src="./img/header/close_Logo_hover.svg" alt="">
-							</div>
-							<div class="modal-body">
-								<p>
-									<span class="only-pc">CÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM PocoSoft
-										VỊ TRÍ TUYỂN DỤNG: </span>
-									<span style="color: #00AAFF;">CONTENT MARKETING</span>
-								</p>
-								<p>MÔ TẢ CÔNG VIỆC</p>
-								<ul>
-									<li>Chịu trách nhiệm sản xuất nội dung trên các nền tảng Web, App của công ty theo
-										phân công của trưởng bộ phận.</li>
-									<li>Lên kế hoạch, quản trị, sáng tạo nội dung, quảng bá hình ảnh, xây dựng thương
-										hiệu tại Fanpage, cộng đồng group...</li>
-									<li>Đo lường chỉ số, báo cáo hiệu quả và đề xuất phương thức cải thiện chất lượng
-										nội dung tại các kênh.</li>
-									<li>Tham gia tìm kiếm, thu thập thông tin, nghiên cứu các nội dung, những xu thế
-										mới trên thị trường về lĩnh vực mẹ và bé.</li>
-									<li>Tham gia cùng team xây dựng và triển khai các chiến dịch Marketing, đóng góp
-										các ý tưởng nội dung sáng tạo cho chiến dịch Marketing.</li>
-									<li>Giám sát tiến độ thực thi nội dung của các bên outsource (Nếu có).</li>
-
-								</ul>
-								<p>YÊU CẦU ỨNG VIÊN</p>
-								<ul>
-									<li>Ưu tiên ứng viên có hiểu biết, đã làm trong lĩnh vực chăm sóc sức khỏe mẹ và
-										bé.</li>
-									<li>Ứng viên tốt nghiệp chuyên ngành Marketing, Quản trị kinh doanh hoặc chuyên
-										ngành có liên quan.</li>
-									<li>Có khả năng viết lách tốt, kinh nghiệm từ 1 - 2 năm về content MKT, nắm vững
-										các kiến thức cơ bản về một số dạng content như SEO, Social Media, PR...</li>
-									<li>Nhiệt tình, trách nhiệm, sáng tạo trong công việc.</li>
-									<li>Biết sử dụng cơ bản các phần mềm PTS, AI, Canva...</li>
-									<li>Biết tiếng Anh là lợi thế.</li>
-
-								</ul>
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal fade" tabindex="-1" role="dialog" id="jd4" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-scrollable tuyendung-modal-margin">
-						<div class="modal-content">
-							<div class="modal-header">
-								<img class="tuyendung-close-btn" data-bs-dismiss="modal" aria-label="Close"
-									src="./img/header/closelogo.svg" alt="">
-								<img class="tuyendung-close-btn" style="
-								display: none;" data-bs-dismiss="modal" aria-label="Close" src="./img/header/close_Logo_hover.svg" alt="">
-							</div>
-							<div class="modal-body">
-								<p>
-									<span class="only-pc">CÔNG TY CỔ PHẦN CÔNG NGHỆ PHẦN MỀM PocoSoft
-										VỊ TRÍ TUYỂN DỤNG: </span>
-									<span style="color: #00AAFF;">JUNIOR TESTER</span>
-								</p>
-								<p>MÔ TẢ CÔNG VIỆC</p>
-								<ul>
-									<li>Phân tích tài liệu đặc tả</li>
-									<li>Thực hiện design và create test case dựa trên tài liệu phân tích thiết kế</li>
-									<li>Thực hiện test các chức năng của sản phẩm: web, app</li>
-									<li>Report lỗi & phối hợp cùng dev để phân tích; đánh giá lỗi.</li>
-									<li>Đề xuất các chức năng của sản phẩm (nếu có)</li>
-									<li>Report kết quả test cho Quản lý dự án</li>
-									<li>Phối hợp công việc theo nhóm dưới dự phân công của Quản lý dự án</li>
-
-								</ul>
-								<p>YÊU CẦU ỨNG VIÊN</p>
-								<ul>
-									<li>Có ít nhất 1 năm kinh nghiệm trong công việc kiểm thử: web, app, API</li>
-									<li>Nắm vững các kỹ thuật test, kỹ thuật design test case.</li>
-									<li>Có kinh nghiệm sử dụng một trong các tool bug tracking (Jira, Redmine,..); tool
-										API testing (Postman,..); SQL (MS SQL, My SQL,..); test management (Testlink,
-										MBI,..)</li>
-									<li>Có khả năng phối hợp tốt với các stakeholders: developer, BA, PM</li>
-									<li>Cẩn thận, tỉ mỉ, chi tiết</li>
-									<li>Kỹ năng xử lý vấn đề tốt</li>
-									<li>Khả năng làm việc độc lập & làm việc nhóm</li>
-									<li>Có ISTQB Foundation certificate là một lợi thế</li>
-									<li>Có kinh nghiệm về Automation test là một lợi thế</li>
-
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end modal -->
-				<!-- dissable slider -->
-				<div class="tuyendung-grid">
-
-
-					<div class="tuyendung-flexbox">
-						<div data-bs-target="#jd1" data-bs-toggle="modal" data-bs-dismiss="modal">
-							<p>Backend Developer</p>
-						</div>
-						<div class="only-pc">
-							<p>Số lượng : 02</p>
-						</div>
-						<div class="only-pc">
-							<p>Kinh nghiệm: Trên 02 năm</p>
-						</div>
-						<div class="only-mobile">
-							<div>
-								<p>Số lượng : 02</p>
-							</div>
-							<div>
-								<p>Kinh nghiệm: Trên 02 năm</p>
-							</div>
-						</div>
-					</div>
-					<div class="tuyendung-flexbox">
-						<div data-bs-target="#jd2" data-bs-toggle="modal" data-bs-dismiss="modal">
-							<p>Frontend Developer</p>
-						</div>
-						<div class="only-pc">
-							<p>Số lượng : 01</p>
-						</div>
-						<div class="only-pc">
-							<p>Kinh nghiệm: 01</p>
-						</div>
-						<div class="only-mobile">
-							<div>
-								<p>Số lượng : 01</p>
-							</div>
-							<div>
-								<p>Kinh nghiệm: 01</p>
-							</div>
-						</div>
-					</div>
-					<div class="tuyendung-flexbox">
-						<div data-bs-target="#jd3" data-bs-toggle="modal" data-bs-dismiss="modal">
-							<p>Content Marketing</p>
-						</div>
-						<div class="only-pc">
-							<p>Số lượng : 01</p>
-						</div>
-						<div class="only-pc">
-							<p>Kinh nghiệm: 01 - 02 năm</p>
-						</div>
-						<div class="only-mobile">
-							<div>
-								<p>Số lượng : 01</p>
-							</div>
-							<div>
-								<p>Kinh nghiệm: 01 - 02 năm</p>
-							</div>
-						</div>
-					</div>
-					<div class="tuyendung-flexbox">
-						<div data-bs-target="#jd4" data-bs-toggle="modal" data-bs-dismiss="modal">
-							<p>Junior Tester</p>
-						</div>
-						<div class="only-pc">
-							<p>Số lượng : 02</p>
-						</div>
-						<div class="only-pc">
-							<p>Kinh nghiệm: Trên 01 năm</p>
-						</div>
-						<div class="only-mobile">
-							<div>
-								<p>Số lượng : 02</p>
-							</div>
-							<div>
-								<p>Kinh nghiệm: Trên 01 năm</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- enable slider  -->
-				<!-- <div id="tuyendung_slider" class="carousel slide" data-bs-ride="carousel" data-interval="false">
-					<div class="carousel-inner">
-						<div class="carousel-item active" data-bs-interval="600000">
-							<div class="tuyendung-grid">
-
-
-								<div class="tuyendung-flexbox">
-									<div data-bs-target="#jd1" data-bs-toggle="modal" data-bs-dismiss="modal">
-										<p>Backend Developer</p>
-									</div>
-									<div class="only-pc">
-										<p>Số lượng : 02</p>
-									</div>
-									<div class="only-pc">
-										<p>Kinh nghiệm: Trên 02 năm</p>
-									</div>
-									<div class="only-mobile">
-										<div>
-											<p>Số lượng : 02</p>
-										</div>
-										<div>
-											<p>Kinh nghiệm: Trên 02 năm</p>
-										</div>
-									</div>
-								</div>
-								<div class="tuyendung-flexbox">
-									<div data-bs-target="#jd2" data-bs-toggle="modal" data-bs-dismiss="modal">
-										<p>Frontend Developer</p>
-									</div>
-									<div class="only-pc">
-										<p>Số lượng : 01</p>
-									</div>
-									<div class="only-pc">
-										<p>Kinh nghiệm: 01</p>
-									</div>
-									<div class="only-mobile">
-										<div>
-											<p>Số lượng : 01</p>
-										</div>
-										<div>
-											<p>Kinh nghiệm: 01</p>
-										</div>
-									</div>
-								</div>
-								<div class="tuyendung-flexbox">
-									<div data-bs-target="#jd3" data-bs-toggle="modal" data-bs-dismiss="modal">
-										<p>Content Marketing</p>
-									</div>
-									<div class="only-pc">
-										<p>Số lượng : 01</p>
-									</div>
-									<div class="only-pc">
-										<p>Kinh nghiệm: 01 - 02 năm</p>
-									</div>
-									<div class="only-mobile">
-										<div>
-											<p>Số lượng : 01</p>
-										</div>
-										<div>
-											<p>Kinh nghiệm: 01 - 02 năm</p>
-										</div>
-									</div>
-								</div>
-								<div class="tuyendung-flexbox">
-									<div data-bs-target="#jd4" data-bs-toggle="modal" data-bs-dismiss="modal">
-										<p>Junior Tester</p>
-									</div>
-									<div class="only-pc">
-										<p>Số lượng : 02</p>
-									</div>
-									<div class="only-pc">
-										<p>Kinh nghiệm: Trên 01 năm</p>
-									</div>
-									<div class="only-mobile">
-										<div>
-											<p>Số lượng : 02</p>
-										</div>
-										<div>
-											<p>Kinh nghiệm: Trên 01 năm</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item" data-bs-interval="600000">
-							slider 2 test
-						</div>
-					</div>
-					<div class='tuyendung-ic-prev' data-bs-target="#tuyendung_slider" data-bs-slide="prev">
-						<img src='./img/gioithieu/icpre.svg'>
-						<img style="display: none;" src='./img/gioithieu/prev_hover.svg'>
-					</div>
-					<div class='tuyendung-ic-next' data-bs-target="#tuyendung_slider" data-bs-slide="next">
-						<img src='./img/gioithieu/icnext.svg'>
-						<img style="display: none;" src='./img/gioithieu/next_hover.svg'>
-					</div>
-				</div> -->
-
+<!-- contact-end -->
+<footer class="footer" id="contact">
+	<div class="container footer-layout only-pc">
+		<div></div>
+		<div>
+			
+			<div class="txt only-mobile">
+				<p>PocoSoft.,JSC</p>
+				<p>Công ty Cổ phần Công nghệ phần mềm PocoSoft</p>
 			</div>
 		</div>
-	</div>
-	<!-- contact-end -->
-	<footer class="footer" id="contact">
-		<div class="container footer-layout only-pc">
-			<div></div>
-			<div>
-				<img width="100" src="./img/logo.png" alt="">
-				<div class="txt only-mobile">
-					<p>PocoSoft.,JSC</p>
-					<p>Công ty Cổ phần Công nghệ phần mềm PocoSoft</p>
-				</div>
+		<div style="max-width: 350px;">
+			<div class="lh" onclick="showdetail('detail')">
+				<p>Liên hệ: </p>
 			</div>
-			<div style="max-width: 350px;">
-				<div class="lh" onclick="showdetail('detail')">
-					<p>Liên hệ: </p>
+			<div class="detail_">
+				<div>
+					<img src="./img/footer/ic1.svg" alt="">
+					<p>Email: nguyenkhacsang@gmail.com</p>
 				</div>
-				<div class="detail_">
-					<div>
-						<img src="./img/footer/ic1.svg" alt="">
-						<p>Email: nguyenkhacsang@gmail.com</p>
-					</div>
-					<div>
-						<img src="./img/footer/ic2.svg" alt="">
-						<p>SDT: 0123456789</p>
+				<div>
+					<img src="./img/footer/ic2.svg" alt="">
+					<p>SDT: 0123456789</p>
 
-					</div>
-					<div>
-						<img style="    
+				</div>
+				<div>
+					<img style="    
 						padding-bottom: 20px;
 						padding-left: 2px;" src="./img/footer/ic3.svg" alt="">
-						<p>Trụ sở: Hà Nội.</p>
+					<p>Trụ sở: Hà Nội.</p>
 
-					</div>
 				</div>
 			</div>
-			<div>
-				<p>Kết nối:</p>
-				<div class="connect" style="display: flex;">
-					<a onclick="window.open('https://www.facebook.com/')"><img src="./img/footer/logos_facebook.svg" alt=""></a>
+		</div>
+		<div>
+			<p>Kết nối:</p>
+			<div class="connect" style="display: flex;">
+				<a onclick="window.open('https://www.facebook.com/')"><img src="./img/footer/logos_facebook.svg"
+						alt=""></a>
+				<a onclick="window.open('https://www.youtube.com/')"><img src="./img/footer/ytb.svg" alt=""></a>
+			</div>
+
+		</div>
+		<div></div>
+		<div></div>
+	</div>
+	<div class="only-mobile footer-layout">
+		<div>
+			<div class="txt">
+				
+			</div>
+		</div>
+		<div style="max-width: 350px;">
+			<div class="lh active_1" onclick="showdetail('detail')">
+				<p>Liên hệ: </p>
+				<img src="./img/footer/muiten.svg" alt="">
+			</div>
+			<div class="detail">
+				<div>
+					<img src="./img/footer/ic1.svg" alt="">
+					<p>Email: nguyenkhacsang@gmailcom</p>
+				</div>
+				<div>
+					<img src="./img/footer/ic2.svg" alt="">
+					<p onclick="document.location.href='tel:0899500092'">SDT: 0123456789</p>
+
+				</div>
+				<div>
+					<img style="    
+						padding-bottom: 20px;
+						padding-left: 2px;" src="./img/footer/ic3.svg" alt="">
+					<p>Trụ sở: Hà nội</p>
+
+				</div>
+			</div>
+
+		</div>
+		<div>
+			<div class="lh active_2" onclick="showdetail('detail1')">
+				<p>Kết nối: </p>
+				<img src="./img/footer/muiten.svg" alt="">
+			</div>
+			<div class="connect detail1">
+				<div style="display: flex;">
+					<a onclick="window.open('https://www.facebook.com/')"><img src="./img/footer/logos_facebook.svg"
+							alt=""></a>
 					<a onclick="window.open('https://www.youtube.com/')"><img src="./img/footer/ytb.svg" alt=""></a>
 				</div>
 
 			</div>
-			<div></div>
-			<div></div>
+
 		</div>
-		<div class="only-mobile footer-layout">
-			<div>
-				<img width="100" src="./img/logo.png" alt="">
-				<div class="txt">
-					<p>JSC</p>
-					<p>Công ty Graphich</p>
-				</div>
-			</div>
-			<div style="max-width: 350px;">
-				<div class="lh active_1" onclick="showdetail('detail')">
-					<p>Liên hệ: </p>
-					<img src="./img/footer/muiten.svg" alt="">
-				</div>
-				<div class="detail">
-					<div>
-						<img src="./img/footer/ic1.svg" alt="">
-						<p>Email: nguyenkhacsang@gmailcom</p>
-					</div>
-					<div>
-						<img src="./img/footer/ic2.svg" alt="">
-						<p onclick="document.location.href='tel:0899500092'">SDT: 0123456789</p>
-
-					</div>
-					<div>
-						<img style="    
-						padding-bottom: 20px;
-						padding-left: 2px;" src="./img/footer/ic3.svg" alt="">
-						<p>Trụ sở: Hà nội</p>
-
-					</div>
-				</div>
-
-			</div>
-			<div>
-				<div class="lh active_2" onclick="showdetail('detail1')">
-					<p>Kết nối: </p>
-					<img src="./img/footer/muiten.svg" alt="">
-				</div>
-				<div class="connect detail1">
-					<div style="display: flex;">
-						<a onclick="window.open('https://www.facebook.com/')" ><img src="./img/footer/logos_facebook.svg" alt=""></a>
-						<a onclick="window.open('https://www.youtube.com/')"><img src="./img/footer/ytb.svg" alt=""></a>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</footer>
 	</div>
-	<div class="backSc" onclick="removebg()"></div>
+</footer>
+</div>
+<div class="backSc" onclick="removebg()"></div>
 
 
-	<script src="./js/script.js"></script>
-	<script src="./js/carousel.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./js/accordions.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
 
 </body>
 

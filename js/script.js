@@ -2,6 +2,7 @@
 // var a = document.getElementById('scroll');
 window.onscroll = function () { scrollFunction() };
 $(document).ready(function(){
+  
   $('html, body').scrollTop(0);
 
   $(window).on('load', function() {
@@ -9,6 +10,11 @@ $(document).ready(function(){
       $('html, body').scrollTop(0);
   }, 0);
 });
+$(".menu-trigger").on('click', function() {	
+  $(this).toggleClass('active');
+  $('#mn').toggleClass("showw");
+});
+
 });
 function scrollFunction() {
 
@@ -408,7 +414,6 @@ function showDivs(n) {
   x[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " w3-red";
 }
-
 
 
 
