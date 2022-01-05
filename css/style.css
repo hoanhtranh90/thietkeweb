@@ -217,7 +217,7 @@ header
   
   .header-area .main-nav .nav li:hover a,
   .header-area .main-nav .nav li a.active {
-	color: #ed563b!important;
+	color: #fafafa!important;
 	opacity: 1;
   }
   
@@ -1679,7 +1679,7 @@ Our Classes
 }
 .team__item:hover > .team__item-info {
 	z-index: 3;
-	background-color: #3a454d;
+	background-color: rgb(237, 86, 59);
 	color: #ffffff;
 }
 .team__item:hover > .team__item-info > .info-name,

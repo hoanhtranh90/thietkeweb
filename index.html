@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Thiết kế web</title>
-	
+
 	<link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.css" />
 	<link rel="stylesheet" href="./css//grid.css" />
 	<link rel="stylesheet" href="./css/style.css" />
@@ -25,60 +25,72 @@
 </head>
 <style>
 	.nav-pills .nav-link.active {
-		background-color: rgb(237, 86, 59) ;
+		background-color: rgb(237, 86, 59);
 	}
+
 	.txtsp {
 		font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-	
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+
 	}
+
 	.nav-link {
 		color: #fff;
 		margin-top: 30px;
-		
+
 	}
+
 	.prod {
 		color: #cdcdcd !important;
 	}
-	.nav-pills .nav-link.active {
-    /* background-color: rgb(237, 86, 59); */
-    background-color: unset;
-    border: 2px solid rgb(237, 86, 59);
-    border-radius: 8px;
-	color: rgb(237, 86, 59);
-	}
 
+	.nav-pills .nav-link.active {
+		/* background-color: rgb(237, 86, 59); */
+		background-color: unset;
+		border: 2px solid rgb(237, 86, 59);
+		border-radius: 8px;
+		color: rgb(237, 86, 59);
+	}
+	.nav-link:hover {
+		color: rgb(194, 194, 194);
+	}
+	.btn2:hover {
+		color: rgb(194, 194, 194);
+	}
+	#siginBtn:hover {
+		color: #fff !important;
+	}
 </style>
 <div id="wrapper">
- <header class="header-area header-sticky" style="background-color: #000;">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<nav class="main-nav">
-					<!-- ***** Logo Start ***** -->
-					<a href="index.html" class="logo">City<em> GYM</em></a>
-					<!-- ***** Logo End ***** -->
-					<!-- ***** Menu Start ***** -->
-					<ul class="nav" id="mn">
-						<li><a></a></li>
-						<li class="scroll-to-section"><a href="index.html" class="active">Trang chủ</a></li>
-						<li class="scroll-to-section"><a href="#gioithieu">Giới thiệu</a></li>
-						<li class="scroll-to-section"><a href="#sanpham">Dịch vụ</a></li>
-						<li class="scroll-to-section"><a href="datlich.html">Đặt lịch</a></li> 
-						<li class="main-button"><a href="signIn.html">Đăng ký</a></li>
-					</ul>        
-					<a class='menu-trigger'>
-						<span>Menu</span>
-					</a>
-					<!-- ***** Menu End ***** -->
-				</nav>
+	<header class="header-area header-sticky" style="background-color: #000;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="index.html" class="logo">City<em> GYM</em></a>
+						<!-- ***** Logo End ***** -->
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav" id="mn">
+							<li><a></a></li>
+							<li class="scroll-to-section"><a href="index.html" class="active">Trang chủ</a></li>
+							<li class="scroll-to-section"><a href="#gioithieu">Giới thiệu</a></li>
+							<li class="scroll-to-section"><a href="#sanpham">Dịch vụ</a></li>
+							<li class="scroll-to-section"><a href="datlich.html">Đặt lịch</a></li>
+							<li class="main-button" id="siginBtn"><a id="siginBtntext" href="signIn.html">Đăng nhập</a></li>
+						</ul>
+						<a class='menu-trigger'>
+							<span>Menu</span>
+						</a>
+						<!-- ***** Menu End ***** -->
+					</nav>
+				</div>
 			</div>
 		</div>
-	</div>
-</header>
-<!-- ***** Header Area End ***** -->
+	</header>
+	<!-- ***** Header Area End ***** -->
 
 	<!-- header-end -->
 	<div class="banner">
@@ -93,13 +105,14 @@
 						metus, tristique ndolor non, ornare sagittis dolor. Nulla
 						vestibulu lacus ... -->
 				</p>
-				<a href="chitiet.html" class="banner__content-btn" >GIA NHẬP</a>
+				<a href="chitiet.html" class="banner__content-btn btn2">CHI TIẾT</a>
 			</div>
-		
+
 		</div>
 	</div>
 	<!-- banner-end -->
-	<div class="gioithieu " id="gioithieu"  style="margin-bottom: 50px; background-color: rgb(45, 45, 45); margin-bottom: 0; padding-bottom: 70px;">
+	<div class="gioithieu " id="gioithieu"
+		style="margin-bottom: 50px; background-color: rgb(45, 45, 45); margin-bottom: 0; padding-bottom: 70px;">
 		<div class="container" style="padding-bottom: 70px;">
 			<div class="gioithieu__col">
 				<div class="gioithieu__col-1-of-2">
@@ -113,11 +126,13 @@
 						<div class="prod">
 							<h3><span style="font-size: 85%;"><strong>BẠN MUỐN CẢI THIỆN VÓC DÁNG – TĂNG CƯỜNG THỂ
 										CHẤT</strong></span></h3>
-							<h3 class="mt-5"><span style="font-size: 85%;"><strong>BẠN CẦN CHẾ ĐỘ ĂN UỐNG KẾT HỢP LUYỆN TẬP KHOA
+							<h3 class="mt-5"><span style="font-size: 85%;"><strong>BẠN CẦN CHẾ ĐỘ ĂN UỐNG KẾT HỢP LUYỆN
+										TẬP KHOA
 										HỌC</strong></span></h3>
-							<h3 class="mt-5"><span style="font-size: 85%;"><strong>BẠN KHAO KHÁT ĐƯỢC TRUYỀN “LỬA” ĐỂ LUYỆN TẬP MỖI
+							<h3 class="mt-5"><span style="font-size: 85%;"><strong>BẠN KHAO KHÁT ĐƯỢC TRUYỀN “LỬA” ĐỂ
+										LUYỆN TẬP MỖI
 										NGÀY</strong></span></h3>
-										
+
 							<h3 class="mt-5">Hãy đến với chúng tôi – Club 300 Climbing &amp; Fitness!</h3>
 							<h3>Tự hào là cơ sở FITNESS chất lượng đạt chứng chỉ uy tín Quốc tế. Club 300 Climbing
 								&amp; Fitness có đa dạng các bộ môn Gym, Yoga, Group X, Climbing với núi nhân tạo
@@ -152,8 +167,9 @@
 							<p>Tầm nhìn</p>
 							<p>
 								Dinh dưỡng kết hợp luyện tập khoa học
-								<br/>
-								Giúp bạn sở hữu một body hoàn hảo vạn người mê, nhờ kết hợp song song việc luyện tập thể hình với tư vấn chế độ ăn uống hiệu quả từ đó phat huy rõ hiệu quả.
+								<br />
+								Giúp bạn sở hữu một body hoàn hảo vạn người mê, nhờ kết hợp song song việc luyện tập thể
+								hình với tư vấn chế độ ăn uống hiệu quả từ đó phat huy rõ hiệu quả.
 							</p>
 						</div>
 						<div class="lineBlue"></div>
@@ -165,7 +181,8 @@
 							<p>Với sứ mệnh đồng hành cùng cộng đồng Gymer, CityGym
 								cam kết
 								tạo ra những buổi tập chất lượng, đảm bảo sức khỏe cho cộng đồng.
-								Chúng tôi có khả năng tối ưu lộ trình luyện tập kết hợp nhiều môn phù hợp với thể trạng, đem lại hiệu quả nhanh nhất và tốt nhất cho bạn.</p>
+								Chúng tôi có khả năng tối ưu lộ trình luyện tập kết hợp nhiều môn phù hợp với thể trạng,
+								đem lại hiệu quả nhanh nhất và tốt nhất cho bạn.</p>
 						</div>
 						<div class="lineBlue"></div>
 					</div>
@@ -179,14 +196,16 @@
 									<p>Đổi mới</p>
 									<p>CityGym luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ
 										nhằm tạo ra hiệu quả cao nhất,
-										 cải thiện khó khăn cho các khách hàng của mình.
-										 Với trái tim nhiệt thành và tâm huyết trong công việc. Chúng tôi tự tin có thể đáp ứng mọi yêu cầu
+										cải thiện khó khăn cho các khách hàng của mình.
+										Với trái tim nhiệt thành và tâm huyết trong công việc. Chúng tôi tự tin có thể
+										đáp ứng mọi yêu cầu
 									</p>
 								</div>
 								<div>
 									<p>Tận tâm</p>
-									<p>Với trái tim nhiệt thành và tâm huyết trong công việc. Chúng tôi tự tin có thể đáp ứng mọi yêu cầu
-										
+									<p>Với trái tim nhiệt thành và tâm huyết trong công việc. Chúng tôi tự tin có thể
+										đáp ứng mọi yêu cầu
+
 
 									</p>
 								</div>
@@ -268,7 +287,8 @@
 	<!-- gioithieu-end -->
 
 	<!-- san pham -->
-	<div class="sanpham" id="sanpham" style="margin-bottom: 50px; background-color: rgb(45, 45, 45); margin-bottom: 0; padding-bottom: 70px;">
+	<div class="sanpham" id="sanpham"
+		style="margin-bottom: 50px; background-color: rgb(45, 45, 45); margin-bottom: 0; padding-bottom: 70px;">
 		<div class="container">
 			<div class="title-sanpham">
 				<p style="color: rgb(237, 86, 59);">Sản phẩm</p>
@@ -279,57 +299,89 @@
 			</div>
 			<ul class="nav nav-pills mb-3 only-mobile-impottant" id="pills-tab" role="tablist">
 				<li class="nav-item" role="presentation">
-				  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"  aria-controls="v-pills-home" aria-selected="true">Gym</button>
+					<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+						aria-selected="true">Gym</button>
 				</li>
 				<li class="nav-item" role="presentation">
-				  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Yoga</button>
+					<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+						aria-selected="false">Yoga</button>
 				</li>
 				<li class="nav-item" role="presentation">
-				  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Fitnts</button>
+					<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+						aria-selected="false">Fitnts</button>
 				</li>
-			  </ul>
+			</ul>
 			<div class="d-flex align-items-start prod" style="width: 100%; margin: 0 auto;">
-				<div class="nav flex-column nav-pills me-3 only-pc" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="width: 40%;">
-				  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" style="width: 250px; font-size: 20px;">Gym</button>
-				  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="width: 250px; font-size: 20px;">Yoga</button>
-				  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" style="width: 250px; font-size: 20px;">Fitnts</button>
-				  <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" style="width: 250px; font-size: 20px;">banu</button>
+				<div class="nav flex-column nav-pills me-3 only-pc" id="v-pills-tab" role="tablist"
+					aria-orientation="vertical" style="width: 40%;">
+					<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+						aria-selected="true" style="width: 250px; font-size: 20px;">Gym</button>
+					<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+						aria-selected="false" style="width: 250px; font-size: 20px;">Yoga</button>
+					<button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+						aria-selected="false" style="width: 250px; font-size: 20px;">Fitnts</button>
+					<button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+						aria-selected="false" style="width: 250px; font-size: 20px;">banu</button>
 				</div>
-	
+
 				<div class="tab-content" id="v-pills-tabContent">
-				  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+						aria-labelledby="v-pills-home-tab">
 						<img src="./img/training-image-01.jpg" alt="First Class">
 						<h2>First Training Class</h2>
 						<p class="txtsp">Tập luyện tại CITIGYM để có cơ hội thay đổi ngoại hình một cách ngoạn mục
-							Việc luyện tập đều đặn tại CITIGYM và đúng kỹ thuật, cùng với một chế độ dinh dưỡng hợp lý sẽ giúp cải thiện vóc dáng một cách rõ rệt. Huấn luyện viên của Citigym thiết kế chương trình luyện tập dựa trên chỉ số cơ thể, tình trạng sức khỏe của bạn nhằm giúp bạn thấy rõ sự thay đổi ngoạn mục chỉ trong khoảng trung bình từ 6-8 tuần.</p>
-					
+							Việc luyện tập đều đặn tại CITIGYM và đúng kỹ thuật, cùng với một chế độ dinh dưỡng hợp lý
+							sẽ giúp cải thiện vóc dáng một cách rõ rệt. Huấn luyện viên của Citigym thiết kế chương
+							trình luyện tập dựa trên chỉ số cơ thể, tình trạng sức khỏe của bạn nhằm giúp bạn thấy rõ sự
+							thay đổi ngoạn mục chỉ trong khoảng trung bình từ 6-8 tuần.</p>
 
-				  </div>
-				  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+					</div>
+					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+						aria-labelledby="v-pills-profile-tab">
 						<img src="./img/training-image-02.jpg" alt="Second Training">
 						<h2>Second Training Class</h2>
 						<p class="txtsp">
-							CITIGYM hỗ trợ hội viên đo chỉ số BMI trước và trong quá trình tập luyện để hội viên có thể theo dõi được kết quả tập luyện. BMI là chỉ số khối cơ thể (Body Mass Index), được các bác sĩ và chuyên gia sức khỏe dùng để xác định một người có bị béo phì, thừa cân hay quá gầy. Hãy để lại thông tin để CITIGYM có thể giúp bạn phân tích sức khỏe và đưa ra những tư vấn phù hợp với thể trạng của bạn.
+							CITIGYM hỗ trợ hội viên đo chỉ số BMI trước và trong quá trình tập luyện để hội viên có thể
+							theo dõi được kết quả tập luyện. BMI là chỉ số khối cơ thể (Body Mass Index), được các bác
+							sĩ và chuyên gia sức khỏe dùng để xác định một người có bị béo phì, thừa cân hay quá gầy.
+							Hãy để lại thông tin để CITIGYM có thể giúp bạn phân tích sức khỏe và đưa ra những tư vấn
+							phù hợp với thể trạng của bạn.
 						</p>
-				  </div>
-				  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+					</div>
+					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+						aria-labelledby="v-pills-messages-tab">
 						<img src="./img/training-image-03.jpg" alt="Third Class">
 						<h2>Third Training Class</h2>
 						<p class="txtsp">
-							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt tình,
-							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt tình,
-							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt tình,
+							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt
+							tình,
+							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt
+							tình,
+							Phòng tập được học viên đánh giá là một phòng tập thân thiện, với đội ngũ HLV giỏi và nhiệt
+							tình,
 						</p>
-				  </div>
-				  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+					</div>
+					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+						aria-labelledby="v-pills-settings-tab">
 						<img src="./img/training-image-04.jpg" alt="Fourth Training">
 						<h2>Fourth Training Class</h2>
 						<p class="txtsp">
-							Tự hào là cơ sở FITNESS chất lượng đạt chứng chỉ uy tín Quốc tế. Club 300 Climbing & Fitness có đa dạng các bộ môn Gym, Yoga, Group X, Climbing với núi nhân tạo trong nhà cao nhất Sài Gòn, Boxing,… giúp bạn có được cơ thể cân đối, khoẻ mạnh và giải trí tuyệt vời sau những giờ làm việc căng thẳng.
+							Tự hào là cơ sở FITNESS chất lượng đạt chứng chỉ uy tín Quốc tế. Club 300 Climbing & Fitness
+							có đa dạng các bộ môn Gym, Yoga, Group X, Climbing với núi nhân tạo trong nhà cao nhất Sài
+							Gòn, Boxing,… giúp bạn có được cơ thể cân đối, khoẻ mạnh và giải trí tuyệt vời sau những giờ
+							làm việc căng thẳng.
 						</p>
-				  </div>
+					</div>
 				</div>
-			  </div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -346,7 +398,7 @@
 			<div class="team__list-col">
 				<div class="team__item">
 					<div href="#" class="team__item-img">
-						<a href=""><img src="./img/Team/member1.jpg" alt=""/></a>
+						<a href=""><img src="./img/Team/member1.jpg" alt="" /></a>
 					</div>
 					<div class="team__item-info">
 						<h3 class="info-name">Lê min hô</h3>
@@ -354,19 +406,13 @@
 					</div>
 					<ul class="team__item-social">
 						<li>
-							<a href="#"
-								><i class="fa fa-twitter" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#"
-								><i class="fa fa-facebook" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#"
-								><i class="fa fa-linkedin" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -382,19 +428,13 @@
 					</div>
 					<ul class="team__item-social">
 						<li>
-							<a href="#"
-								><i class="fa fa-twitter" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#"
-								><i class="fa fa-facebook" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#"
-								><i class="fa fa-linkedin" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -410,19 +450,13 @@
 					</div>
 					<ul class="team__item-social">
 						<li>
-							<a href="#"
-								><i class="fa fa-twitter" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#"
-								><i class="fa fa-facebook" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#"
-								><i class="fa fa-linkedin" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -438,19 +472,13 @@
 					</div>
 					<ul class="team__item-social">
 						<li>
-							<a href="#"
-								><i class="fa fa-twitter" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#"
-								><i class="fa fa-facebook" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#"
-								><i class="fa fa-linkedin" aria-hidden="true"></i
-							></a>
+							<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -458,25 +486,37 @@
 		</div>
 	</div>
 </div>
+
+
 <!-- team-end -->
+<div style="background-color: rgb(45, 45, 45); padding-top: 50px; padding-bottom: 50px;">
+	<div class="container" style="color: #fff;">
+		<div class="title work--white">
+			<h2>Trải nghiệm.</h2>
+		</div>
+		<div class="comment mt-4 text-justify float-left" style="display: flex; justify-content: center; flex-direction: column; text-align: center;"> 
+			<img style="margin: auto;" src="https://picsum.photos/100/100" alt=""
+				class="rounded-circle" width="100" height="100">
+			<h4>Lê min hô</h4> <span>- 20 October, 2021</span> <br>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
+				vero sequi velit molestias doloremque molestiae dicta?</p>
+		</div>
+	</div>
+</div>
+
+
 
 <div class="contact" id="contect">
 	<div class="container">
 		<div class="title">
-			<h2>Trải nghiệm của bạn.</h2>
+			<h2>Liên hệ.</h2>
 		</div>
 	</div>
 	<div class="contact__map">
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62714.07523490118!2d106.64715198179823!3d10.762995359248984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1585295632542!5m2!1svi!2s"
-			width="100%"
-			height="346"
-			frameborder="0"
-			style="border:0;"
-			allowfullscreen=""
-			aria-hidden="false"
-			tabindex="0"
-		></iframe>
+			width="100%" height="346" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+			tabindex="0"></iframe>
 	</div>
 	<div class="container">
 		<div class="contact__list">
@@ -487,12 +527,10 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 						nisi metus, tristique nec dolor non, ornare sagittis dolor.
 						Nulla vestibulum lacus sed molestie gravida.
-						<span style="display: block; padding-top: 2.9rem;"
-							>Cras fermentum elit quis magna congue,
+						<span style="display: block; padding-top: 2.9rem;">Cras fermentum elit quis magna congue,
 							<span style="font-weight: bold;">vel sodales</span> arcu
 							vestibulum. Nunc lobortis dui magna, quis dapibus
-							lacus</span
-						>
+							lacus</span>
 					</p>
 				</div>
 			</div>
@@ -502,33 +540,15 @@
 						<div class="top-row clearfix">
 							<div class="field-wrap">
 								<label for="username">Your Name</label>
-								<input
-									type="text"
-									id="username"
-									name="username"
-									required
-									autocomplete="off"
-								/>
+								<input type="text" id="username" name="username" required autocomplete="off" />
 							</div>
 							<div class="field-wrap">
 								<label for="email">Your Email</label>
-								<input
-									type="email"
-									id="email"
-									name="email"
-									required
-									autocomplete="off"
-								/>
+								<input type="email" id="email" name="email" required autocomplete="off" />
 							</div>
 							<div class="textarea-feild">
 								<label for="message">Your Message</label>
-								<textarea
-									rows="8"
-									cols="46"
-									id="message"
-									name="message"
-									required
-								></textarea>
+								<textarea rows="8" cols="46" id="message" name="message" required></textarea>
 							</div>
 						</div>
 						<div class="form__btn">
@@ -543,12 +563,13 @@
 <!-- contact-end -->
 
 
+
 <!-- contact-end -->
 <footer class="footer" id="contact">
 	<div class="container footer-layout only-pc">
 		<div></div>
 		<div>
-			
+
 			<div class="txt only-mobile">
 				<p>PocoSoft.,JSC</p>
 				<p>Công ty Cổ phần Công nghệ phần mềm PocoSoft</p>
@@ -592,7 +613,7 @@
 	<div class="only-mobile footer-layout">
 		<div>
 			<div class="txt">
-				
+
 			</div>
 		</div>
 		<div style="max-width: 350px;">
@@ -637,18 +658,69 @@
 		</div>
 	</div>
 </footer>
+<div class="modal fade" id="myModalLogout" role="dialog" style="font-size: 18px !important;">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div style="display:flex; justify-content: space-between; padding: 8px 15px">
+				<h4 class="modal-title" style="font-size: 1.5rem !important" >Thoát khỏi hệ thống ?</h4>
+
+				<a type="button" class="close" data-bs-dismiss="modal">&times;</a>
+			</div>
+			<div class="modal-footer">
+				<div class="col-md-2 col-md-offset-4">
+					<a href="signIn.html" class="truong-small-linkbt"> <input type="button" data-toggle="modal" style="font-size: 1.5rem !important" 
+																			   data-target="#myModalLogout"
+																			   class="btn btn-danger" name=""
+																			   value="Đồng ý" style="width: auto">
+					</a>
+				</div>
+				<div class="col-md-2 ">
+					<input type="button" class="btn btn-outline-secondary" name="" data-bs-toggle="modal"
+						   data-bs-target="#myModalLogout" style="font-size: 1.5rem !important" 
+						   value="Hủy bỏ" style="width: auto">
+				</div>
+
+			</div>
+		</div>
+	</div>
 </div>
-<div class="backSc" onclick="removebg()"></div>
+
 
 
 <script src="./js/script.js"></script>
 <script src="./js/carousel.js"></script>
-<script src="./js/accordions.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 	crossorigin="anonymous"></script>
 
+
+<script>
+		$(document).ready(function () {
+			var params = {};
+	
+			if (location.search) {
+				var parts = location.search.substring(1).split('&');
+	
+				for (var i = 0; i < parts.length; i++) {
+					var nv = parts[i].split('=');
+					if (!nv[0]) continue;
+					params[nv[0]] = nv[1] || true;
+				}
+			}
+			console.log(params);
+			if(params.email){
+				let html = `<span data-bs-toggle="modal" data-bs-target="#myModalLogout"> Đăng xuất</span>`;
+				document.getElementById("siginBtntext").innerHTML= html;
+				document.getElementById("siginBtntext").href="#"; 
+			}
+			else{
+				document.getElementById("siginBtntext").innerHTML="Đăng nhập";
+			}
+		});
+		
+</script>
 </body>
 
 </html>

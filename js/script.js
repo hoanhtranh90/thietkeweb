@@ -140,21 +140,6 @@ else if (i == 3 && k == 1 || i == 1 && k == 2) {
   }, 500);
 }
 
-// if(i == 3) {
-//   document.querySelector(`.sanpham1 > div:nth-child(2)`).classList.add("ani-out")
-//   setTimeout(() => {
-//     if( document.querySelector(`.sanpham1 > div:nth-child(2)`).classList.contains("ani-out"))
-//   document.querySelector(`.sanpham1 > div:nth-child(2)`).classList.remove("ani-out")
-
-//   }, 1000);
-// }
-// if(i == 1) {
-//   document.querySelector(`.sanpham2 > div:nth-child(2)`).classList.add("ani-out")
-//   setTimeout(() => {
-//     if( document.querySelector(`.sanpham2 > div:nth-child(2)`).classList.contains("ani-out"))
-//   {document.querySelector(`.sanpham2 > div:nth-child(2)`).classList.remove("ani-out")}
-
-//   }, 1000);
 
 Array.from(document.querySelectorAll(".grid-sanpham > div > div")).forEach((e) => {
   if (e.classList.contains("sanpham-flexbox")) {
@@ -323,97 +308,6 @@ else {
 }
 //end
 
-
-//disable auto slide
-
-//end
-
-//change button phan gioi thieu
-
-
-//button san pham
-$(".sanpham2 .sanpham-btn-2").hover(function () {
-  $(".sanpham2 .sanpham-btn-2").css("background-color", "#FA7387");
-  $(".sanpham2 .sanpham-btn-2").css("color", "#fff");
-}, function () {
-  $(".sanpham2 .sanpham-btn-2").css("background-color", "#fff");
-  $(".sanpham2 .sanpham-btn-2").css("color", "#FA7387");
-});
-$(".sanpham1 .sanpham-btn-2").hover(function () {
-  $(".sanpham1 .sanpham-btn-2").css("background-color", "#FA7387");
-  $(".sanpham1 .sanpham-btn-2").css("color", "#fff");
-}, function () {
-  $(".sanpham1 .sanpham-btn-2").css("background-color", "#fff");
-  $(".sanpham1 .sanpham-btn-2").css("color", "#FA7387");
-});
-$(".sanpham3 .sanpham-btn-2").hover(function () {
-  $(".sanpham3 .sanpham-btn-2").css("background-color", "#FA7387");
-  $(".sanpham3 .sanpham-btn-2").css("color", "#fff");
-}, function () {
-  $(".sanpham3 .sanpham-btn-2").css("background-color", "#fff");
-  $(".sanpham3 .sanpham-btn-2").css("color", "#FA7387");
-});
-//end
-
-
-//tuyendung-modal-hover
-$(".tuyendung .modal-header img").hover(function () {
-  $(".tuyendung .modal-header > img:nth-child(1)").css("display", "none");
-  $(".tuyendung .modal-header > img:nth-child(2)").css("display", "unset");
-}, function () {
-  $(".tuyendung .modal-header > img:nth-child(1)").css("display", "unset");
-  $(".tuyendung .modal-header > img:nth-child(2)").css("display", "none");
-});
-//end
-var clicked = false, clickY;
-$(document).on({
-  'mousemove': function (e) {
-    clicked && updateScrollPos(e);
-  },
-  'mousedown': function (e) {
-    clicked = true;
-    clickY = e.pageY;
-  },
-  'mouseup': function () {
-    clicked = false;
-    $('html').css('cursor', 'auto');
-  }
-});
-
-var updateScrollPos = function (e) {
-  $('html').css('cursor', 'row-resize');
-  $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
-}
-
-
-//slide sanpham mobile
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = x.length }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " w3-red";
-}
 
 
 

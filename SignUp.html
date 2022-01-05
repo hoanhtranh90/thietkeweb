@@ -48,7 +48,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 400px;
-            height: 650px;
+            height: 550px;
             padding: 80px 40px;
             box-sizing: border-box;
             background: rgb(255 255 255 / 11%);
@@ -88,8 +88,7 @@
         }
 
         .formContent input[type="text"],
-        .formContent input[type="password"],
-        .formContent input[type="email"] {
+        .formContent input[type="password"] {
             padding: 0;
             border: none;
             border-bottom: 1px solid #fff;
@@ -106,7 +105,7 @@
             background: #e8e8e8;
             cursor: pointer;
             border-radius: 5px;
-            border: 1px solid #000;
+            border: none;
             outline: none;
             margin-top: 5px;
             padding: 10px 10px 10px 10px;
@@ -114,7 +113,7 @@
 
         .formContent input[type="submit"]:hover {
             color: #fff;
-            background: #104e99;
+            background: rgb(237, 86, 59);
         }
 
         .formContent a {
@@ -154,7 +153,7 @@
             left: 0;
             position: absolute;
             left: 15%;
-            margin-top: 10px;
+            margin-top: 13px;
         }
 
         .Oroption:after {
@@ -226,22 +225,15 @@
     <div class="formContent blur"> 
         <h2>Đăng Ký</h2>
         <form>
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Email" required>
+            <label>Tên đăng nhập</label>
+            <input type="text" name="email" placeholder="Tên đăng nhập" required>
             <label>Mật khẩu</label>
             <input type="password" name="password" placeholder="Mật khẩu" required>
             <label>Nhập lại mật khẩu</label>
             <input type="password" name="password" placeholder="Mật khẩu" required>
             <input type="submit" name="submit" value="Đăng ký">
             <div class="remember">
-                <div class="login">
-                    <div class="Oroption">OR</div>
-                </div>
-                <div style="color: rgb(238, 238, 238);">Đăng nhập Facebook và Google</div>
-                <div class="links">
-                    <div class="facebook"><img src="img/facebook.png" alt="Facebook Icon" /> </div>
-                    <div class="google"> <img src="img/google.png" alt="Facebook Icon" /> </div>
-                </div>
-                <div class="signup" ><a href="SignIn.html" style="color: rgb(238, 238, 238);">Signin Now</a> </div>
+                
+                <div class="signup" ><a href="SignIn.html" style="color: rgb(238, 238, 238);">Đăng nhập</a> </div>
             </div>
 </body>
