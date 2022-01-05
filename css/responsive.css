@@ -184,7 +184,31 @@
         width: 150px;
         height: 160px;
     }
-   
+     /* ====== TEAM ====== */
+     .team {
+        padding-bottom: 6rem;
+    }
+    .team__item-img a {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .team__item-img a img {
+        max-width: 100%;
+    }
+    /* TEAM */
+    .team {
+        padding-bottom: 5rem;
+        padding-top: 8rem;
+    }
+    .team__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2.5rem;
+    }
+    .team__list-col {
+        width: 100%;
+    }
 }
 
 
@@ -336,7 +360,7 @@
     }
     .gioithieu .gioithieu-bg,
     .gioithieu .gioithieu-right {
-        background-color: #E6F2FD;
+        border: 1px solid #ccc;
     }
     .gioithieu__col {
         display: grid;
@@ -443,6 +467,21 @@
         top: 50%;
         right: 0 !important;
       }
+
+          /* ====== TEAM ====== */
+    .team {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .team__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+    }
+    .team__list-col {
+        width: 100%;
+    }
+    
     /* ====== SANPHAM ====== */
     .sanpham {
         padding-top: 60px;

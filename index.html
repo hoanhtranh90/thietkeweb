@@ -32,7 +32,24 @@
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
+	
 	}
+	.nav-link {
+		color: #fff;
+		margin-top: 30px;
+		
+	}
+	.prod {
+		color: #cdcdcd !important;
+	}
+	.nav-pills .nav-link.active {
+    /* background-color: rgb(237, 86, 59); */
+    background-color: unset;
+    border: 2px solid rgb(237, 86, 59);
+    border-radius: 8px;
+	color: rgb(237, 86, 59);
+	}
+
 </style>
 <div id="wrapper">
  <header class="header-area header-sticky" style="background-color: #000;">
@@ -46,10 +63,9 @@
 					<!-- ***** Menu Start ***** -->
 					<ul class="nav" id="mn">
 						<li><a></a></li>
-						<li class="scroll-to-section"><a href="#top" class="active">Trang chủ</a></li>
+						<li class="scroll-to-section"><a href="index.html" class="active">Trang chủ</a></li>
 						<li class="scroll-to-section"><a href="#gioithieu">Giới thiệu</a></li>
-						<li class="scroll-to-section"><a href="#sanpham">Sản phẩm</a></li>
-						<li class="scroll-to-section"><a href="dichvu.html">Dịch vụ</a></li>
+						<li class="scroll-to-section"><a href="#sanpham">Dịch vụ</a></li>
 						<li class="scroll-to-section"><a href="datlich.html">Đặt lịch</a></li> 
 						<li class="main-button"><a href="signIn.html">Đăng ký</a></li>
 					</ul>        
@@ -77,14 +93,14 @@
 						metus, tristique ndolor non, ornare sagittis dolor. Nulla
 						vestibulu lacus ... -->
 				</p>
-				<a href="#sanpham" class="banner__content-btn">GIA NHẬP</a>
+				<a href="chitiet.html" class="banner__content-btn" >GIA NHẬP</a>
 			</div>
 		
 		</div>
 	</div>
 	<!-- banner-end -->
-	<div class="gioithieu" id="gioithieu">
-		<div class="container">
+	<div class="gioithieu " id="gioithieu"  style="margin-bottom: 50px; background-color: rgb(45, 45, 45); margin-bottom: 0; padding-bottom: 70px;">
+		<div class="container" style="padding-bottom: 70px;">
 			<div class="gioithieu__col">
 				<div class="gioithieu__col-1-of-2">
 					<img src="./img/club300-tru-so-3-770x800.jpg" alt="" srcset="">
@@ -92,9 +108,9 @@
 				<div class="gioithieu__col-1-of-2">
 					<div class="gioithieu-right">
 						<div>
-							<p style="font-size: 20px;">Giới thiệu</p>
+							<p style="font-size: 24px; color: rgb(237, 86, 59);">Giới thiệu</p>
 						</div>
-						<div>
+						<div class="prod">
 							<h3><span style="font-size: 85%;"><strong>BẠN MUỐN CẢI THIỆN VÓC DÁNG – TĂNG CƯỜNG THỂ
 										CHẤT</strong></span></h3>
 							<h3 class="mt-5"><span style="font-size: 85%;"><strong>BẠN CẦN CHẾ ĐỘ ĂN UỐNG KẾT HỢP LUYỆN TẬP KHOA
@@ -115,7 +131,7 @@
 			</div>
 
 		</div>
-		<div class="gioithieu-bg">
+		<div class="gioithieu-bg" style="background-color: rgb(250, 250, 250);">
 
 			<div class="container">
 
@@ -164,6 +180,7 @@
 									<p>CityGym luôn nỗ lực tìm kiếm những giải pháp mới, sáng tạo, tiến bộ
 										nhằm tạo ra hiệu quả cao nhất,
 										 cải thiện khó khăn cho các khách hàng của mình.
+										 Với trái tim nhiệt thành và tâm huyết trong công việc. Chúng tôi tự tin có thể đáp ứng mọi yêu cầu
 									</p>
 								</div>
 								<div>
@@ -251,12 +268,12 @@
 	<!-- gioithieu-end -->
 
 	<!-- san pham -->
-	<div class="sanpham" id="sanpham" style="margin-bottom: 50px;">
+	<div class="sanpham" id="sanpham" style="margin-bottom: 50px; background-color: rgb(45, 45, 45); margin-bottom: 0; padding-bottom: 70px;">
 		<div class="container">
 			<div class="title-sanpham">
-				<p>Sản phẩm</p>
+				<p style="color: rgb(237, 86, 59);">Sản phẩm</p>
 				<div>
-					<p>CityGym cung cấp đa dạng thể loại cho khách hàng</p>
+					<p class="prod">CityGym cung cấp đa dạng thể loại cho khách hàng</p>
 				</div>
 
 			</div>
@@ -271,7 +288,7 @@
 				  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Fitnts</button>
 				</li>
 			  </ul>
-			<div class="d-flex align-items-start" style="width: 100%; margin: 0 auto;">
+			<div class="d-flex align-items-start prod" style="width: 100%; margin: 0 auto;">
 				<div class="nav flex-column nav-pills me-3 only-pc" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="width: 40%;">
 				  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" style="width: 250px; font-size: 20px;">Gym</button>
 				  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="width: 250px; font-size: 20px;">Yoga</button>
@@ -286,7 +303,6 @@
 						<p class="txtsp">Tập luyện tại CITIGYM để có cơ hội thay đổi ngoại hình một cách ngoạn mục
 							Việc luyện tập đều đặn tại CITIGYM và đúng kỹ thuật, cùng với một chế độ dinh dưỡng hợp lý sẽ giúp cải thiện vóc dáng một cách rõ rệt. Huấn luyện viên của Citigym thiết kế chương trình luyện tập dựa trên chỉ số cơ thể, tình trạng sức khỏe của bạn nhằm giúp bạn thấy rõ sự thay đổi ngoạn mục chỉ trong khoảng trung bình từ 6-8 tuần.</p>
 					
-						<a href="chitiet.html"> <button type="button" class="btn btn-outline-primary mt-3" style="font-size: 16px;" >Xem chi tiết</button></a>
 
 				  </div>
 				  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -318,6 +334,214 @@
 	</div>
 </div>
 <!-- sanpham-end -->
+
+<div class="team" id="team">
+	<div class="container">
+		<div class="title">
+			<h2>Ban huấn luyện viên.</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="team__list">
+			<div class="team__list-col">
+				<div class="team__item">
+					<div href="#" class="team__item-img">
+						<a href=""><img src="./img/Team/member1.jpg" alt=""/></a>
+					</div>
+					<div class="team__item-info">
+						<h3 class="info-name">Lê min hô</h3>
+						<span class="info-pos">Capital</span>
+					</div>
+					<ul class="team__item-social">
+						<li>
+							<a href="#"
+								><i class="fa fa-twitter" aria-hidden="true"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa fa-facebook" aria-hidden="true"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa fa-linkedin" aria-hidden="true"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="team__list-col">
+				<div class="team__item">
+					<div href="#" class="team__item-img">
+						<img src="./img/Team/member2.jpg" alt="" />
+					</div>
+					<div class="team__item-info">
+						<h3 class="info-name">Tran Giao diu</h3>
+						<span class="info-pos">Huấn luyện viên trưởng</span>
+					</div>
+					<ul class="team__item-social">
+						<li>
+							<a href="#"
+								><i class="fa fa-twitter" aria-hidden="true"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa fa-facebook" aria-hidden="true"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa fa-linkedin" aria-hidden="true"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="team__list-col">
+				<div class="team__item">
+					<div href="#" class="team__item-img">
+						<img src="./img/Team/member3.jpg" alt="" />
+					</div>
+					<div class="team__item-info">
+						<h3 class="info-name">Khanh han nam</h3>
+						<span class="info-pos">Anh đẹp trai</span>
+					</div>
+					<ul class="team__item-social">
+						<li>
+							<a href="#"
+								><i class="fa fa-twitter" aria-hidden="true"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa fa-facebook" aria-hidden="true"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa fa-linkedin" aria-hidden="true"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="team__list-col">
+				<div class="team__item">
+					<div href="#" class="team__item-img">
+						<img src="./img/Team/member4.jpg" alt="" />
+					</div>
+					<div class="team__item-info">
+						<h3 class="info-name">Long long</h3>
+						<span class="info-pos">hahiha</span>
+					</div>
+					<ul class="team__item-social">
+						<li>
+							<a href="#"
+								><i class="fa fa-twitter" aria-hidden="true"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa fa-facebook" aria-hidden="true"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa fa-linkedin" aria-hidden="true"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- team-end -->
+
+<div class="contact" id="contect">
+	<div class="container">
+		<div class="title">
+			<h2>Trải nghiệm của bạn.</h2>
+		</div>
+	</div>
+	<div class="contact__map">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62714.07523490118!2d106.64715198179823!3d10.762995359248984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1585295632542!5m2!1svi!2s"
+			width="100%"
+			height="346"
+			frameborder="0"
+			style="border:0;"
+			allowfullscreen=""
+			aria-hidden="false"
+			tabindex="0"
+		></iframe>
+	</div>
+	<div class="container">
+		<div class="contact__list">
+			<div class="contact__item-col">
+				<div class="contact__info">
+					<h3 class="contact__info-title">Liên hê vơi chúng tôi</h3>
+					<p class="contact__info-desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+						nisi metus, tristique nec dolor non, ornare sagittis dolor.
+						Nulla vestibulum lacus sed molestie gravida.
+						<span style="display: block; padding-top: 2.9rem;"
+							>Cras fermentum elit quis magna congue,
+							<span style="font-weight: bold;">vel sodales</span> arcu
+							vestibulum. Nunc lobortis dui magna, quis dapibus
+							lacus</span
+						>
+					</p>
+				</div>
+			</div>
+			<div class="contact__item-col">
+				<div class="contact__form">
+					<form action="#" method="post">
+						<div class="top-row clearfix">
+							<div class="field-wrap">
+								<label for="username">Your Name</label>
+								<input
+									type="text"
+									id="username"
+									name="username"
+									required
+									autocomplete="off"
+								/>
+							</div>
+							<div class="field-wrap">
+								<label for="email">Your Email</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									required
+									autocomplete="off"
+								/>
+							</div>
+							<div class="textarea-feild">
+								<label for="message">Your Message</label>
+								<textarea
+									rows="8"
+									cols="46"
+									id="message"
+									name="message"
+									required
+								></textarea>
+							</div>
+						</div>
+						<div class="form__btn">
+							<button type="submit">Send Message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- contact-end -->
+
 
 <!-- contact-end -->
 <footer class="footer" id="contact">

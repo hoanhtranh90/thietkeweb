@@ -32,13 +32,17 @@
         font-family: Open Sans;
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-    }
-    * {
-        font-size: 16px !important;
     }
     label {
         color: #fff;
+        font-size: 18px;
+      
+    }
+    input {
+      height: 36px;
+    }
+    .forms  div {
+      font-size: 16px !important;
     }
 </style>
 <div id="wrapper" style="height:100vh ;background-image: url(./img/cta-bg.jpg)">
@@ -70,27 +74,35 @@
         </div>
     </header>
 
-    <form class="container" style="padding-top: 120px;">
+    <div class=" container d-flex justify-content-between" style="padding-top: 120px; ">
+
+      <div  style="width: 60%; padding-right: 30px;">
+        <label style="color: #fff; font-style: italic; font-size: 36px; font-weight: 700;">GET YOUR FREE DAY PASS.</label>
+        <label style="font-size: 24px;">Not sure if U Time is right for you? Then put us to the test by booking a free gym trial. That’s free access to all equipment, any class and any U Time Fitness studio.
+          </label>
+        </div>
+
+      <form class=" forms" style=" width: 40%;">
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group ">
             <label for="inputEmail4">Email</label>
             <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group ">
             <label for="name">Họ tên</label>
             <input type="text" class="form-control" id="name" placeholder="Họ tên">
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group ">
           <label for="inputAddress">Địa chỉ</label>
           <input type="text" class="form-control" id="inputAddress" placeholder="Địa chỉ">
         </div>
-        <div class="form-group">
+        <div class="form-group ">
             <label for="inputAddress">Số điện thoại</label>
             <input type="text" class="form-control" id="inputAddress" >
           </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
+        <div class="form-row ">
+          <div>
             <label for="inputCity">Nơi ở</label>
             <input type="text" class="form-control" id="inputCity">
           </div>
@@ -103,6 +115,8 @@
             </label>
           </div>
         </div>
-        <button type="button" class="btn btn-primary">Gửi</button>
+        <button type="button" class="btn btn-primary" style="font-size: 20px;">Gửi</button>
       </form>
+    </div>
+  
 </div>

@@ -1,76 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <style>
-        #content {
-            background-image: url("./img/contact-bg.jpg");
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open sans", sans-serif;
+        }
+
+        body:before {
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("../img/training-image-01.jpg");
+            background-position: center center;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: "Open sans", sans-serif;
+        }
+
+        .blur {
+            background: rgb(0 0 0 / 20%);
+            backdrop-filter: blur(6px);
+            height: 100vh;
+            width: 100%;
+        }
+
+        .formContent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 650px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgb(255 255 255 / 11%);
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+            border-radius: 10px;
+        }
+
+        .avatarImg {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-80px/2);
+            left: calc(50% - 40px);
+        }
+
+        .formContent h2 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Open sans", sans-serif;
+        }
+
+        .formContent label {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .formContent input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .formContent input[type="text"],
+        .formContent input[type="password"],
+        .formContent input[type="email"] {
+            padding: 0;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .formContent input[type="submit"] {
+            color: #000;
+            font-size: 16px;
+            background: #e8e8e8;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid #000;
+            outline: none;
+            margin-top: 5px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .formContent input[type="submit"]:hover {
+            color: #fff;
+            background: #104e99;
+        }
+
+        .formContent a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        input[type="checkbox"] {
+            width: 6%;
+        }
+
+        .remember span {
+            color: #fff;
+            font-family: "Open sans", sans-serif
+        }
+
+        .remember span a {
+            color: #fff;
+            font-family: "Open sans", sans-serif
+        }
+
+        .login {
+            color: #fff;
+            text-align: center;
+            margin: 20px 0;
+            font-family: "Open sans", sans-serif;
+        }
+
+        .Oroption:before {
+            content: "";
+            display: block;
+            width: 115px;
+            height: 1px;
+            background: #e8e8e8;
+            left: 0;
+            position: absolute;
+            left: 15%;
+            margin-top: 10px;
+        }
+
+        .Oroption:after {
+            content: "";
+            display: block;
+            width: 115px;
+            height: 1px;
+            background: #e8e8e8;
+            right: 58px;
+            /* top: 50%; */
+            position: absolute;
+            margin-top: -10px;
+        }
+
+        .links {
+            display: flex;
+            cursor: pointer;
+            color: white;
+            margin: 0 0 20px 0;
+        }
+
+        .facebook {
+            width: 80%;
+            height: 31px;
+            line-height: 45px;
+            border: 1px solid #1f89d4;
+            border-radius: 5px;
+        }
+
+        .google {
+            width: 80%;
+            height: 31px;
+            line-height: 45px;
+            margin-left: 10px;
+            border: 1px solid #fb5859;
+            border-radius: 5px;
+        }
+
+        .facebook img,
+        .google img {
+            width: 100%;
+        }
+
+        .links i {
+            font-size: 17px;
+        }
+
+        i span {
+            margin-left: 8px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-family: "Open sans", sans-serif;
+        }
+
+        .signup {
+            font-size: 15px;
+            color: white;
+            font-family: "Open sans", sans-serif;
+            text-align: center;
+        }
+
+        .signup a {
+            color: #387aff;
+            text-decoration: none;
         }
     </style>
-    <div id="content">
-        <div class="row">
-            <div class="col-8"></div>
-            <div class="col-4"
-                 style="display:flex; background-color: rgba(255, 255, 255, 0.9); border-bottom-right-radius: 24px; border-top-right-radius: 24px; height: 99vh; width: 40%;">
-                <div style="align-self: center; padding: 0 70px">
-                    <div style="display:flex; ">
-                        <p style="font-size: 24px;color: #EAB308; opacity: 0;">ACSACAKSKCAKASssssssssssssssssCKACKCASKCAKACKA</p>
-                    </div>
-                    <div style="margin-left: 15px">
-                        <div class="row" style="margin-bottom: 16px">
-                            <div class="col-12">
-                                <div style="color: #4B5563; font-size: 14px; font-weight: 500">Tên đăng nhập</div>
-                                <input type="text" class="form-control" name="username" id="username" onchange="checkBtn()"
-                                       />
-                            </div>
-                        </div>
-                        <div class="row" style="margin-bottom: 16px">
-                            <div class="col-12">
-                                <div style="color: #4B5563; font-size: 14px; font-weight: 500">Mật khẩu</div>
-                                <input type="password" class="form-control" name="password" id="password"  onchange="checkBtn()"
-                                       style="position: relative"/>
-                                
-                            </div>
-                   
+    <div class="blur"></div>
+    <div class="formContent blur"> 
+        <h2>Đăng nhập</h2>
+        <form action="index.html">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <label>Mật khẩu</label>
+            <input type="password" name="password" placeholder="Mật khẩu" required>
+            <input type="checkbox">
+            <label style="font-size: 12px;">Đồng ý điều khoản của chúng tôi</label>
+            <input type="submit" name="submit" value="Đăng nhập">
 
-                        </div>
-
-
-                        <div style="display:flex; justify-content: space-between; margin-left: 5px;">
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="remember1">
-                                <label class="form-check-label" for="remember1">Nhớ tài khoản</label>
-                            </div>
-                            <div class="mb-3 form-check" style="color: rgb(38, 88, 182);">
-                                <a style="text-decoration: none;" href="SignUp.html" class="form-check-label" for="remember1">Đăng ký</a>
-                            </div>
-                        </div>
-
-                        <div class="row" id="login-consol">
-                            <div class="col-12">
-                                <button  style="width: 100%; height: 50px; background-color: rgb(237, 86, 59) ; color: #fff;"  onclick="window.open('index.html','__self')"
-                                        type="submit" class="btn" id="login">ĐĂNG NHẬP
-                                </button>
-                            </div>
-                        </div>
-
-                        
-                    </div>
+            <a style="color: rgb(238, 238, 238);">Quên mật khẩu</a>
+            <div class="remember">
+                <div class="login">
+                    <div class="Oroption">OR</div>
                 </div>
+                <div style="color: rgb(238, 238, 238);">Đăng nhập Facebook và Google</div>
+                <div class="links">
+                    <div class="facebook"><img src="img/facebook.png" alt="Facebook Icon" /> </div>
+                    <div class="google"> <img src="img/google.png" alt="Facebook Icon" /> </div>
+                </div>
+                <div class="signup" > Bạn chưa có tài khoản? <a href="SignUp.html" style="color: rgb(238, 238, 238);">Signup Now!</a> </a></div>
             </div>
-        </div>
-    </div>
 </body>
